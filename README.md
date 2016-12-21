@@ -63,7 +63,10 @@ latter. For an evaluation of Synapse consistency and accuracy see
 [synapse_characterization](
 https://github.com/radical-experiments/AIMES-Experience/tree/master/synapse_characterization)
 
-Finally, we either factor out or do not measure the time taken to transfer input/output files as they do not affect the agent performance under the metrics we consider. Consistently, the experiments we perform with Synapse will have no input or output files.
+Finally, we either factor out or do not measure the time taken to transfer
+input/output files as they do not affect the agent performance under the metrics
+we consider. Consistently, the experiments we perform with Synapse will have no
+input or output files.
 
 ## Experiment 1
 
@@ -84,58 +87,81 @@ Finally, we either factor out or do not measure the time taken to transfer input
 *   Executables: Synapse emulator
 *   Resources: Stampede, Titan
 
+***NOTE***: the following is a parameter composition within the boundaries posed
+by the use case. It is likely the number of experiments will be
+reduced/aggregated.
+
+***NOTE 1***: Walltime for each pilot is calculated as:
+```
+i * mean execution time of 3 task * number of generations
+```
+`i` is 2 by default and adjusted in case of failure.
+
 ### Experiment 1.a
 
-| N tasks | N core/task | N pilot | N core/pilot | Resource       |
-|---------|-------------|---------|--------------|----------------|
-| 128     | 1           | 1       | 128          | Stampede/Titan |
-| 256     | 1           | 1       | 256          | Stampede/Titan |
-| 512     | 1           | 1       | 512          | Stampede/Titan |
-| 1024    | 1           | 1       | 1024         | Stampede/Titan |
-| 2048    | 1           | 1       | 2048         | Stampede/Titan |
-| 4096    | 1           | 1       | 4096         | Stampede/Titan |
-| 8192    | 1           | 1       | 8192         | Stampede/Titan |
-| 16384   | 1           | 1       | 16384        | Titan          |
+| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
+|---------|-------------|---------------|---------|--------------|----------------|
+| 128     | 1           | 1             | 1       | 128          | Stampede/Titan |
+| 256     | 1           | 1             | 1       | 256          | Stampede/Titan |
+| 512     | 1           | 1             | 1       | 512          | Stampede/Titan |
+| 1024    | 1           | 1             | 1       | 1024         | Stampede/Titan |
+| 2048    | 1           | 1             | 1       | 2048         | Stampede/Titan |
+| 4096    | 1           | 1             | 1       | 4096         | Stampede/Titan |
+| 8192    | 1           | 1             | 1       | 8192         | Stampede/Titan |
+| 16384   | 1           | 1             | 1       | 16384        | Titan          |
 
 
 ### Experiment 1.b
 
-| N tasks Exp 1.a | N tasks | N core/task | N pilot | N core/pilot | Resource       |
-|-----------------|---------|-------------|---------|--------------|----------------|
-| 128             | 2       | 64          | 1       | 128          | Stampede/Titan |
-|                 | 1       | 128         | 1       | 128          | Stampede/Titan |
-| 256             | 4       | 64          | 1       | 256          | Stampede/Titan |
-|                 | 2       | 128         | 1       | 256          | Stampede/Titan |
-| 512             | 8       | 64          | 1       | 512          | Stampede/Titan |
-|                 | 4       | 128         | 1       | 512          | Stampede/Titan |
-| 1024            | 16      | 64          | 1       | 1024         | Stampede/Titan |
-|                 | 8       | 128         | 1       | 1024         | Stampede/Titan |
-| 2048            | 32      | 64          | 1       | 2048         | Stampede/Titan |
-|                 | 16      | 128         | 1       | 2048         | Stampede/Titan |
-| 4096            | 64      | 64          | 1       | 4096         | Stampede/Titan |
-|                 | 32      | 128         | 1       | 4096         | Stampede/Titan |
-| 8192            | 128     | 64          | 1       | 8192         | Stampede/Titan |
-|                 | 64      | 128         | 1       | 8192         | Stampede/Titan |
-| 16384           | 256     | 64          | 1       | 16384        | Titan          |
-|                 | 128     | 128         | 1       | 16384        | Titan          |
+| N tasks Exp 1.a | N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
+|-----------------|---------|-------------|---------------|---------|--------------|----------------|
+| 128             | 2       | 64          | 1             | 1       | 128          | Stampede/Titan |
+|                 | 1       | 128         | 1             | 1       | 128          | Stampede/Titan |
+| 256             | 4       | 64          | 1             | 1       | 256          | Stampede/Titan |
+|                 | 2       | 128         | 1             | 1       | 256          | Stampede/Titan |
+| 512             | 8       | 64          | 1             | 1       | 512          | Stampede/Titan |
+|                 | 4       | 128         | 1             | 1       | 512          | Stampede/Titan |
+| 1024            | 16      | 64          | 1             | 1       | 1024         | Stampede/Titan |
+|                 | 8       | 128         | 1             | 1       | 1024         | Stampede/Titan |
+| 2048            | 32      | 64          | 1             | 1       | 2048         | Stampede/Titan |
+|                 | 16      | 128         | 1             | 1       | 2048         | Stampede/Titan |
+| 4096            | 64      | 64          | 1             | 1       | 4096         | Stampede/Titan |
+|                 | 32      | 128         | 1             | 1       | 4096         | Stampede/Titan |
+| 8192            | 128     | 64          | 1             | 1       | 8192         | Stampede/Titan |
+|                 | 64      | 128         | 1             | 1       | 8192         | Stampede/Titan |
+| 16384           | 256     | 64          | 1             | 1       | 16384        | Titan          |
+|                 | 128     | 128         | 1             | 1       | 16384        | Titan          |
 
 ### Experiment 1.c
 
-| N tasks Exp 1.a | N core/task       | N pilot | N core/pilot | Resource       |
-|-----------------|-------------------|---------|--------------|----------------|
-| 130             | 1/128   ; 64/2    | 1       | 128          | Stampede/Titan |
-| 129             | 1/128   ; 128/1   | 1       | 128          | Stampede/Titan |
-| 260             | 1/256   ; 64/4    | 1       | 256          | Stampede/Titan |
-| 258             | 1/256   ; 128/2   | 1       | 256          | Stampede/Titan |
-| 520             | 1/512   ; 64/8    | 1       | 512          | Stampede/Titan |
-| 516             | 1/512   ; 128/4   | 1       | 512          | Stampede/Titan |
-| 1040            | 1/1024  ; 64/16   | 1       | 1024         | Stampede/Titan |
-| 1032            | 1/1024  ; 128/8   | 1       | 1024         | Stampede/Titan |
-| 2080            | 1/2048  ; 64/32   | 1       | 2048         | Stampede/Titan |
-| 2064            | 1/2048  ; 128/16  | 1       | 2048         | Stampede/Titan |
-| 4160            | 1/4096  ; 64/64   | 1       | 4096         | Stampede/Titan |
-| 4128            | 1/4096  ; 128/32  | 1       | 4096         | Stampede/Titan |
-| 8320            | 1/8192  ; 64/128  | 1       | 8192         | Stampede/Titan |
-| 8256            | 1/8192  ; 128/64  | 1       | 8192         | Stampede/Titan |
-| 16640           | 1/16384 ; 64/256  | 1       | 16384        | Titan          |
-| 16512           | 1/16384 ; 128/128 | 1       | 16384        | Titan          |
+| N tasks Exp 1.a | N core/task       | N generations | N pilot | N core/pilot | Resource       |
+|-----------------|-------------------|---------------|---------|--------------|----------------|
+| 130             | 1/128   ; 64/2    | 1             | 1       | 128          | Stampede/Titan |
+| 129             | 1/128   ; 128/1   | 1             | 1       | 128          | Stampede/Titan |
+| 260             | 1/256   ; 64/4    | 1             | 1       | 256          | Stampede/Titan |
+| 258             | 1/256   ; 128/2   | 1             | 1       | 256          | Stampede/Titan |
+| 520             | 1/512   ; 64/8    | 1             | 1       | 512          | Stampede/Titan |
+| 516             | 1/512   ; 128/4   | 1             | 1       | 512          | Stampede/Titan |
+| 1040            | 1/1024  ; 64/16   | 1             | 1       | 1024         | Stampede/Titan |
+| 1032            | 1/1024  ; 128/8   | 1             | 1       | 1024         | Stampede/Titan |
+| 2080            | 1/2048  ; 64/32   | 1             | 1       | 2048         | Stampede/Titan |
+| 2064            | 1/2048  ; 128/16  | 1             | 1       | 2048         | Stampede/Titan |
+| 4160            | 1/4096  ; 64/64   | 1             | 1       | 4096         | Stampede/Titan |
+| 4128            | 1/4096  ; 128/32  | 1             | 1       | 4096         | Stampede/Titan |
+| 8320            | 1/8192  ; 64/128  | 1             | 1       | 8192         | Stampede/Titan |
+| 8256            | 1/8192  ; 128/64  | 1             | 1       | 8192         | Stampede/Titan |
+| 16640           | 1/16384 ; 64/256  | 1             | 1       | 16384        | Titan          |
+| 16512           | 1/16384 ; 128/128 | 1             | 1       | 16384        | Titan          |
+
+### Experiment 1.d-e-f-g-h-i-l
+
+| N tasks | N core/task | N generations      | N pilot | N core/pilot | Resource       |
+|---------|-------------|--------------------|---------|--------------|----------------|
+| 128     | 1           | 2,4,8,16,32,64,128 | 1       | 128          | Stampede/Titan |
+| 256     | 1           | 2,4,8,16,32,64,128 | 1       | 256          | Stampede/Titan |
+| 512     | 1           | 2,4,8,16,32,64,128 | 1       | 512          | Stampede/Titan |
+| 1024    | 1           | 2,4,8,16,32,64,128 | 1       | 1024         | Stampede/Titan |
+| 2048    | 1           | 2,4,8,16,32,64,128 | 1       | 2048         | Stampede/Titan |
+| 4096    | 1           | 2,4,8,16,32,64,128 | 1       | 4096         | Stampede/Titan |
+| 8192    | 1           | 2,4,8,16,32,64,128 | 1       | 8192         | Stampede/Titan |
+| 16384   | 1           | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |

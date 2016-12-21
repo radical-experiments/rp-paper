@@ -1,0 +1,106 @@
+{
+    "cmd": "/bin/sleep 3", 
+    "cpu": {
+        "cores_per_socket": 2, 
+        "cycles_idle_back": 0, 
+        "cycles_idle_front": 0, 
+        "cycles_stalled_back": 0, 
+        "cycles_stalled_front": 0, 
+        "efficiency": 1, 
+        "flops": 0.3330961697431621, 
+        "flops_per_core": 10680000000, 
+        "flops_per_cycle": 4, 
+        "frequency": 2670000000.0, 
+        "load": 1.21, 
+        "num_sockets": 1, 
+        "ops": 1, 
+        "real": 3.002135992050171, 
+        "sequence": [
+            [
+                3.000443565, 
+                {
+                    "branch_misses": 961.0, 
+                    "branch_misses_perc": -1.0, 
+                    "branches": 19642.0, 
+                    "branches_perc": -1.0, 
+                    "cycles": 433492.0, 
+                    "cycles_perc": -1.0, 
+                    "cycles_stalled_back": 312006.0, 
+                    "cycles_stalled_back_perc": -1.0, 
+                    "cycles_stalled_front": 389365.0, 
+                    "cycles_stalled_front_perc": -1.0, 
+                    "efficiency": null, 
+                    "flops": 29567.62827832091, 
+                    "ops": 88716.0, 
+                    "ops_perc": -1.0, 
+                    "real": 3.000443565, 
+                    "utilization": 19.54515532711123
+                }
+            ]
+        ], 
+        "threads_per_core": 2, 
+        "utilization": 0
+    }, 
+    "mem": {
+        "peak": 5943296.0, 
+        "rss": 368640.0, 
+        "sequence": [
+            [
+                0.0037729740142822266, 
+                {
+                    "rss": 368640.0, 
+                    "size": 5943296.0
+                }
+            ], 
+            [
+                1.0047318935394287, 
+                {
+                    "rss": 0.0, 
+                    "size": 0.0
+                }
+            ], 
+            [
+                2.0061638355255127, 
+                {
+                    "rss": 0.0, 
+                    "size": 0.0
+                }
+            ]
+        ], 
+        "size": 5943296.0
+    }, 
+    "sto": {
+        "read": 2012.0, 
+        "sequence": [
+            [
+                0.0021429061889648438, 
+                {
+                    "read": 2012.0, 
+                    "write": 0.0
+                }
+            ], 
+            [
+                1.004701852798462, 
+                {
+                    "read": 0.0, 
+                    "write": 0.0
+                }
+            ], 
+            [
+                2.0061848163604736, 
+                {
+                    "read": 0.0, 
+                    "write": 0.0
+                }
+            ]
+        ], 
+        "write": 0
+    }, 
+    "sys": {
+        "hostname": "thinkie"
+    }, 
+    "time": {
+        "real": 3.002135992050171, 
+        "start": 1463167440.890433
+    }
+}

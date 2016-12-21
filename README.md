@@ -74,7 +74,7 @@ input or output files.
     *   Spatial heterogeneity (Hs): 0
     *   Temporal heterogeneity (Ht): 1
     *   Input/output dependency among tasks (D): 1
-    *   Runtime communication among tasks (C): 0
+    *   Runtime communication among tasks (C): 1
 *   workload:
     *   Number of stages: 2
     *   Number of iteration for each stage: 1-20
@@ -110,6 +110,11 @@ i * mean execution time of 3 task * number of generations
 | 8192    | 1           | 1             | 1       | 8192         | Stampede/Titan |
 | 16384   | 1           | 1             | 1       | 16384        | Titan          |
 
+Measure: concurrent 1-core tasks execution time
+Hs: 0
+Ht: SD 25%
+D: 0
+C: 0
 
 ### Experiment 1.b
 
@@ -132,6 +137,13 @@ i * mean execution time of 3 task * number of generations
 | 16384           | 256     | 64          | 1             | 1       | 16384        | Titan          |
 |                 | 128     | 128         | 1             | 1       | 16384        | Titan          |
 
+Measure: concurrent MPI tasks execution time
+Hs: 0
+Ht: unknown
+D: 0
+C: 1
+
+
 ### Experiment 1.c
 
 | N tasks Exp 1.a | N core/task       | N generations | N pilot | N core/pilot | Resource       |
@@ -153,6 +165,13 @@ i * mean execution time of 3 task * number of generations
 | 16640           | 1/16384 ; 64/256  | 1             | 1       | 16384        | Titan          |
 | 16512           | 1/16384 ; 128/128 | 1             | 1       | 16384        | Titan          |
 
+Measure: concurrent 1-core/MPI tasks execution time
+Hs: 1
+Ht: unknown
+D: 0
+C: 1
+
+
 ### Experiment 1.d-e-f-g-h-i-l
 
 | N tasks | N core/task | N generations      | N pilot | N core/pilot | Resource       |
@@ -165,3 +184,36 @@ i * mean execution time of 3 task * number of generations
 | 4096    | 1           | 2,4,8,16,32,64,128 | 1       | 4096         | Stampede/Titan |
 | 8192    | 1           | 2,4,8,16,32,64,128 | 1       | 8192         | Stampede/Titan |
 | 16384   | 1           | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
+
+Measure: concurrent and sequential 1-core tasks execution time
+Hs: 0
+Ht: SD 25%
+D: 0
+C: 0
+
+### Experiment 1.m-n-o-p-q-r-t
+
+| N tasks Exp 1.a | N core/task       | N generations      | N pilot | N core/pilot | Resource       |
+|-----------------|-------------------|--------------------|---------|--------------|----------------|
+| 130             | 1/128   ; 64/2    | 2,4,8,16,32,64,128 | 1       | 128          | Stampede/Titan |
+| 129             | 1/128   ; 128/1   | 2,4,8,16,32,64,128 | 1       | 128          | Stampede/Titan |
+| 260             | 1/256   ; 64/4    | 2,4,8,16,32,64,128 | 1       | 256          | Stampede/Titan |
+| 258             | 1/256   ; 128/2   | 2,4,8,16,32,64,128 | 1       | 256          | Stampede/Titan |
+| 520             | 1/512   ; 64/8    | 2,4,8,16,32,64,128 | 1       | 512          | Stampede/Titan |
+| 516             | 1/512   ; 128/4   | 2,4,8,16,32,64,128 | 1       | 512          | Stampede/Titan |
+| 1040            | 1/1024  ; 64/16   | 2,4,8,16,32,64,128 | 1       | 1024         | Stampede/Titan |
+| 1032            | 1/1024  ; 128/8   | 2,4,8,16,32,64,128 | 1       | 1024         | Stampede/Titan |
+| 2080            | 1/2048  ; 64/32   | 2,4,8,16,32,64,128 | 1       | 2048         | Stampede/Titan |
+| 2064            | 1/2048  ; 128/16  | 2,4,8,16,32,64,128 | 1       | 2048         | Stampede/Titan |
+| 4160            | 1/4096  ; 64/64   | 2,4,8,16,32,64,128 | 1       | 4096         | Stampede/Titan |
+| 4128            | 1/4096  ; 128/32  | 2,4,8,16,32,64,128 | 1       | 4096         | Stampede/Titan |
+| 8320            | 1/8192  ; 64/128  | 2,4,8,16,32,64,128 | 1       | 8192         | Stampede/Titan |
+| 8256            | 1/8192  ; 128/64  | 2,4,8,16,32,64,128 | 1       | 8192         | Stampede/Titan |
+| 16640           | 1/16384 ; 64/256  | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
+| 16512           | 1/16384 ; 128/128 | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
+
+Measure: concurrent and sequential 1-core/MPI tasks execution time
+Hs: 1
+Ht: unknown
+D: 0
+C: 1

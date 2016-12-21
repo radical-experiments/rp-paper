@@ -99,6 +99,12 @@ i * mean execution time of 3 task * number of generations
 
 ### Experiment 1.a
 
+*   Measure: concurrent 1-core tasks execution time
+*   Hs: 0
+*   Ht: SD 25%
+*   D: 0
+*   C: 0
+
 | N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |---------|-------------|---------------|---------|--------------|----------------|
 | 128     | 1           | 1             | 1       | 128          | Stampede/Titan |
@@ -110,13 +116,13 @@ i * mean execution time of 3 task * number of generations
 | 8192    | 1           | 1             | 1       | 8192         | Stampede/Titan |
 | 16384   | 1           | 1             | 1       | 16384        | Titan          |
 
-Measure: concurrent 1-core tasks execution time
-Hs: 0
-Ht: SD 25%
-D: 0
-C: 0
-
 ### Experiment 1.b
+
+*   Measure: concurrent MPI tasks execution time
+*   Hs: 0
+*   Ht: unknown
+*   D: 0
+*   C: 1
 
 | N tasks Exp 1.a | N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |-----------------|---------|-------------|---------------|---------|--------------|----------------|
@@ -137,14 +143,13 @@ C: 0
 | 16384           | 256     | 64          | 1             | 1       | 16384        | Titan          |
 |                 | 128     | 128         | 1             | 1       | 16384        | Titan          |
 
-Measure: concurrent MPI tasks execution time
-Hs: 0
-Ht: unknown
-D: 0
-C: 1
-
-
 ### Experiment 1.c
+
+*   Measure: concurrent 1-core/MPI tasks execution time
+*   Hs: 1
+*   Ht: unknown
+*   D: 0
+*   C: 1
 
 | N tasks Exp 1.a | N core/task       | N generations | N pilot | N core/pilot | Resource       |
 |-----------------|-------------------|---------------|---------|--------------|----------------|
@@ -165,14 +170,13 @@ C: 1
 | 16640           | 1/16384 ; 64/256  | 1             | 1       | 16384        | Titan          |
 | 16512           | 1/16384 ; 128/128 | 1             | 1       | 16384        | Titan          |
 
-Measure: concurrent 1-core/MPI tasks execution time
-Hs: 1
-Ht: unknown
-D: 0
-C: 1
-
-
 ### Experiment 1.d-e-f-g-h-i-l
+
+*   Measure: concurrent and sequential 1-core tasks execution time
+*   Hs: 0
+*   Ht: SD 25%
+*   D: 0
+*   C: 0
 
 | N tasks | N core/task | N generations      | N pilot | N core/pilot | Resource       |
 |---------|-------------|--------------------|---------|--------------|----------------|
@@ -185,13 +189,13 @@ C: 1
 | 8192    | 1           | 2,4,8,16,32,64,128 | 1       | 8192         | Stampede/Titan |
 | 16384   | 1           | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
 
-Measure: concurrent and sequential 1-core tasks execution time
-Hs: 0
-Ht: SD 25%
-D: 0
-C: 0
-
 ### Experiment 1.m-n-o-p-q-r-t
+
+*   Measure: concurrent and sequential 1-core/MPI tasks execution time
+*   Hs: 1
+*   Ht: unknown
+*   D: 0
+*   C: 1
 
 | N tasks Exp 1.a | N core/task       | N generations      | N pilot | N core/pilot | Resource       |
 |-----------------|-------------------|--------------------|---------|--------------|----------------|
@@ -211,9 +215,3 @@ C: 0
 | 8256            | 1/8192  ; 128/64  | 2,4,8,16,32,64,128 | 1       | 8192         | Stampede/Titan |
 | 16640           | 1/16384 ; 64/256  | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
 | 16512           | 1/16384 ; 128/128 | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
-
-Measure: concurrent and sequential 1-core/MPI tasks execution time
-Hs: 1
-Ht: unknown
-D: 0
-C: 1

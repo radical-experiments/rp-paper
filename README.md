@@ -1,4 +1,4 @@
-# Experiments for the so called RADICAL-Pilot paper
+# Experiments for the so-called RADICAL-Pilot paper
 
 The goal of our experiments is to characterize the performance of the agent
 module of [RADICAL-Pilot](https://github.com/radical-cybertools/radical.pilot)
@@ -9,8 +9,8 @@ or the performance of the interaction between the client and agent modules.
 
 We assume five use cases:
 *   [AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1).
+*   ([GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23).)
 *   [Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1).
-*   [GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23).
 *   [Detector simulation stage of the ATALAS Monte Carlo workflow]().
 *   Michael Shirts workload (failing which, AMBER QM/MM CDI workload)
 

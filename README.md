@@ -31,9 +31,12 @@ We assume the following definitions:
     executions. Note that, formally, a workload can have a single task.
 
 We assume the following performance metrics (copy them over from RP draft):
-*   ...
-*   ...
-*   ...
+
+*   time to completion: first task enters the agent - last task leaves the agent
+*   utilization: during timespan above: what portion of core hours is used by CUs
+    (time dependent and average)
+*   unit throughput for each agent component during the time span above 
+    (time dependent and average)
 
 Given that our goal is to characterize the performance of RP agent, we ignore
 the patterns of coordination and communication between the client and agent

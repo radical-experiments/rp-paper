@@ -11,7 +11,7 @@ We assume five use cases:
 *   [AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1).
 *   ([GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23).)
 *   [Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1).
-*   [Detector simulation stage of the ATALAS Monte Carlo workflow]().
+*   [Detector simulation stage of the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit).
 *   Michael Shirts workload (failing which, AMBER QM/MM CDI workload)
 
 We assume the following definitions:
@@ -35,7 +35,7 @@ We assume the following performance metrics (copy them over from RP draft):
 *   time to completion: first task enters the agent - last task leaves the agent
 *   utilization: during timespan above: what portion of core hours is used by CUs
     (time dependent and average)
-*   unit throughput for each agent component during the time span above 
+*   unit throughput for each agent component during the time span above
     (time dependent and average)
 
 Given that our goal is to characterize the performance of RP agent, we ignore
@@ -84,9 +84,13 @@ input or output files.
     *   Stage 1
         *   Number of tasks: 128-16384 (as specified in use case proposal)
         *   Number of cores per task: 1
+        *   Number of input files: ??
+        *   Number of output files: ??
     *   Stage 2
         *   Number of tasks: (n tasks Stage 1)/64-128
         *   Number of cores per task: 64-128 (limited by CoCo scalability)
+        *   Number of input files: ??
+        *   Number of output files: ??
 *   Executables: Synapse emulator
 *   Resources: Stampede, Titan
 
@@ -218,3 +222,74 @@ i * mean execution time of 3 task * number of generations
 | 8256            | 1/8192  ; 128/64  | 2,4,8,16,32,64,128 | 1       | 8192         | Stampede/Titan |
 | 16640           | 1/16384 ; 64/256  | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
 | 16512           | 1/16384 ; 128/128 | 2,4,8,16,32,64,128 | 1       | 16384        | Titan          |
+
+## Experiment 2
+
+*   Use case: REPEX for biochemistry, biophysical chemistry
+    *   Spatial heterogeneity (Hs): possibly with GPU/CPU
+    *   Temporal heterogeneity (Ht): 1
+    *   Input/output dependency among tasks (D): 1
+    *   Runtime communication among tasks (C): 1
+*   workload:
+    *   Number of stages: 2
+    *   Number of iteration for each stage: 3/2
+    *   Stage 1
+        *   Number of tasks: 384-16384 (as specified in use case proposal)
+        *   Number of cores per task: #cores x node
+        *   Number of files: 1 + 3 * Number of tasks
+            *   1 * 476KB
+            *   Number of tasks * 210 KB
+            *   Number of tasks * 350 KB
+            *   Number of tasks * 350 KB
+        *   Number of output files: 4 * Number of tasks
+            *   Number of tasks * 17  KB
+            *   Number of tasks * 421 KB
+            *   Number of tasks * 2   KB
+            *   Number of tasks * 211 KB
+    *   Stage 2
+        *   Number of tasks: 1
+        *   Number of cores per task: 1
+        *   Number of input files: Number of tasks
+            *   Number of tasks * 2KB
+        *   Number of output files: 1
+            *   1 * ??  KB
+*   Executables: Synapse emulator
+*   Resources: Stampede, Titan
+
+## Experiment 3
+
+*   Use case: ATLAS Geant4 Monte Carlo workflow
+    *   Spatial heterogeneity (Hs): 0
+    *   Temporal heterogeneity (Ht): 1 (depends on the events)
+    *   Input/output dependency among tasks (D): 0
+    *   Runtime communication among tasks (C): 0
+*   workload:
+    *   Number of stages: 1
+    *   Number of iteration for each stage: --
+    *   Stage 1
+        *   Number of tasks: number-of-nodes, each task with number-of-cores-per-node independent threads
+        *   Number of cores per task: #cores x node
+        *   Number of input files: number of events
+*   Executables: Synapse emulator
+*   Resources: Stampede, Titan
+
+## Experiment 4
+
+*   Use case: Michael Shirts workload (failing which, AMBER QM/MM CDI workload)
+    *   Spatial heterogeneity (Hs):
+    *   Temporal heterogeneity (Ht):
+    *   Input/output dependency among tasks (D):
+    *   Runtime communication among tasks (C):
+*   workload:
+    *   Number of stages:
+    *   Number of iteration for each stage:
+    *   Stage 1
+        *   Number of tasks:
+        *   Number of cores per task:
+        *   Number of input files:
+    *   Stage n
+        *   Number of tasks:
+        *   Number of cores per task:
+        *   Number of input files:
+*   Executables: Synapse emulator
+*   Resources: Stampede, Titan

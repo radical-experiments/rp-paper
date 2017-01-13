@@ -293,3 +293,35 @@ i * mean execution time of 3 task * number of generations
         *   Number of input files:
 *   Executables: Synapse emulator
 *   Resources: Stampede, Titan
+
+---
+
+# Software Stack
+
+Experiments are based on the `feature/split_module_2` branch of
+radical.pilot, and the `devel` branches of radical.saga and
+radical.utils.  The workload is in some cases gromacs or amber, in
+other cases we use radical.synapse, as released.
+
+
+The software stack can be installed as follows:
+
+```shell
+
+$ virtualenv ve
+$ source ve/bin/activate
+
+$ mkdir radical; cd radical
+$ git clone git@github.com:radical-cybertools/radical.pilot.git
+$ git clone git@github.com:radical-cybertools/radical.utils.git
+$ git clone git@github.com:radical-cybertools/radical.synapse.git
+$ git clone git@github.com:radical-cybertools/saga-python.git radical.saga
+
+$ cd radical.utils  ; git checkout devel                 ; pip install .; cd ..
+$ cd radical.saga   ; git checkout devel                 ; pip install .; cd ..
+$ cd radical.pilot  ; git checkout feature/split_module_2; pip install .; cd ..
+$ cd radical.synapse; git checkout master                ; pip install .; cd ..
+
+$ cd ..
+```
+

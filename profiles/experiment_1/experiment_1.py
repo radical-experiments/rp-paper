@@ -54,7 +54,7 @@ if __name__ == '__main__':
         # Here we use a dict to initialize the description object
         pd_init = {
                 'resource'      : resource,
-                'runtime'       : 15,  # pilot runtime (min)
+                'runtime'       : 120,  # pilot runtime (min)
                 'exit_on_error' : True,
                 'project'       : config[resource]['project'],
                 'queue'         : config[resource]['queue'],
@@ -88,7 +88,7 @@ if __name__ == '__main__':
             # Here we don't use dict initialization.
             cud = rp.ComputeUnitDescription()
             cud.executable     = '/bin/sh'
-            cud.arguments      = [runscript.sh, '-i', os.path.basename(prof)]
+            cud.arguments      = ['runscript.sh', '-i', os.path.basename(prof)]
             cud.input_staging  = [prof, 'runscript.sh']
 
             cuds.append(cud)
@@ -110,10 +110,6 @@ if __name__ == '__main__':
                     % (unit.uid, unit.state[:4], 
                         unit.exit_code, unit.stdout.strip()[:35]))
     
-        # delete the sample input files
-        os.system('rm input.dat')
-
-
     except Exception as e:
         # Something unexpected happened in the pilot code above
         report.error('caught Exception: %s\n' % e)
@@ -130,7 +126,7 @@ if __name__ == '__main__':
         # always clean up the session, no matter if we caught an exception or
         # not.  This will kill all remaining pilots.
         report.header('finalize')
-        session.close()
+        session.close(cleanup=False)
 
     report.header()
 

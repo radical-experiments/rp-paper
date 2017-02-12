@@ -31,6 +31,7 @@ def initialize_entity(ename=None):
                 'pilot'  : {'pid'          : [],     # Pilot ID
                             'sid'          : [],     # Session ID
                             'hid'          : [],     # Host ID
+                            'ncore'        : [],     # #cores
                             'nunit'        : [],     # #units executed
                             'experiment'   : []},    # Experiment ID
                 'unit'   : {'uid'          : [],     # Unit ID
@@ -194,6 +195,9 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels):
             ps['hid'].append(parse_osg_hostid(pentity.cfg['hostid']))
         else:
             ps['hid'].append(None)
+
+        # Number of cores of the pilot.
+        ps['ncore'].append(pentity.description['cores'])
 
         # Number of units executed.
         ps['nunit'].append(len(pu_rels[pid]))

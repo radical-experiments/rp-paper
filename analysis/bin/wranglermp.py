@@ -27,7 +27,9 @@ def initialize_entity(ename=None):
                             'nunit_done'   : [],     # #active units
                             'nunit_failed' : [],     # #failed units
                             'npilot'       : [],     # #pilots
-                            'npilot_active': []},    # #active pilots
+                            'npilot_active': [],     # #active pilots
+                            'ncore'        : [],     # #cores
+                            'ncore_active' : []},    # #active cores
                 'pilot'  : {'pid'          : [],     # Pilot ID
                             'sid'          : [],     # Session ID
                             'hid'          : [],     # Host ID
@@ -318,6 +320,8 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
     s['nunit'].append(len(sra_units.get()))
     s['npilot'].append(len(sra_pilots.get()))
     s['npilot_active'].append(len(sra_pilots.timestamps(state='PMGR_ACTIVE')))
+    s['ncore'].append(pilots[pilots.sid == sid].ncore.sum())
+    s['ncore_active'].append(pilots[(pilots.sid == sid) & (pilots.P_LRMS_RUNNING > 0)].ncore.sum())
     s['nunit_done'].append(len(sra_units.timestamps(state='DONE')))
     s['nunit_failed'].append(len(sra_units.timestamps(state='FAILED')))
 

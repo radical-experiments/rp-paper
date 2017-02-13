@@ -320,10 +320,15 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
     s['nunit'].append(len(sra_units.get()))
     s['npilot'].append(len(sra_pilots.get()))
     s['npilot_active'].append(len(sra_pilots.timestamps(state='PMGR_ACTIVE')))
-    s['ncore'].append(pilots[pilots.sid == sid].ncore.sum())
-    s['ncore_active'].append(pilots[(pilots.sid == sid) & (pilots.P_LRMS_RUNNING > 0)].ncore.sum())
     s['nunit_done'].append(len(sra_units.timestamps(state='DONE')))
     s['nunit_failed'].append(len(sra_units.timestamps(state='FAILED')))
+
+    # Number of cores requested and used by the session's pilots. Make a copy of
+    # the pilots DF with only the columns we need to limit memory overhead.
+    pcores = pilots[pilots.sid == sid][['P_LRMS_RUNNING', 'ncore']]
+    s['ncore'].append(pcores.ncore.sum())
+    s['ncore_active'].append(pcores[pcores.P_LRMS_RUNNING > 0].ncore.sum())
+    pcores = None
 
     # Pilots total durations.  NOTE: s initialization guarantees
     # the existence of duration keys.

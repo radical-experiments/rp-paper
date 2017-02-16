@@ -1,0 +1,1437 @@
+#time,name,uid,state,event,msg
+1487270243.9199,umgr.staging.input.0.child:,,,sync abs,titan-ext1.ccs.ornl.gov:127.0.0.1:1487270243.9:1487270243.91:ntp
+1487270243.9233,umgr.staging.input.0.child:MainThread,umgr.staging.input.0.child,,initialize,
+1487270243.9336,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270260.7278,umgr.staging.input.0.child:MainThread,unit.000000,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7278,umgr.staging.input.0.child:MainThread,unit.000000,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7281,umgr.staging.input.0.child:MainThread,unit.000001,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7281,umgr.staging.input.0.child:MainThread,unit.000001,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7282,umgr.staging.input.0.child:MainThread,unit.000002,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7282,umgr.staging.input.0.child:MainThread,unit.000002,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7283,umgr.staging.input.0.child:MainThread,unit.000003,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7283,umgr.staging.input.0.child:MainThread,unit.000003,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7283,umgr.staging.input.0.child:MainThread,unit.000004,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7283,umgr.staging.input.0.child:MainThread,unit.000004,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7284,umgr.staging.input.0.child:MainThread,unit.000005,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7284,umgr.staging.input.0.child:MainThread,unit.000005,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7285,umgr.staging.input.0.child:MainThread,unit.000006,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7285,umgr.staging.input.0.child:MainThread,unit.000006,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7286,umgr.staging.input.0.child:MainThread,unit.000007,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7286,umgr.staging.input.0.child:MainThread,unit.000007,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7287,umgr.staging.input.0.child:MainThread,unit.000008,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7287,umgr.staging.input.0.child:MainThread,unit.000008,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7288,umgr.staging.input.0.child:MainThread,unit.000009,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7288,umgr.staging.input.0.child:MainThread,unit.000009,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7288,umgr.staging.input.0.child:MainThread,unit.000010,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7289,umgr.staging.input.0.child:MainThread,unit.000010,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7289,umgr.staging.input.0.child:MainThread,unit.000011,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7289,umgr.staging.input.0.child:MainThread,unit.000011,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7290,umgr.staging.input.0.child:MainThread,unit.000012,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7290,umgr.staging.input.0.child:MainThread,unit.000012,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7291,umgr.staging.input.0.child:MainThread,unit.000013,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7291,umgr.staging.input.0.child:MainThread,unit.000013,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7292,umgr.staging.input.0.child:MainThread,unit.000014,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7292,umgr.staging.input.0.child:MainThread,unit.000014,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7293,umgr.staging.input.0.child:MainThread,unit.000015,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7293,umgr.staging.input.0.child:MainThread,unit.000015,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7294,umgr.staging.input.0.child:MainThread,unit.000016,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7294,umgr.staging.input.0.child:MainThread,unit.000016,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7295,umgr.staging.input.0.child:MainThread,unit.000017,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7295,umgr.staging.input.0.child:MainThread,unit.000017,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7296,umgr.staging.input.0.child:MainThread,unit.000018,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7296,umgr.staging.input.0.child:MainThread,unit.000018,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7297,umgr.staging.input.0.child:MainThread,unit.000019,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7297,umgr.staging.input.0.child:MainThread,unit.000019,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7297,umgr.staging.input.0.child:MainThread,unit.000020,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7297,umgr.staging.input.0.child:MainThread,unit.000020,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7298,umgr.staging.input.0.child:MainThread,unit.000021,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7298,umgr.staging.input.0.child:MainThread,unit.000021,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7299,umgr.staging.input.0.child:MainThread,unit.000022,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7299,umgr.staging.input.0.child:MainThread,unit.000022,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7300,umgr.staging.input.0.child:MainThread,unit.000023,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7300,umgr.staging.input.0.child:MainThread,unit.000023,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7301,umgr.staging.input.0.child:MainThread,unit.000024,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7301,umgr.staging.input.0.child:MainThread,unit.000024,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7302,umgr.staging.input.0.child:MainThread,unit.000025,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7302,umgr.staging.input.0.child:MainThread,unit.000025,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7302,umgr.staging.input.0.child:MainThread,unit.000026,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7302,umgr.staging.input.0.child:MainThread,unit.000026,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7303,umgr.staging.input.0.child:MainThread,unit.000027,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7303,umgr.staging.input.0.child:MainThread,unit.000027,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7304,umgr.staging.input.0.child:MainThread,unit.000028,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7304,umgr.staging.input.0.child:MainThread,unit.000028,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7305,umgr.staging.input.0.child:MainThread,unit.000029,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7305,umgr.staging.input.0.child:MainThread,unit.000029,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7306,umgr.staging.input.0.child:MainThread,unit.000030,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7306,umgr.staging.input.0.child:MainThread,unit.000030,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7307,umgr.staging.input.0.child:MainThread,unit.000031,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7307,umgr.staging.input.0.child:MainThread,unit.000031,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7307,umgr.staging.input.0.child:MainThread,unit.000032,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7308,umgr.staging.input.0.child:MainThread,unit.000032,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7308,umgr.staging.input.0.child:MainThread,unit.000033,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7308,umgr.staging.input.0.child:MainThread,unit.000033,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7309,umgr.staging.input.0.child:MainThread,unit.000034,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7309,umgr.staging.input.0.child:MainThread,unit.000034,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7310,umgr.staging.input.0.child:MainThread,unit.000035,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7310,umgr.staging.input.0.child:MainThread,unit.000035,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7311,umgr.staging.input.0.child:MainThread,unit.000036,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7311,umgr.staging.input.0.child:MainThread,unit.000036,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7312,umgr.staging.input.0.child:MainThread,unit.000037,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7312,umgr.staging.input.0.child:MainThread,unit.000037,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7313,umgr.staging.input.0.child:MainThread,unit.000038,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7313,umgr.staging.input.0.child:MainThread,unit.000038,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7313,umgr.staging.input.0.child:MainThread,unit.000039,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7313,umgr.staging.input.0.child:MainThread,unit.000039,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7314,umgr.staging.input.0.child:MainThread,unit.000040,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7314,umgr.staging.input.0.child:MainThread,unit.000040,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7315,umgr.staging.input.0.child:MainThread,unit.000041,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7315,umgr.staging.input.0.child:MainThread,unit.000041,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7316,umgr.staging.input.0.child:MainThread,unit.000042,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7316,umgr.staging.input.0.child:MainThread,unit.000042,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7317,umgr.staging.input.0.child:MainThread,unit.000043,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7317,umgr.staging.input.0.child:MainThread,unit.000043,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7318,umgr.staging.input.0.child:MainThread,unit.000044,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7318,umgr.staging.input.0.child:MainThread,unit.000044,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7318,umgr.staging.input.0.child:MainThread,unit.000045,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7319,umgr.staging.input.0.child:MainThread,unit.000045,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7319,umgr.staging.input.0.child:MainThread,unit.000046,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7319,umgr.staging.input.0.child:MainThread,unit.000046,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7320,umgr.staging.input.0.child:MainThread,unit.000047,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7320,umgr.staging.input.0.child:MainThread,unit.000047,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7321,umgr.staging.input.0.child:MainThread,unit.000048,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7321,umgr.staging.input.0.child:MainThread,unit.000048,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7322,umgr.staging.input.0.child:MainThread,unit.000049,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7322,umgr.staging.input.0.child:MainThread,unit.000049,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7323,umgr.staging.input.0.child:MainThread,unit.000050,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7323,umgr.staging.input.0.child:MainThread,unit.000050,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7324,umgr.staging.input.0.child:MainThread,unit.000051,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7324,umgr.staging.input.0.child:MainThread,unit.000051,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7324,umgr.staging.input.0.child:MainThread,unit.000052,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7325,umgr.staging.input.0.child:MainThread,unit.000052,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7325,umgr.staging.input.0.child:MainThread,unit.000053,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7325,umgr.staging.input.0.child:MainThread,unit.000053,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7326,umgr.staging.input.0.child:MainThread,unit.000054,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7326,umgr.staging.input.0.child:MainThread,unit.000054,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7327,umgr.staging.input.0.child:MainThread,unit.000055,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7327,umgr.staging.input.0.child:MainThread,unit.000055,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7328,umgr.staging.input.0.child:MainThread,unit.000056,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7328,umgr.staging.input.0.child:MainThread,unit.000056,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7329,umgr.staging.input.0.child:MainThread,unit.000057,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7329,umgr.staging.input.0.child:MainThread,unit.000057,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7330,umgr.staging.input.0.child:MainThread,unit.000058,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7330,umgr.staging.input.0.child:MainThread,unit.000058,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7330,umgr.staging.input.0.child:MainThread,unit.000059,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7330,umgr.staging.input.0.child:MainThread,unit.000059,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7331,umgr.staging.input.0.child:MainThread,unit.000060,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7331,umgr.staging.input.0.child:MainThread,unit.000060,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7332,umgr.staging.input.0.child:MainThread,unit.000061,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7332,umgr.staging.input.0.child:MainThread,unit.000061,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7333,umgr.staging.input.0.child:MainThread,unit.000062,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7333,umgr.staging.input.0.child:MainThread,unit.000062,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7334,umgr.staging.input.0.child:MainThread,unit.000063,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7334,umgr.staging.input.0.child:MainThread,unit.000063,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7335,umgr.staging.input.0.child:MainThread,unit.000064,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7335,umgr.staging.input.0.child:MainThread,unit.000064,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7336,umgr.staging.input.0.child:MainThread,unit.000065,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7336,umgr.staging.input.0.child:MainThread,unit.000065,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7336,umgr.staging.input.0.child:MainThread,unit.000066,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7337,umgr.staging.input.0.child:MainThread,unit.000066,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7337,umgr.staging.input.0.child:MainThread,unit.000067,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7337,umgr.staging.input.0.child:MainThread,unit.000067,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7338,umgr.staging.input.0.child:MainThread,unit.000068,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7338,umgr.staging.input.0.child:MainThread,unit.000068,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7339,umgr.staging.input.0.child:MainThread,unit.000069,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7339,umgr.staging.input.0.child:MainThread,unit.000069,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7340,umgr.staging.input.0.child:MainThread,unit.000070,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7340,umgr.staging.input.0.child:MainThread,unit.000070,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7341,umgr.staging.input.0.child:MainThread,unit.000071,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7341,umgr.staging.input.0.child:MainThread,unit.000071,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7341,umgr.staging.input.0.child:MainThread,unit.000072,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7342,umgr.staging.input.0.child:MainThread,unit.000072,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7342,umgr.staging.input.0.child:MainThread,unit.000073,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7342,umgr.staging.input.0.child:MainThread,unit.000073,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7343,umgr.staging.input.0.child:MainThread,unit.000074,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7343,umgr.staging.input.0.child:MainThread,unit.000074,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7344,umgr.staging.input.0.child:MainThread,unit.000075,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7344,umgr.staging.input.0.child:MainThread,unit.000075,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7345,umgr.staging.input.0.child:MainThread,unit.000076,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7345,umgr.staging.input.0.child:MainThread,unit.000076,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7346,umgr.staging.input.0.child:MainThread,unit.000077,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7346,umgr.staging.input.0.child:MainThread,unit.000077,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7347,umgr.staging.input.0.child:MainThread,unit.000078,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7347,umgr.staging.input.0.child:MainThread,unit.000078,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7348,umgr.staging.input.0.child:MainThread,unit.000079,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7348,umgr.staging.input.0.child:MainThread,unit.000079,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7349,umgr.staging.input.0.child:MainThread,unit.000080,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7349,umgr.staging.input.0.child:MainThread,unit.000080,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7350,umgr.staging.input.0.child:MainThread,unit.000081,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7350,umgr.staging.input.0.child:MainThread,unit.000081,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7351,umgr.staging.input.0.child:MainThread,unit.000082,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7351,umgr.staging.input.0.child:MainThread,unit.000082,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7352,umgr.staging.input.0.child:MainThread,unit.000083,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7352,umgr.staging.input.0.child:MainThread,unit.000083,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7353,umgr.staging.input.0.child:MainThread,unit.000084,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7353,umgr.staging.input.0.child:MainThread,unit.000084,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7354,umgr.staging.input.0.child:MainThread,unit.000085,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7354,umgr.staging.input.0.child:MainThread,unit.000085,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7355,umgr.staging.input.0.child:MainThread,unit.000086,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7356,umgr.staging.input.0.child:MainThread,unit.000086,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7356,umgr.staging.input.0.child:MainThread,unit.000087,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7356,umgr.staging.input.0.child:MainThread,unit.000087,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7357,umgr.staging.input.0.child:MainThread,unit.000088,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7357,umgr.staging.input.0.child:MainThread,unit.000088,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7358,umgr.staging.input.0.child:MainThread,unit.000089,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7358,umgr.staging.input.0.child:MainThread,unit.000089,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7359,umgr.staging.input.0.child:MainThread,unit.000090,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7359,umgr.staging.input.0.child:MainThread,unit.000090,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7360,umgr.staging.input.0.child:MainThread,unit.000091,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7360,umgr.staging.input.0.child:MainThread,unit.000091,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7361,umgr.staging.input.0.child:MainThread,unit.000092,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7361,umgr.staging.input.0.child:MainThread,unit.000092,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7362,umgr.staging.input.0.child:MainThread,unit.000093,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7362,umgr.staging.input.0.child:MainThread,unit.000093,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7362,umgr.staging.input.0.child:MainThread,unit.000094,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7363,umgr.staging.input.0.child:MainThread,unit.000094,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7363,umgr.staging.input.0.child:MainThread,unit.000095,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7363,umgr.staging.input.0.child:MainThread,unit.000095,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7364,umgr.staging.input.0.child:MainThread,unit.000096,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7364,umgr.staging.input.0.child:MainThread,unit.000096,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7365,umgr.staging.input.0.child:MainThread,unit.000097,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7365,umgr.staging.input.0.child:MainThread,unit.000097,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7366,umgr.staging.input.0.child:MainThread,unit.000098,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7366,umgr.staging.input.0.child:MainThread,unit.000098,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7367,umgr.staging.input.0.child:MainThread,unit.000099,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7367,umgr.staging.input.0.child:MainThread,unit.000099,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7367,umgr.staging.input.0.child:MainThread,unit.000100,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7368,umgr.staging.input.0.child:MainThread,unit.000100,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7368,umgr.staging.input.0.child:MainThread,unit.000101,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7368,umgr.staging.input.0.child:MainThread,unit.000101,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7369,umgr.staging.input.0.child:MainThread,unit.000102,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7369,umgr.staging.input.0.child:MainThread,unit.000102,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7370,umgr.staging.input.0.child:MainThread,unit.000103,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7370,umgr.staging.input.0.child:MainThread,unit.000103,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7371,umgr.staging.input.0.child:MainThread,unit.000104,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7371,umgr.staging.input.0.child:MainThread,unit.000104,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7372,umgr.staging.input.0.child:MainThread,unit.000105,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7372,umgr.staging.input.0.child:MainThread,unit.000105,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7373,umgr.staging.input.0.child:MainThread,unit.000106,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7373,umgr.staging.input.0.child:MainThread,unit.000106,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7374,umgr.staging.input.0.child:MainThread,unit.000107,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7374,umgr.staging.input.0.child:MainThread,unit.000107,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7374,umgr.staging.input.0.child:MainThread,unit.000108,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7374,umgr.staging.input.0.child:MainThread,unit.000108,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7375,umgr.staging.input.0.child:MainThread,unit.000109,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7375,umgr.staging.input.0.child:MainThread,unit.000109,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7377,umgr.staging.input.0.child:MainThread,unit.000110,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7378,umgr.staging.input.0.child:MainThread,unit.000110,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7378,umgr.staging.input.0.child:MainThread,unit.000111,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7378,umgr.staging.input.0.child:MainThread,unit.000111,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7379,umgr.staging.input.0.child:MainThread,unit.000112,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7379,umgr.staging.input.0.child:MainThread,unit.000112,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7380,umgr.staging.input.0.child:MainThread,unit.000113,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7380,umgr.staging.input.0.child:MainThread,unit.000113,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7381,umgr.staging.input.0.child:MainThread,unit.000114,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7381,umgr.staging.input.0.child:MainThread,unit.000114,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7382,umgr.staging.input.0.child:MainThread,unit.000115,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7382,umgr.staging.input.0.child:MainThread,unit.000115,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7382,umgr.staging.input.0.child:MainThread,unit.000116,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7383,umgr.staging.input.0.child:MainThread,unit.000116,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7383,umgr.staging.input.0.child:MainThread,unit.000117,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7383,umgr.staging.input.0.child:MainThread,unit.000117,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7384,umgr.staging.input.0.child:MainThread,unit.000118,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7384,umgr.staging.input.0.child:MainThread,unit.000118,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7385,umgr.staging.input.0.child:MainThread,unit.000119,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7385,umgr.staging.input.0.child:MainThread,unit.000119,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7386,umgr.staging.input.0.child:MainThread,unit.000120,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7386,umgr.staging.input.0.child:MainThread,unit.000120,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7387,umgr.staging.input.0.child:MainThread,unit.000121,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7387,umgr.staging.input.0.child:MainThread,unit.000121,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7387,umgr.staging.input.0.child:MainThread,unit.000122,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7388,umgr.staging.input.0.child:MainThread,unit.000122,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7388,umgr.staging.input.0.child:MainThread,unit.000123,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7388,umgr.staging.input.0.child:MainThread,unit.000123,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7389,umgr.staging.input.0.child:MainThread,unit.000124,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7389,umgr.staging.input.0.child:MainThread,unit.000124,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7390,umgr.staging.input.0.child:MainThread,unit.000125,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7390,umgr.staging.input.0.child:MainThread,unit.000125,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7391,umgr.staging.input.0.child:MainThread,unit.000126,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7391,umgr.staging.input.0.child:MainThread,unit.000126,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,get,umgr.staging.input.queue.output
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work start,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000000,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000001,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000002,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000003,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000004,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000005,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000006,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000007,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000008,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000009,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000010,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000011,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000012,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000013,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000014,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000015,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000016,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000017,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000018,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000019,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000020,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000021,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000022,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000023,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000024,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000025,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000026,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000027,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000028,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000029,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000030,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000031,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000032,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000033,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000034,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000035,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000036,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000037,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000038,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000039,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000040,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000041,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000042,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000043,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000044,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000045,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000046,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000047,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000048,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000049,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000050,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000051,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000052,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000053,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000054,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000055,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000056,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000057,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000058,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000059,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000060,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000061,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000062,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000063,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000064,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000065,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000066,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000067,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000068,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000069,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000070,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000071,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000072,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000073,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000074,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000075,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000076,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000077,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000078,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000079,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000080,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000081,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000082,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000083,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000084,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000085,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000086,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000087,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000088,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000089,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000090,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000091,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000092,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000093,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000094,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000095,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000096,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000097,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000098,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000099,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000100,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000101,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000102,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000103,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000104,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000105,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000106,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000107,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000108,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000109,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000110,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000111,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000112,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000113,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000114,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000115,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000116,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000117,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000118,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000119,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000120,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000121,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000122,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000123,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000124,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000125,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000126,UMGR_STAGING_INPUT,advance,
+1487270260.7392,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT,advance,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000000,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000001,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000002,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000003,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000004,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000005,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000006,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000007,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000008,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000009,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000010,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000011,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000012,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000013,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000014,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000015,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000016,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000017,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000018,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000019,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000020,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000021,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000022,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000023,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000024,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000025,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000026,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000027,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000028,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000029,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000030,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000031,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000032,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000033,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000034,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000035,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000036,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000037,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000038,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000039,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000040,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000041,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000042,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000043,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000044,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000045,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000046,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000047,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000048,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000049,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000050,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000051,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000052,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000053,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000054,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000055,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000056,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000057,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000058,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000059,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000060,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000061,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000062,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000063,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000064,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000065,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000066,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000067,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000068,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000069,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000070,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000071,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000072,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000073,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000074,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000075,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000076,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000077,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000078,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000079,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000080,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000081,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000082,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000083,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000084,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000085,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000086,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000087,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000088,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000089,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000090,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000091,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000092,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000093,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000094,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000095,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000096,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000097,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000098,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000099,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000100,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000101,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000102,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000103,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000104,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000105,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000106,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000107,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000108,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000109,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000110,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000111,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000112,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000113,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000114,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000115,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000116,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000117,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000118,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000119,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000120,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000121,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000122,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000123,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000124,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000125,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000126,UMGR_STAGING_INPUT,publish,
+1487270260.7499,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT,publish,
+1487270260.8170,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000000/
+1487270271.9330,umgr.staging.input.0.child:MainThread,unit.000000,,created sandbox,
+1487270271.9330,umgr.staging.input.0.child:MainThread,unit.000000,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270272.3461,umgr.staging.input.0.child:MainThread,unit.000000,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270272.3462,umgr.staging.input.0.child:MainThread,unit.000000,AGENT_STAGING_INPUT_PENDING,advance,
+1487270272.3472,umgr.staging.input.0.child:MainThread,unit.000000,AGENT_STAGING_INPUT_PENDING,publish,
+1487270272.3476,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000001/
+1487270272.5587,umgr.staging.input.0.child:MainThread,unit.000001,,created sandbox,
+1487270272.5588,umgr.staging.input.0.child:MainThread,unit.000001,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270272.9298,umgr.staging.input.0.child:MainThread,unit.000001,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270272.9299,umgr.staging.input.0.child:MainThread,unit.000001,AGENT_STAGING_INPUT_PENDING,advance,
+1487270272.9303,umgr.staging.input.0.child:MainThread,unit.000001,AGENT_STAGING_INPUT_PENDING,publish,
+1487270272.9306,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000002/
+1487270273.0403,umgr.staging.input.0.child:MainThread,unit.000002,,created sandbox,
+1487270273.0404,umgr.staging.input.0.child:MainThread,unit.000002,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270273.4171,umgr.staging.input.0.child:MainThread,unit.000002,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270273.4171,umgr.staging.input.0.child:MainThread,unit.000002,AGENT_STAGING_INPUT_PENDING,advance,
+1487270273.4175,umgr.staging.input.0.child:MainThread,unit.000002,AGENT_STAGING_INPUT_PENDING,publish,
+1487270273.4178,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000003/
+1487270273.5305,umgr.staging.input.0.child:MainThread,unit.000003,,created sandbox,
+1487270273.5305,umgr.staging.input.0.child:MainThread,unit.000003,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270273.9126,umgr.staging.input.0.child:MainThread,unit.000003,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270273.9127,umgr.staging.input.0.child:MainThread,unit.000003,AGENT_STAGING_INPUT_PENDING,advance,
+1487270273.9131,umgr.staging.input.0.child:MainThread,unit.000003,AGENT_STAGING_INPUT_PENDING,publish,
+1487270273.9134,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000004/
+1487270274.0222,umgr.staging.input.0.child:MainThread,unit.000004,,created sandbox,
+1487270274.0222,umgr.staging.input.0.child:MainThread,unit.000004,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270274.4031,umgr.staging.input.0.child:MainThread,unit.000004,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270274.4032,umgr.staging.input.0.child:MainThread,unit.000004,AGENT_STAGING_INPUT_PENDING,advance,
+1487270274.4036,umgr.staging.input.0.child:MainThread,unit.000004,AGENT_STAGING_INPUT_PENDING,publish,
+1487270274.4039,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000005/
+1487270274.5203,umgr.staging.input.0.child:MainThread,unit.000005,,created sandbox,
+1487270274.5203,umgr.staging.input.0.child:MainThread,unit.000005,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270274.7405,umgr.staging.input.0.child:MainThread,unit.000005,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270274.7405,umgr.staging.input.0.child:MainThread,unit.000005,AGENT_STAGING_INPUT_PENDING,advance,
+1487270274.7410,umgr.staging.input.0.child:MainThread,unit.000005,AGENT_STAGING_INPUT_PENDING,publish,
+1487270274.7412,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000006/
+1487270274.8499,umgr.staging.input.0.child:MainThread,unit.000006,,created sandbox,
+1487270274.8499,umgr.staging.input.0.child:MainThread,unit.000006,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270275.1225,umgr.staging.input.0.child:MainThread,unit.000006,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270275.1225,umgr.staging.input.0.child:MainThread,unit.000006,AGENT_STAGING_INPUT_PENDING,advance,
+1487270275.1229,umgr.staging.input.0.child:MainThread,unit.000006,AGENT_STAGING_INPUT_PENDING,publish,
+1487270275.1232,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000007/
+1487270275.2318,umgr.staging.input.0.child:MainThread,unit.000007,,created sandbox,
+1487270275.2318,umgr.staging.input.0.child:MainThread,unit.000007,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270275.4838,umgr.staging.input.0.child:MainThread,unit.000007,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270275.4838,umgr.staging.input.0.child:MainThread,unit.000007,AGENT_STAGING_INPUT_PENDING,advance,
+1487270275.4842,umgr.staging.input.0.child:MainThread,unit.000007,AGENT_STAGING_INPUT_PENDING,publish,
+1487270275.4845,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000008/
+1487270275.6035,umgr.staging.input.0.child:MainThread,unit.000008,,created sandbox,
+1487270275.6035,umgr.staging.input.0.child:MainThread,unit.000008,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270275.8353,umgr.staging.input.0.child:MainThread,unit.000008,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270275.8354,umgr.staging.input.0.child:MainThread,unit.000008,AGENT_STAGING_INPUT_PENDING,advance,
+1487270275.8358,umgr.staging.input.0.child:MainThread,unit.000008,AGENT_STAGING_INPUT_PENDING,publish,
+1487270275.8360,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000009/
+1487270275.9447,umgr.staging.input.0.child:MainThread,unit.000009,,created sandbox,
+1487270275.9447,umgr.staging.input.0.child:MainThread,unit.000009,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270276.1618,umgr.staging.input.0.child:MainThread,unit.000009,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270276.1618,umgr.staging.input.0.child:MainThread,unit.000009,AGENT_STAGING_INPUT_PENDING,advance,
+1487270276.1621,umgr.staging.input.0.child:MainThread,unit.000009,AGENT_STAGING_INPUT_PENDING,publish,
+1487270276.1624,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000010/
+1487270276.2709,umgr.staging.input.0.child:MainThread,unit.000010,,created sandbox,
+1487270276.2709,umgr.staging.input.0.child:MainThread,unit.000010,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270276.4880,umgr.staging.input.0.child:MainThread,unit.000010,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270276.4881,umgr.staging.input.0.child:MainThread,unit.000010,AGENT_STAGING_INPUT_PENDING,advance,
+1487270276.4885,umgr.staging.input.0.child:MainThread,unit.000010,AGENT_STAGING_INPUT_PENDING,publish,
+1487270276.4888,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000011/
+1487270276.5970,umgr.staging.input.0.child:MainThread,unit.000011,,created sandbox,
+1487270276.5970,umgr.staging.input.0.child:MainThread,unit.000011,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270276.8179,umgr.staging.input.0.child:MainThread,unit.000011,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270276.8180,umgr.staging.input.0.child:MainThread,unit.000011,AGENT_STAGING_INPUT_PENDING,advance,
+1487270276.8184,umgr.staging.input.0.child:MainThread,unit.000011,AGENT_STAGING_INPUT_PENDING,publish,
+1487270276.8187,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000012/
+1487270276.9276,umgr.staging.input.0.child:MainThread,unit.000012,,created sandbox,
+1487270276.9276,umgr.staging.input.0.child:MainThread,unit.000012,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270277.1459,umgr.staging.input.0.child:MainThread,unit.000012,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270277.1460,umgr.staging.input.0.child:MainThread,unit.000012,AGENT_STAGING_INPUT_PENDING,advance,
+1487270277.1464,umgr.staging.input.0.child:MainThread,unit.000012,AGENT_STAGING_INPUT_PENDING,publish,
+1487270277.1467,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000013/
+1487270277.2559,umgr.staging.input.0.child:MainThread,unit.000013,,created sandbox,
+1487270277.2559,umgr.staging.input.0.child:MainThread,unit.000013,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270277.4735,umgr.staging.input.0.child:MainThread,unit.000013,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270277.4736,umgr.staging.input.0.child:MainThread,unit.000013,AGENT_STAGING_INPUT_PENDING,advance,
+1487270277.4740,umgr.staging.input.0.child:MainThread,unit.000013,AGENT_STAGING_INPUT_PENDING,publish,
+1487270277.4742,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000014/
+1487270277.5842,umgr.staging.input.0.child:MainThread,unit.000014,,created sandbox,
+1487270277.5843,umgr.staging.input.0.child:MainThread,unit.000014,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270277.8034,umgr.staging.input.0.child:MainThread,unit.000014,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270277.8035,umgr.staging.input.0.child:MainThread,unit.000014,AGENT_STAGING_INPUT_PENDING,advance,
+1487270277.8039,umgr.staging.input.0.child:MainThread,unit.000014,AGENT_STAGING_INPUT_PENDING,publish,
+1487270277.8041,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000015/
+1487270277.9126,umgr.staging.input.0.child:MainThread,unit.000015,,created sandbox,
+1487270277.9126,umgr.staging.input.0.child:MainThread,unit.000015,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270278.1299,umgr.staging.input.0.child:MainThread,unit.000015,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270278.1300,umgr.staging.input.0.child:MainThread,unit.000015,AGENT_STAGING_INPUT_PENDING,advance,
+1487270278.1303,umgr.staging.input.0.child:MainThread,unit.000015,AGENT_STAGING_INPUT_PENDING,publish,
+1487270278.1306,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000016/
+1487270278.2394,umgr.staging.input.0.child:MainThread,unit.000016,,created sandbox,
+1487270278.2394,umgr.staging.input.0.child:MainThread,unit.000016,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270278.4604,umgr.staging.input.0.child:MainThread,unit.000016,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270278.4605,umgr.staging.input.0.child:MainThread,unit.000016,AGENT_STAGING_INPUT_PENDING,advance,
+1487270278.4609,umgr.staging.input.0.child:MainThread,unit.000016,AGENT_STAGING_INPUT_PENDING,publish,
+1487270278.4612,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000017/
+1487270278.5702,umgr.staging.input.0.child:MainThread,unit.000017,,created sandbox,
+1487270278.5703,umgr.staging.input.0.child:MainThread,unit.000017,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270278.7894,umgr.staging.input.0.child:MainThread,unit.000017,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270278.7895,umgr.staging.input.0.child:MainThread,unit.000017,AGENT_STAGING_INPUT_PENDING,advance,
+1487270278.7899,umgr.staging.input.0.child:MainThread,unit.000017,AGENT_STAGING_INPUT_PENDING,publish,
+1487270278.7901,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000018/
+1487270278.8997,umgr.staging.input.0.child:MainThread,unit.000018,,created sandbox,
+1487270278.8997,umgr.staging.input.0.child:MainThread,unit.000018,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270279.1180,umgr.staging.input.0.child:MainThread,unit.000018,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270279.1181,umgr.staging.input.0.child:MainThread,unit.000018,AGENT_STAGING_INPUT_PENDING,advance,
+1487270279.1185,umgr.staging.input.0.child:MainThread,unit.000018,AGENT_STAGING_INPUT_PENDING,publish,
+1487270279.1187,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000019/
+1487270279.2273,umgr.staging.input.0.child:MainThread,unit.000019,,created sandbox,
+1487270279.2274,umgr.staging.input.0.child:MainThread,unit.000019,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270279.4562,umgr.staging.input.0.child:MainThread,unit.000019,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270279.4563,umgr.staging.input.0.child:MainThread,unit.000019,AGENT_STAGING_INPUT_PENDING,advance,
+1487270279.4567,umgr.staging.input.0.child:MainThread,unit.000019,AGENT_STAGING_INPUT_PENDING,publish,
+1487270279.4570,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000020/
+1487270279.5813,umgr.staging.input.0.child:MainThread,unit.000020,,created sandbox,
+1487270279.5813,umgr.staging.input.0.child:MainThread,unit.000020,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270279.8288,umgr.staging.input.0.child:MainThread,unit.000020,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270279.8288,umgr.staging.input.0.child:MainThread,unit.000020,AGENT_STAGING_INPUT_PENDING,advance,
+1487270279.8292,umgr.staging.input.0.child:MainThread,unit.000020,AGENT_STAGING_INPUT_PENDING,publish,
+1487270279.8294,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000021/
+1487270279.9696,umgr.staging.input.0.child:MainThread,unit.000021,,created sandbox,
+1487270279.9696,umgr.staging.input.0.child:MainThread,unit.000021,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270280.2257,umgr.staging.input.0.child:MainThread,unit.000021,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270280.2258,umgr.staging.input.0.child:MainThread,unit.000021,AGENT_STAGING_INPUT_PENDING,advance,
+1487270280.2261,umgr.staging.input.0.child:MainThread,unit.000021,AGENT_STAGING_INPUT_PENDING,publish,
+1487270280.2264,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000022/
+1487270280.3389,umgr.staging.input.0.child:MainThread,unit.000022,,created sandbox,
+1487270280.3389,umgr.staging.input.0.child:MainThread,unit.000022,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270280.5974,umgr.staging.input.0.child:MainThread,unit.000022,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270280.5974,umgr.staging.input.0.child:MainThread,unit.000022,AGENT_STAGING_INPUT_PENDING,advance,
+1487270280.5978,umgr.staging.input.0.child:MainThread,unit.000022,AGENT_STAGING_INPUT_PENDING,publish,
+1487270280.5980,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000023/
+1487270280.9788,umgr.staging.input.0.child:MainThread,unit.000023,,created sandbox,
+1487270280.9788,umgr.staging.input.0.child:MainThread,unit.000023,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270281.2352,umgr.staging.input.0.child:MainThread,unit.000023,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270281.2352,umgr.staging.input.0.child:MainThread,unit.000023,AGENT_STAGING_INPUT_PENDING,advance,
+1487270281.2356,umgr.staging.input.0.child:MainThread,unit.000023,AGENT_STAGING_INPUT_PENDING,publish,
+1487270281.2359,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000024/
+1487270281.3506,umgr.staging.input.0.child:MainThread,unit.000024,,created sandbox,
+1487270281.3506,umgr.staging.input.0.child:MainThread,unit.000024,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270281.8047,umgr.staging.input.0.child:MainThread,unit.000024,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270281.8048,umgr.staging.input.0.child:MainThread,unit.000024,AGENT_STAGING_INPUT_PENDING,advance,
+1487270281.8055,umgr.staging.input.0.child:MainThread,unit.000024,AGENT_STAGING_INPUT_PENDING,publish,
+1487270281.8057,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000025/
+1487270281.9199,umgr.staging.input.0.child:MainThread,unit.000025,,created sandbox,
+1487270281.9199,umgr.staging.input.0.child:MainThread,unit.000025,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270282.2656,umgr.staging.input.0.child:MainThread,unit.000025,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270282.2657,umgr.staging.input.0.child:MainThread,unit.000025,AGENT_STAGING_INPUT_PENDING,advance,
+1487270282.2661,umgr.staging.input.0.child:MainThread,unit.000025,AGENT_STAGING_INPUT_PENDING,publish,
+1487270282.2664,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000026/
+1487270282.5547,umgr.staging.input.0.child:MainThread,unit.000026,,created sandbox,
+1487270282.5547,umgr.staging.input.0.child:MainThread,unit.000026,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270282.7881,umgr.staging.input.0.child:MainThread,unit.000026,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270282.7882,umgr.staging.input.0.child:MainThread,unit.000026,AGENT_STAGING_INPUT_PENDING,advance,
+1487270282.7886,umgr.staging.input.0.child:MainThread,unit.000026,AGENT_STAGING_INPUT_PENDING,publish,
+1487270282.7889,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000027/
+1487270282.8986,umgr.staging.input.0.child:MainThread,unit.000027,,created sandbox,
+1487270282.8986,umgr.staging.input.0.child:MainThread,unit.000027,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270283.1180,umgr.staging.input.0.child:MainThread,unit.000027,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270283.1181,umgr.staging.input.0.child:MainThread,unit.000027,AGENT_STAGING_INPUT_PENDING,advance,
+1487270283.1185,umgr.staging.input.0.child:MainThread,unit.000027,AGENT_STAGING_INPUT_PENDING,publish,
+1487270283.1187,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000028/
+1487270283.2275,umgr.staging.input.0.child:MainThread,unit.000028,,created sandbox,
+1487270283.2275,umgr.staging.input.0.child:MainThread,unit.000028,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270283.4461,umgr.staging.input.0.child:MainThread,unit.000028,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270283.4461,umgr.staging.input.0.child:MainThread,unit.000028,AGENT_STAGING_INPUT_PENDING,advance,
+1487270283.4465,umgr.staging.input.0.child:MainThread,unit.000028,AGENT_STAGING_INPUT_PENDING,publish,
+1487270283.4468,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000029/
+1487270283.5587,umgr.staging.input.0.child:MainThread,unit.000029,,created sandbox,
+1487270283.5587,umgr.staging.input.0.child:MainThread,unit.000029,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270283.7788,umgr.staging.input.0.child:MainThread,unit.000029,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270283.7789,umgr.staging.input.0.child:MainThread,unit.000029,AGENT_STAGING_INPUT_PENDING,advance,
+1487270283.7793,umgr.staging.input.0.child:MainThread,unit.000029,AGENT_STAGING_INPUT_PENDING,publish,
+1487270283.7796,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000030/
+1487270283.8893,umgr.staging.input.0.child:MainThread,unit.000030,,created sandbox,
+1487270283.8893,umgr.staging.input.0.child:MainThread,unit.000030,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270284.1079,umgr.staging.input.0.child:MainThread,unit.000030,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270284.1079,umgr.staging.input.0.child:MainThread,unit.000030,AGENT_STAGING_INPUT_PENDING,advance,
+1487270284.1083,umgr.staging.input.0.child:MainThread,unit.000030,AGENT_STAGING_INPUT_PENDING,publish,
+1487270284.1086,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000031/
+1487270284.2204,umgr.staging.input.0.child:MainThread,unit.000031,,created sandbox,
+1487270284.2205,umgr.staging.input.0.child:MainThread,unit.000031,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270284.4392,umgr.staging.input.0.child:MainThread,unit.000031,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270284.4393,umgr.staging.input.0.child:MainThread,unit.000031,AGENT_STAGING_INPUT_PENDING,advance,
+1487270284.4398,umgr.staging.input.0.child:MainThread,unit.000031,AGENT_STAGING_INPUT_PENDING,publish,
+1487270284.4401,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000032/
+1487270284.5486,umgr.staging.input.0.child:MainThread,unit.000032,,created sandbox,
+1487270284.5486,umgr.staging.input.0.child:MainThread,unit.000032,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270284.7677,umgr.staging.input.0.child:MainThread,unit.000032,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270284.7677,umgr.staging.input.0.child:MainThread,unit.000032,AGENT_STAGING_INPUT_PENDING,advance,
+1487270284.7682,umgr.staging.input.0.child:MainThread,unit.000032,AGENT_STAGING_INPUT_PENDING,publish,
+1487270284.7684,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000033/
+1487270284.8782,umgr.staging.input.0.child:MainThread,unit.000033,,created sandbox,
+1487270284.8782,umgr.staging.input.0.child:MainThread,unit.000033,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270285.0976,umgr.staging.input.0.child:MainThread,unit.000033,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270285.0977,umgr.staging.input.0.child:MainThread,unit.000033,AGENT_STAGING_INPUT_PENDING,advance,
+1487270285.0982,umgr.staging.input.0.child:MainThread,unit.000033,AGENT_STAGING_INPUT_PENDING,publish,
+1487270285.0985,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000034/
+1487270285.2088,umgr.staging.input.0.child:MainThread,unit.000034,,created sandbox,
+1487270285.2089,umgr.staging.input.0.child:MainThread,unit.000034,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270285.4278,umgr.staging.input.0.child:MainThread,unit.000034,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270285.4278,umgr.staging.input.0.child:MainThread,unit.000034,AGENT_STAGING_INPUT_PENDING,advance,
+1487270285.4282,umgr.staging.input.0.child:MainThread,unit.000034,AGENT_STAGING_INPUT_PENDING,publish,
+1487270285.4285,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000035/
+1487270285.5378,umgr.staging.input.0.child:MainThread,unit.000035,,created sandbox,
+1487270285.5378,umgr.staging.input.0.child:MainThread,unit.000035,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270285.7592,umgr.staging.input.0.child:MainThread,unit.000035,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270285.7593,umgr.staging.input.0.child:MainThread,unit.000035,AGENT_STAGING_INPUT_PENDING,advance,
+1487270285.7598,umgr.staging.input.0.child:MainThread,unit.000035,AGENT_STAGING_INPUT_PENDING,publish,
+1487270285.7601,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000036/
+1487270285.8693,umgr.staging.input.0.child:MainThread,unit.000036,,created sandbox,
+1487270285.8693,umgr.staging.input.0.child:MainThread,unit.000036,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270286.0877,umgr.staging.input.0.child:MainThread,unit.000036,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270286.0877,umgr.staging.input.0.child:MainThread,unit.000036,AGENT_STAGING_INPUT_PENDING,advance,
+1487270286.0882,umgr.staging.input.0.child:MainThread,unit.000036,AGENT_STAGING_INPUT_PENDING,publish,
+1487270286.0885,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000037/
+1487270286.1992,umgr.staging.input.0.child:MainThread,unit.000037,,created sandbox,
+1487270286.1992,umgr.staging.input.0.child:MainThread,unit.000037,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270286.4399,umgr.staging.input.0.child:MainThread,unit.000037,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270286.4399,umgr.staging.input.0.child:MainThread,unit.000037,AGENT_STAGING_INPUT_PENDING,advance,
+1487270286.4404,umgr.staging.input.0.child:MainThread,unit.000037,AGENT_STAGING_INPUT_PENDING,publish,
+1487270286.4407,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000038/
+1487270286.5750,umgr.staging.input.0.child:MainThread,unit.000038,,created sandbox,
+1487270286.5750,umgr.staging.input.0.child:MainThread,unit.000038,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270286.8111,umgr.staging.input.0.child:MainThread,unit.000038,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270286.8112,umgr.staging.input.0.child:MainThread,unit.000038,AGENT_STAGING_INPUT_PENDING,advance,
+1487270286.8115,umgr.staging.input.0.child:MainThread,unit.000038,AGENT_STAGING_INPUT_PENDING,publish,
+1487270286.8118,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000039/
+1487270286.9315,umgr.staging.input.0.child:MainThread,unit.000039,,created sandbox,
+1487270286.9315,umgr.staging.input.0.child:MainThread,unit.000039,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270287.1599,umgr.staging.input.0.child:MainThread,unit.000039,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270287.1599,umgr.staging.input.0.child:MainThread,unit.000039,AGENT_STAGING_INPUT_PENDING,advance,
+1487270287.1603,umgr.staging.input.0.child:MainThread,unit.000039,AGENT_STAGING_INPUT_PENDING,publish,
+1487270287.1606,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000040/
+1487270287.3875,umgr.staging.input.0.child:MainThread,unit.000040,,created sandbox,
+1487270287.3876,umgr.staging.input.0.child:MainThread,unit.000040,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270287.7616,umgr.staging.input.0.child:MainThread,unit.000040,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270287.7617,umgr.staging.input.0.child:MainThread,unit.000040,AGENT_STAGING_INPUT_PENDING,advance,
+1487270287.7621,umgr.staging.input.0.child:MainThread,unit.000040,AGENT_STAGING_INPUT_PENDING,publish,
+1487270287.7623,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000041/
+1487270287.8716,umgr.staging.input.0.child:MainThread,unit.000041,,created sandbox,
+1487270287.8716,umgr.staging.input.0.child:MainThread,unit.000041,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270288.0909,umgr.staging.input.0.child:MainThread,unit.000041,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270288.0909,umgr.staging.input.0.child:MainThread,unit.000041,AGENT_STAGING_INPUT_PENDING,advance,
+1487270288.0912,umgr.staging.input.0.child:MainThread,unit.000041,AGENT_STAGING_INPUT_PENDING,publish,
+1487270288.0915,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000042/
+1487270288.2002,umgr.staging.input.0.child:MainThread,unit.000042,,created sandbox,
+1487270288.2002,umgr.staging.input.0.child:MainThread,unit.000042,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270288.4177,umgr.staging.input.0.child:MainThread,unit.000042,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270288.4177,umgr.staging.input.0.child:MainThread,unit.000042,AGENT_STAGING_INPUT_PENDING,advance,
+1487270288.4180,umgr.staging.input.0.child:MainThread,unit.000042,AGENT_STAGING_INPUT_PENDING,publish,
+1487270288.4182,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000043/
+1487270288.5304,umgr.staging.input.0.child:MainThread,unit.000043,,created sandbox,
+1487270288.5304,umgr.staging.input.0.child:MainThread,unit.000043,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270288.7501,umgr.staging.input.0.child:MainThread,unit.000043,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270288.7501,umgr.staging.input.0.child:MainThread,unit.000043,AGENT_STAGING_INPUT_PENDING,advance,
+1487270288.7505,umgr.staging.input.0.child:MainThread,unit.000043,AGENT_STAGING_INPUT_PENDING,publish,
+1487270288.7508,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000044/
+1487270288.8592,umgr.staging.input.0.child:MainThread,unit.000044,,created sandbox,
+1487270288.8593,umgr.staging.input.0.child:MainThread,unit.000044,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270289.0777,umgr.staging.input.0.child:MainThread,unit.000044,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270289.0778,umgr.staging.input.0.child:MainThread,unit.000044,AGENT_STAGING_INPUT_PENDING,advance,
+1487270289.0781,umgr.staging.input.0.child:MainThread,unit.000044,AGENT_STAGING_INPUT_PENDING,publish,
+1487270289.0784,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000045/
+1487270289.1865,umgr.staging.input.0.child:MainThread,unit.000045,,created sandbox,
+1487270289.1865,umgr.staging.input.0.child:MainThread,unit.000045,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270289.4044,umgr.staging.input.0.child:MainThread,unit.000045,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270289.4044,umgr.staging.input.0.child:MainThread,unit.000045,AGENT_STAGING_INPUT_PENDING,advance,
+1487270289.4048,umgr.staging.input.0.child:MainThread,unit.000045,AGENT_STAGING_INPUT_PENDING,publish,
+1487270289.4050,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000046/
+1487270289.5128,umgr.staging.input.0.child:MainThread,unit.000046,,created sandbox,
+1487270289.5129,umgr.staging.input.0.child:MainThread,unit.000046,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270289.7306,umgr.staging.input.0.child:MainThread,unit.000046,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270289.7306,umgr.staging.input.0.child:MainThread,unit.000046,AGENT_STAGING_INPUT_PENDING,advance,
+1487270289.7309,umgr.staging.input.0.child:MainThread,unit.000046,AGENT_STAGING_INPUT_PENDING,publish,
+1487270289.7312,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000047/
+1487270289.8394,umgr.staging.input.0.child:MainThread,unit.000047,,created sandbox,
+1487270289.8394,umgr.staging.input.0.child:MainThread,unit.000047,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270290.0598,umgr.staging.input.0.child:MainThread,unit.000047,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270290.0598,umgr.staging.input.0.child:MainThread,unit.000047,AGENT_STAGING_INPUT_PENDING,advance,
+1487270290.0603,umgr.staging.input.0.child:MainThread,unit.000047,AGENT_STAGING_INPUT_PENDING,publish,
+1487270290.0605,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000048/
+1487270290.1691,umgr.staging.input.0.child:MainThread,unit.000048,,created sandbox,
+1487270290.1691,umgr.staging.input.0.child:MainThread,unit.000048,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270290.3874,umgr.staging.input.0.child:MainThread,unit.000048,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270290.3875,umgr.staging.input.0.child:MainThread,unit.000048,AGENT_STAGING_INPUT_PENDING,advance,
+1487270290.3880,umgr.staging.input.0.child:MainThread,unit.000048,AGENT_STAGING_INPUT_PENDING,publish,
+1487270290.3882,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000049/
+1487270290.4964,umgr.staging.input.0.child:MainThread,unit.000049,,created sandbox,
+1487270290.4964,umgr.staging.input.0.child:MainThread,unit.000049,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270290.7141,umgr.staging.input.0.child:MainThread,unit.000049,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270290.7141,umgr.staging.input.0.child:MainThread,unit.000049,AGENT_STAGING_INPUT_PENDING,advance,
+1487270290.7145,umgr.staging.input.0.child:MainThread,unit.000049,AGENT_STAGING_INPUT_PENDING,publish,
+1487270290.7148,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000050/
+1487270290.8239,umgr.staging.input.0.child:MainThread,unit.000050,,created sandbox,
+1487270290.8239,umgr.staging.input.0.child:MainThread,unit.000050,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270291.0671,umgr.staging.input.0.child:MainThread,unit.000050,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270291.0672,umgr.staging.input.0.child:MainThread,unit.000050,AGENT_STAGING_INPUT_PENDING,advance,
+1487270291.0676,umgr.staging.input.0.child:MainThread,unit.000050,AGENT_STAGING_INPUT_PENDING,publish,
+1487270291.0679,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000051/
+1487270291.1764,umgr.staging.input.0.child:MainThread,unit.000051,,created sandbox,
+1487270291.1764,umgr.staging.input.0.child:MainThread,unit.000051,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270291.3940,umgr.staging.input.0.child:MainThread,unit.000051,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270291.3941,umgr.staging.input.0.child:MainThread,unit.000051,AGENT_STAGING_INPUT_PENDING,advance,
+1487270291.3945,umgr.staging.input.0.child:MainThread,unit.000051,AGENT_STAGING_INPUT_PENDING,publish,
+1487270291.3948,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000052/
+1487270291.7396,umgr.staging.input.0.child:MainThread,unit.000052,,created sandbox,
+1487270291.7397,umgr.staging.input.0.child:MainThread,unit.000052,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270291.9655,umgr.staging.input.0.child:MainThread,unit.000052,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270291.9656,umgr.staging.input.0.child:MainThread,unit.000052,AGENT_STAGING_INPUT_PENDING,advance,
+1487270291.9660,umgr.staging.input.0.child:MainThread,unit.000052,AGENT_STAGING_INPUT_PENDING,publish,
+1487270291.9662,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000053/
+1487270292.0746,umgr.staging.input.0.child:MainThread,unit.000053,,created sandbox,
+1487270292.0746,umgr.staging.input.0.child:MainThread,unit.000053,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270292.3221,umgr.staging.input.0.child:MainThread,unit.000053,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270292.3221,umgr.staging.input.0.child:MainThread,unit.000053,AGENT_STAGING_INPUT_PENDING,advance,
+1487270292.3225,umgr.staging.input.0.child:MainThread,unit.000053,AGENT_STAGING_INPUT_PENDING,publish,
+1487270292.3228,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000054/
+1487270292.4304,umgr.staging.input.0.child:MainThread,unit.000054,,created sandbox,
+1487270292.4304,umgr.staging.input.0.child:MainThread,unit.000054,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270292.6475,umgr.staging.input.0.child:MainThread,unit.000054,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270292.6476,umgr.staging.input.0.child:MainThread,unit.000054,AGENT_STAGING_INPUT_PENDING,advance,
+1487270292.6479,umgr.staging.input.0.child:MainThread,unit.000054,AGENT_STAGING_INPUT_PENDING,publish,
+1487270292.6482,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000055/
+1487270292.7588,umgr.staging.input.0.child:MainThread,unit.000055,,created sandbox,
+1487270292.7588,umgr.staging.input.0.child:MainThread,unit.000055,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270292.9782,umgr.staging.input.0.child:MainThread,unit.000055,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270292.9783,umgr.staging.input.0.child:MainThread,unit.000055,AGENT_STAGING_INPUT_PENDING,advance,
+1487270292.9786,umgr.staging.input.0.child:MainThread,unit.000055,AGENT_STAGING_INPUT_PENDING,publish,
+1487270292.9788,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000056/
+1487270293.0869,umgr.staging.input.0.child:MainThread,unit.000056,,created sandbox,
+1487270293.0869,umgr.staging.input.0.child:MainThread,unit.000056,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270293.3035,umgr.staging.input.0.child:MainThread,unit.000056,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270293.3036,umgr.staging.input.0.child:MainThread,unit.000056,AGENT_STAGING_INPUT_PENDING,advance,
+1487270293.3039,umgr.staging.input.0.child:MainThread,unit.000056,AGENT_STAGING_INPUT_PENDING,publish,
+1487270293.3042,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000057/
+1487270293.4125,umgr.staging.input.0.child:MainThread,unit.000057,,created sandbox,
+1487270293.4126,umgr.staging.input.0.child:MainThread,unit.000057,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270293.6300,umgr.staging.input.0.child:MainThread,unit.000057,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270293.6301,umgr.staging.input.0.child:MainThread,unit.000057,AGENT_STAGING_INPUT_PENDING,advance,
+1487270293.6304,umgr.staging.input.0.child:MainThread,unit.000057,AGENT_STAGING_INPUT_PENDING,publish,
+1487270293.6306,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000058/
+1487270293.7388,umgr.staging.input.0.child:MainThread,unit.000058,,created sandbox,
+1487270293.7388,umgr.staging.input.0.child:MainThread,unit.000058,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270293.9563,umgr.staging.input.0.child:MainThread,unit.000058,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270293.9564,umgr.staging.input.0.child:MainThread,unit.000058,AGENT_STAGING_INPUT_PENDING,advance,
+1487270293.9568,umgr.staging.input.0.child:MainThread,unit.000058,AGENT_STAGING_INPUT_PENDING,publish,
+1487270293.9570,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000059/
+1487270294.0661,umgr.staging.input.0.child:MainThread,unit.000059,,created sandbox,
+1487270294.0661,umgr.staging.input.0.child:MainThread,unit.000059,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270294.2855,umgr.staging.input.0.child:MainThread,unit.000059,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270294.2855,umgr.staging.input.0.child:MainThread,unit.000059,AGENT_STAGING_INPUT_PENDING,advance,
+1487270294.2858,umgr.staging.input.0.child:MainThread,unit.000059,AGENT_STAGING_INPUT_PENDING,publish,
+1487270294.2860,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000060/
+1487270294.3944,umgr.staging.input.0.child:MainThread,unit.000060,,created sandbox,
+1487270294.3944,umgr.staging.input.0.child:MainThread,unit.000060,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270294.6151,umgr.staging.input.0.child:MainThread,unit.000060,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270294.6151,umgr.staging.input.0.child:MainThread,unit.000060,AGENT_STAGING_INPUT_PENDING,advance,
+1487270294.6155,umgr.staging.input.0.child:MainThread,unit.000060,AGENT_STAGING_INPUT_PENDING,publish,
+1487270294.6158,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000061/
+1487270294.7234,umgr.staging.input.0.child:MainThread,unit.000061,,created sandbox,
+1487270294.7234,umgr.staging.input.0.child:MainThread,unit.000061,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270294.9425,umgr.staging.input.0.child:MainThread,unit.000061,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270294.9425,umgr.staging.input.0.child:MainThread,unit.000061,AGENT_STAGING_INPUT_PENDING,advance,
+1487270294.9430,umgr.staging.input.0.child:MainThread,unit.000061,AGENT_STAGING_INPUT_PENDING,publish,
+1487270294.9433,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000062/
+1487270295.0523,umgr.staging.input.0.child:MainThread,unit.000062,,created sandbox,
+1487270295.0524,umgr.staging.input.0.child:MainThread,unit.000062,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270295.2720,umgr.staging.input.0.child:MainThread,unit.000062,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270295.2721,umgr.staging.input.0.child:MainThread,unit.000062,AGENT_STAGING_INPUT_PENDING,advance,
+1487270295.2724,umgr.staging.input.0.child:MainThread,unit.000062,AGENT_STAGING_INPUT_PENDING,publish,
+1487270295.2726,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000063/
+1487270295.3811,umgr.staging.input.0.child:MainThread,unit.000063,,created sandbox,
+1487270295.3811,umgr.staging.input.0.child:MainThread,unit.000063,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270295.5986,umgr.staging.input.0.child:MainThread,unit.000063,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270295.5987,umgr.staging.input.0.child:MainThread,unit.000063,AGENT_STAGING_INPUT_PENDING,advance,
+1487270295.5991,umgr.staging.input.0.child:MainThread,unit.000063,AGENT_STAGING_INPUT_PENDING,publish,
+1487270295.5993,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000064/
+1487270295.7073,umgr.staging.input.0.child:MainThread,unit.000064,,created sandbox,
+1487270295.7074,umgr.staging.input.0.child:MainThread,unit.000064,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270295.9244,umgr.staging.input.0.child:MainThread,unit.000064,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270295.9245,umgr.staging.input.0.child:MainThread,unit.000064,AGENT_STAGING_INPUT_PENDING,advance,
+1487270295.9249,umgr.staging.input.0.child:MainThread,unit.000064,AGENT_STAGING_INPUT_PENDING,publish,
+1487270295.9252,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000065/
+1487270296.0348,umgr.staging.input.0.child:MainThread,unit.000065,,created sandbox,
+1487270296.0349,umgr.staging.input.0.child:MainThread,unit.000065,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270296.2780,umgr.staging.input.0.child:MainThread,unit.000065,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270296.2780,umgr.staging.input.0.child:MainThread,unit.000065,AGENT_STAGING_INPUT_PENDING,advance,
+1487270296.2785,umgr.staging.input.0.child:MainThread,unit.000065,AGENT_STAGING_INPUT_PENDING,publish,
+1487270296.2787,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000066/
+1487270296.3992,umgr.staging.input.0.child:MainThread,unit.000066,,created sandbox,
+1487270296.3993,umgr.staging.input.0.child:MainThread,unit.000066,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270296.6320,umgr.staging.input.0.child:MainThread,unit.000066,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270296.6321,umgr.staging.input.0.child:MainThread,unit.000066,AGENT_STAGING_INPUT_PENDING,advance,
+1487270296.6324,umgr.staging.input.0.child:MainThread,unit.000066,AGENT_STAGING_INPUT_PENDING,publish,
+1487270296.6327,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000067/
+1487270296.7408,umgr.staging.input.0.child:MainThread,unit.000067,,created sandbox,
+1487270296.7408,umgr.staging.input.0.child:MainThread,unit.000067,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270296.9584,umgr.staging.input.0.child:MainThread,unit.000067,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270296.9585,umgr.staging.input.0.child:MainThread,unit.000067,AGENT_STAGING_INPUT_PENDING,advance,
+1487270296.9589,umgr.staging.input.0.child:MainThread,unit.000067,AGENT_STAGING_INPUT_PENDING,publish,
+1487270296.9592,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000068/
+1487270297.0679,umgr.staging.input.0.child:MainThread,unit.000068,,created sandbox,
+1487270297.0679,umgr.staging.input.0.child:MainThread,unit.000068,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270297.2856,umgr.staging.input.0.child:MainThread,unit.000068,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270297.2856,umgr.staging.input.0.child:MainThread,unit.000068,AGENT_STAGING_INPUT_PENDING,advance,
+1487270297.2860,umgr.staging.input.0.child:MainThread,unit.000068,AGENT_STAGING_INPUT_PENDING,publish,
+1487270297.2862,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000069/
+1487270297.3943,umgr.staging.input.0.child:MainThread,unit.000069,,created sandbox,
+1487270297.3943,umgr.staging.input.0.child:MainThread,unit.000069,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270297.6125,umgr.staging.input.0.child:MainThread,unit.000069,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270297.6125,umgr.staging.input.0.child:MainThread,unit.000069,AGENT_STAGING_INPUT_PENDING,advance,
+1487270297.6128,umgr.staging.input.0.child:MainThread,unit.000069,AGENT_STAGING_INPUT_PENDING,publish,
+1487270297.6130,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000070/
+1487270297.7211,umgr.staging.input.0.child:MainThread,unit.000070,,created sandbox,
+1487270297.7211,umgr.staging.input.0.child:MainThread,unit.000070,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270297.9386,umgr.staging.input.0.child:MainThread,unit.000070,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270297.9386,umgr.staging.input.0.child:MainThread,unit.000070,AGENT_STAGING_INPUT_PENDING,advance,
+1487270297.9389,umgr.staging.input.0.child:MainThread,unit.000070,AGENT_STAGING_INPUT_PENDING,publish,
+1487270297.9392,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000071/
+1487270298.0482,umgr.staging.input.0.child:MainThread,unit.000071,,created sandbox,
+1487270298.0482,umgr.staging.input.0.child:MainThread,unit.000071,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270298.2805,umgr.staging.input.0.child:MainThread,unit.000071,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270298.2806,umgr.staging.input.0.child:MainThread,unit.000071,AGENT_STAGING_INPUT_PENDING,advance,
+1487270298.2810,umgr.staging.input.0.child:MainThread,unit.000071,AGENT_STAGING_INPUT_PENDING,publish,
+1487270298.2812,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000072/
+1487270298.3953,umgr.staging.input.0.child:MainThread,unit.000072,,created sandbox,
+1487270298.3953,umgr.staging.input.0.child:MainThread,unit.000072,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270298.6129,umgr.staging.input.0.child:MainThread,unit.000072,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270298.6129,umgr.staging.input.0.child:MainThread,unit.000072,AGENT_STAGING_INPUT_PENDING,advance,
+1487270298.6132,umgr.staging.input.0.child:MainThread,unit.000072,AGENT_STAGING_INPUT_PENDING,publish,
+1487270298.6134,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000073/
+1487270298.7216,umgr.staging.input.0.child:MainThread,unit.000073,,created sandbox,
+1487270298.7217,umgr.staging.input.0.child:MainThread,unit.000073,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270298.9389,umgr.staging.input.0.child:MainThread,unit.000073,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270298.9389,umgr.staging.input.0.child:MainThread,unit.000073,AGENT_STAGING_INPUT_PENDING,advance,
+1487270298.9392,umgr.staging.input.0.child:MainThread,unit.000073,AGENT_STAGING_INPUT_PENDING,publish,
+1487270298.9394,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000074/
+1487270299.0490,umgr.staging.input.0.child:MainThread,unit.000074,,created sandbox,
+1487270299.0491,umgr.staging.input.0.child:MainThread,unit.000074,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270299.2679,umgr.staging.input.0.child:MainThread,unit.000074,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270299.2680,umgr.staging.input.0.child:MainThread,unit.000074,AGENT_STAGING_INPUT_PENDING,advance,
+1487270299.2683,umgr.staging.input.0.child:MainThread,unit.000074,AGENT_STAGING_INPUT_PENDING,publish,
+1487270299.2686,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000075/
+1487270299.3775,umgr.staging.input.0.child:MainThread,unit.000075,,created sandbox,
+1487270299.3775,umgr.staging.input.0.child:MainThread,unit.000075,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270299.5964,umgr.staging.input.0.child:MainThread,unit.000075,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270299.5964,umgr.staging.input.0.child:MainThread,unit.000075,AGENT_STAGING_INPUT_PENDING,advance,
+1487270299.5969,umgr.staging.input.0.child:MainThread,unit.000075,AGENT_STAGING_INPUT_PENDING,publish,
+1487270299.5972,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000076/
+1487270299.7050,umgr.staging.input.0.child:MainThread,unit.000076,,created sandbox,
+1487270299.7050,umgr.staging.input.0.child:MainThread,unit.000076,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270299.9236,umgr.staging.input.0.child:MainThread,unit.000076,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270299.9237,umgr.staging.input.0.child:MainThread,unit.000076,AGENT_STAGING_INPUT_PENDING,advance,
+1487270299.9240,umgr.staging.input.0.child:MainThread,unit.000076,AGENT_STAGING_INPUT_PENDING,publish,
+1487270299.9243,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000077/
+1487270300.0335,umgr.staging.input.0.child:MainThread,unit.000077,,created sandbox,
+1487270300.0335,umgr.staging.input.0.child:MainThread,unit.000077,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270300.2522,umgr.staging.input.0.child:MainThread,unit.000077,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270300.2522,umgr.staging.input.0.child:MainThread,unit.000077,AGENT_STAGING_INPUT_PENDING,advance,
+1487270300.2525,umgr.staging.input.0.child:MainThread,unit.000077,AGENT_STAGING_INPUT_PENDING,publish,
+1487270300.2528,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000078/
+1487270300.3618,umgr.staging.input.0.child:MainThread,unit.000078,,created sandbox,
+1487270300.3618,umgr.staging.input.0.child:MainThread,unit.000078,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270300.5799,umgr.staging.input.0.child:MainThread,unit.000078,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270300.5799,umgr.staging.input.0.child:MainThread,unit.000078,AGENT_STAGING_INPUT_PENDING,advance,
+1487270300.5804,umgr.staging.input.0.child:MainThread,unit.000078,AGENT_STAGING_INPUT_PENDING,publish,
+1487270300.5806,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000079/
+1487270300.6895,umgr.staging.input.0.child:MainThread,unit.000079,,created sandbox,
+1487270300.6895,umgr.staging.input.0.child:MainThread,unit.000079,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270300.9079,umgr.staging.input.0.child:MainThread,unit.000079,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270300.9079,umgr.staging.input.0.child:MainThread,unit.000079,AGENT_STAGING_INPUT_PENDING,advance,
+1487270300.9082,umgr.staging.input.0.child:MainThread,unit.000079,AGENT_STAGING_INPUT_PENDING,publish,
+1487270300.9085,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000080/
+1487270301.0169,umgr.staging.input.0.child:MainThread,unit.000080,,created sandbox,
+1487270301.0169,umgr.staging.input.0.child:MainThread,unit.000080,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270301.2355,umgr.staging.input.0.child:MainThread,unit.000080,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270301.2355,umgr.staging.input.0.child:MainThread,unit.000080,AGENT_STAGING_INPUT_PENDING,advance,
+1487270301.2359,umgr.staging.input.0.child:MainThread,unit.000080,AGENT_STAGING_INPUT_PENDING,publish,
+1487270301.2361,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000081/
+1487270301.3443,umgr.staging.input.0.child:MainThread,unit.000081,,created sandbox,
+1487270301.3443,umgr.staging.input.0.child:MainThread,unit.000081,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270301.5612,umgr.staging.input.0.child:MainThread,unit.000081,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270301.5612,umgr.staging.input.0.child:MainThread,unit.000081,AGENT_STAGING_INPUT_PENDING,advance,
+1487270301.5615,umgr.staging.input.0.child:MainThread,unit.000081,AGENT_STAGING_INPUT_PENDING,publish,
+1487270301.5618,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000082/
+1487270301.6701,umgr.staging.input.0.child:MainThread,unit.000082,,created sandbox,
+1487270301.6701,umgr.staging.input.0.child:MainThread,unit.000082,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270301.8881,umgr.staging.input.0.child:MainThread,unit.000082,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270301.8881,umgr.staging.input.0.child:MainThread,unit.000082,AGENT_STAGING_INPUT_PENDING,advance,
+1487270301.8884,umgr.staging.input.0.child:MainThread,unit.000082,AGENT_STAGING_INPUT_PENDING,publish,
+1487270301.8887,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000083/
+1487270301.9966,umgr.staging.input.0.child:MainThread,unit.000083,,created sandbox,
+1487270301.9966,umgr.staging.input.0.child:MainThread,unit.000083,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270302.2155,umgr.staging.input.0.child:MainThread,unit.000083,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270302.2155,umgr.staging.input.0.child:MainThread,unit.000083,AGENT_STAGING_INPUT_PENDING,advance,
+1487270302.2158,umgr.staging.input.0.child:MainThread,unit.000083,AGENT_STAGING_INPUT_PENDING,publish,
+1487270302.2160,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000084/
+1487270302.3239,umgr.staging.input.0.child:MainThread,unit.000084,,created sandbox,
+1487270302.3240,umgr.staging.input.0.child:MainThread,unit.000084,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270302.5413,umgr.staging.input.0.child:MainThread,unit.000084,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270302.5414,umgr.staging.input.0.child:MainThread,unit.000084,AGENT_STAGING_INPUT_PENDING,advance,
+1487270302.5416,umgr.staging.input.0.child:MainThread,unit.000084,AGENT_STAGING_INPUT_PENDING,publish,
+1487270302.5419,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000085/
+1487270302.6500,umgr.staging.input.0.child:MainThread,unit.000085,,created sandbox,
+1487270302.6500,umgr.staging.input.0.child:MainThread,unit.000085,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270302.8687,umgr.staging.input.0.child:MainThread,unit.000085,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270302.8688,umgr.staging.input.0.child:MainThread,unit.000085,AGENT_STAGING_INPUT_PENDING,advance,
+1487270302.8692,umgr.staging.input.0.child:MainThread,unit.000085,AGENT_STAGING_INPUT_PENDING,publish,
+1487270302.8695,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000086/
+1487270302.9773,umgr.staging.input.0.child:MainThread,unit.000086,,created sandbox,
+1487270302.9773,umgr.staging.input.0.child:MainThread,unit.000086,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270303.1969,umgr.staging.input.0.child:MainThread,unit.000086,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270303.1969,umgr.staging.input.0.child:MainThread,unit.000086,AGENT_STAGING_INPUT_PENDING,advance,
+1487270303.1974,umgr.staging.input.0.child:MainThread,unit.000086,AGENT_STAGING_INPUT_PENDING,publish,
+1487270303.1977,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000087/
+1487270303.3066,umgr.staging.input.0.child:MainThread,unit.000087,,created sandbox,
+1487270303.3066,umgr.staging.input.0.child:MainThread,unit.000087,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270303.5303,umgr.staging.input.0.child:MainThread,unit.000087,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270303.5303,umgr.staging.input.0.child:MainThread,unit.000087,AGENT_STAGING_INPUT_PENDING,advance,
+1487270303.5307,umgr.staging.input.0.child:MainThread,unit.000087,AGENT_STAGING_INPUT_PENDING,publish,
+1487270303.5309,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000088/
+1487270303.6388,umgr.staging.input.0.child:MainThread,unit.000088,,created sandbox,
+1487270303.6388,umgr.staging.input.0.child:MainThread,unit.000088,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270303.8562,umgr.staging.input.0.child:MainThread,unit.000088,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270303.8562,umgr.staging.input.0.child:MainThread,unit.000088,AGENT_STAGING_INPUT_PENDING,advance,
+1487270303.8566,umgr.staging.input.0.child:MainThread,unit.000088,AGENT_STAGING_INPUT_PENDING,publish,
+1487270303.8568,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000089/
+1487270303.9650,umgr.staging.input.0.child:MainThread,unit.000089,,created sandbox,
+1487270303.9650,umgr.staging.input.0.child:MainThread,unit.000089,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270304.1906,umgr.staging.input.0.child:MainThread,unit.000089,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270304.1907,umgr.staging.input.0.child:MainThread,unit.000089,AGENT_STAGING_INPUT_PENDING,advance,
+1487270304.1910,umgr.staging.input.0.child:MainThread,unit.000089,AGENT_STAGING_INPUT_PENDING,publish,
+1487270304.1913,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000090/
+1487270304.3004,umgr.staging.input.0.child:MainThread,unit.000090,,created sandbox,
+1487270304.3005,umgr.staging.input.0.child:MainThread,unit.000090,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270304.5187,umgr.staging.input.0.child:MainThread,unit.000090,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270304.5187,umgr.staging.input.0.child:MainThread,unit.000090,AGENT_STAGING_INPUT_PENDING,advance,
+1487270304.5191,umgr.staging.input.0.child:MainThread,unit.000090,AGENT_STAGING_INPUT_PENDING,publish,
+1487270304.5194,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000091/
+1487270304.6281,umgr.staging.input.0.child:MainThread,unit.000091,,created sandbox,
+1487270304.6281,umgr.staging.input.0.child:MainThread,unit.000091,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270304.8451,umgr.staging.input.0.child:MainThread,unit.000091,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270304.8452,umgr.staging.input.0.child:MainThread,unit.000091,AGENT_STAGING_INPUT_PENDING,advance,
+1487270304.8455,umgr.staging.input.0.child:MainThread,unit.000091,AGENT_STAGING_INPUT_PENDING,publish,
+1487270304.8457,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000092/
+1487270304.9535,umgr.staging.input.0.child:MainThread,unit.000092,,created sandbox,
+1487270304.9536,umgr.staging.input.0.child:MainThread,unit.000092,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270305.1724,umgr.staging.input.0.child:MainThread,unit.000092,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270305.1725,umgr.staging.input.0.child:MainThread,unit.000092,AGENT_STAGING_INPUT_PENDING,advance,
+1487270305.1728,umgr.staging.input.0.child:MainThread,unit.000092,AGENT_STAGING_INPUT_PENDING,publish,
+1487270305.1731,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000093/
+1487270305.2823,umgr.staging.input.0.child:MainThread,unit.000093,,created sandbox,
+1487270305.2823,umgr.staging.input.0.child:MainThread,unit.000093,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270305.5003,umgr.staging.input.0.child:MainThread,unit.000093,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270305.5003,umgr.staging.input.0.child:MainThread,unit.000093,AGENT_STAGING_INPUT_PENDING,advance,
+1487270305.5006,umgr.staging.input.0.child:MainThread,unit.000093,AGENT_STAGING_INPUT_PENDING,publish,
+1487270305.5009,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000094/
+1487270305.6097,umgr.staging.input.0.child:MainThread,unit.000094,,created sandbox,
+1487270305.6098,umgr.staging.input.0.child:MainThread,unit.000094,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270305.8299,umgr.staging.input.0.child:MainThread,unit.000094,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270305.8299,umgr.staging.input.0.child:MainThread,unit.000094,AGENT_STAGING_INPUT_PENDING,advance,
+1487270305.8304,umgr.staging.input.0.child:MainThread,unit.000094,AGENT_STAGING_INPUT_PENDING,publish,
+1487270305.8306,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000095/
+1487270305.9386,umgr.staging.input.0.child:MainThread,unit.000095,,created sandbox,
+1487270305.9386,umgr.staging.input.0.child:MainThread,unit.000095,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270306.1562,umgr.staging.input.0.child:MainThread,unit.000095,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270306.1563,umgr.staging.input.0.child:MainThread,unit.000095,AGENT_STAGING_INPUT_PENDING,advance,
+1487270306.1567,umgr.staging.input.0.child:MainThread,unit.000095,AGENT_STAGING_INPUT_PENDING,publish,
+1487270306.1570,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000096/
+1487270306.2661,umgr.staging.input.0.child:MainThread,unit.000096,,created sandbox,
+1487270306.2661,umgr.staging.input.0.child:MainThread,unit.000096,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270306.4837,umgr.staging.input.0.child:MainThread,unit.000096,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270306.4837,umgr.staging.input.0.child:MainThread,unit.000096,AGENT_STAGING_INPUT_PENDING,advance,
+1487270306.4841,umgr.staging.input.0.child:MainThread,unit.000096,AGENT_STAGING_INPUT_PENDING,publish,
+1487270306.4844,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000097/
+1487270306.5929,umgr.staging.input.0.child:MainThread,unit.000097,,created sandbox,
+1487270306.5929,umgr.staging.input.0.child:MainThread,unit.000097,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270306.8106,umgr.staging.input.0.child:MainThread,unit.000097,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270306.8106,umgr.staging.input.0.child:MainThread,unit.000097,AGENT_STAGING_INPUT_PENDING,advance,
+1487270306.8111,umgr.staging.input.0.child:MainThread,unit.000097,AGENT_STAGING_INPUT_PENDING,publish,
+1487270306.8114,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000098/
+1487270306.9199,umgr.staging.input.0.child:MainThread,unit.000098,,created sandbox,
+1487270306.9200,umgr.staging.input.0.child:MainThread,unit.000098,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270307.1387,umgr.staging.input.0.child:MainThread,unit.000098,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270307.1387,umgr.staging.input.0.child:MainThread,unit.000098,AGENT_STAGING_INPUT_PENDING,advance,
+1487270307.1391,umgr.staging.input.0.child:MainThread,unit.000098,AGENT_STAGING_INPUT_PENDING,publish,
+1487270307.1394,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000099/
+1487270307.2513,umgr.staging.input.0.child:MainThread,unit.000099,,created sandbox,
+1487270307.2514,umgr.staging.input.0.child:MainThread,unit.000099,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270307.4715,umgr.staging.input.0.child:MainThread,unit.000099,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270307.4715,umgr.staging.input.0.child:MainThread,unit.000099,AGENT_STAGING_INPUT_PENDING,advance,
+1487270307.4720,umgr.staging.input.0.child:MainThread,unit.000099,AGENT_STAGING_INPUT_PENDING,publish,
+1487270307.4723,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000100/
+1487270307.6024,umgr.staging.input.0.child:MainThread,unit.000100,,created sandbox,
+1487270307.6024,umgr.staging.input.0.child:MainThread,unit.000100,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270307.8208,umgr.staging.input.0.child:MainThread,unit.000100,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270307.8209,umgr.staging.input.0.child:MainThread,unit.000100,AGENT_STAGING_INPUT_PENDING,advance,
+1487270307.8213,umgr.staging.input.0.child:MainThread,unit.000100,AGENT_STAGING_INPUT_PENDING,publish,
+1487270307.8216,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000101/
+1487270307.9302,umgr.staging.input.0.child:MainThread,unit.000101,,created sandbox,
+1487270307.9302,umgr.staging.input.0.child:MainThread,unit.000101,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270308.1513,umgr.staging.input.0.child:MainThread,unit.000101,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270308.1514,umgr.staging.input.0.child:MainThread,unit.000101,AGENT_STAGING_INPUT_PENDING,advance,
+1487270308.1518,umgr.staging.input.0.child:MainThread,unit.000101,AGENT_STAGING_INPUT_PENDING,publish,
+1487270308.1520,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000102/
+1487270308.2608,umgr.staging.input.0.child:MainThread,unit.000102,,created sandbox,
+1487270308.2608,umgr.staging.input.0.child:MainThread,unit.000102,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270308.4798,umgr.staging.input.0.child:MainThread,unit.000102,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270308.4798,umgr.staging.input.0.child:MainThread,unit.000102,AGENT_STAGING_INPUT_PENDING,advance,
+1487270308.4801,umgr.staging.input.0.child:MainThread,unit.000102,AGENT_STAGING_INPUT_PENDING,publish,
+1487270308.4804,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000103/
+1487270308.5886,umgr.staging.input.0.child:MainThread,unit.000103,,created sandbox,
+1487270308.5886,umgr.staging.input.0.child:MainThread,unit.000103,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270308.8052,umgr.staging.input.0.child:MainThread,unit.000103,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270308.8052,umgr.staging.input.0.child:MainThread,unit.000103,AGENT_STAGING_INPUT_PENDING,advance,
+1487270308.8056,umgr.staging.input.0.child:MainThread,unit.000103,AGENT_STAGING_INPUT_PENDING,publish,
+1487270308.8058,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000104/
+1487270308.9135,umgr.staging.input.0.child:MainThread,unit.000104,,created sandbox,
+1487270308.9135,umgr.staging.input.0.child:MainThread,unit.000104,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270309.1312,umgr.staging.input.0.child:MainThread,unit.000104,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270309.1313,umgr.staging.input.0.child:MainThread,unit.000104,AGENT_STAGING_INPUT_PENDING,advance,
+1487270309.1316,umgr.staging.input.0.child:MainThread,unit.000104,AGENT_STAGING_INPUT_PENDING,publish,
+1487270309.1318,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000105/
+1487270309.2408,umgr.staging.input.0.child:MainThread,unit.000105,,created sandbox,
+1487270309.2408,umgr.staging.input.0.child:MainThread,unit.000105,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270309.4582,umgr.staging.input.0.child:MainThread,unit.000105,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270309.4583,umgr.staging.input.0.child:MainThread,unit.000105,AGENT_STAGING_INPUT_PENDING,advance,
+1487270309.4586,umgr.staging.input.0.child:MainThread,unit.000105,AGENT_STAGING_INPUT_PENDING,publish,
+1487270309.4588,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000106/
+1487270309.5669,umgr.staging.input.0.child:MainThread,unit.000106,,created sandbox,
+1487270309.5669,umgr.staging.input.0.child:MainThread,unit.000106,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270309.7840,umgr.staging.input.0.child:MainThread,unit.000106,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270309.7841,umgr.staging.input.0.child:MainThread,unit.000106,AGENT_STAGING_INPUT_PENDING,advance,
+1487270309.7844,umgr.staging.input.0.child:MainThread,unit.000106,AGENT_STAGING_INPUT_PENDING,publish,
+1487270309.7847,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000107/
+1487270309.8927,umgr.staging.input.0.child:MainThread,unit.000107,,created sandbox,
+1487270309.8927,umgr.staging.input.0.child:MainThread,unit.000107,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270310.1103,umgr.staging.input.0.child:MainThread,unit.000107,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270310.1103,umgr.staging.input.0.child:MainThread,unit.000107,AGENT_STAGING_INPUT_PENDING,advance,
+1487270310.1107,umgr.staging.input.0.child:MainThread,unit.000107,AGENT_STAGING_INPUT_PENDING,publish,
+1487270310.1110,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000108/
+1487270310.2189,umgr.staging.input.0.child:MainThread,unit.000108,,created sandbox,
+1487270310.2189,umgr.staging.input.0.child:MainThread,unit.000108,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270310.4385,umgr.staging.input.0.child:MainThread,unit.000108,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270310.4385,umgr.staging.input.0.child:MainThread,unit.000108,AGENT_STAGING_INPUT_PENDING,advance,
+1487270310.4388,umgr.staging.input.0.child:MainThread,unit.000108,AGENT_STAGING_INPUT_PENDING,publish,
+1487270310.4391,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000109/
+1487270310.5473,umgr.staging.input.0.child:MainThread,unit.000109,,created sandbox,
+1487270310.5473,umgr.staging.input.0.child:MainThread,unit.000109,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270310.7643,umgr.staging.input.0.child:MainThread,unit.000109,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270310.7644,umgr.staging.input.0.child:MainThread,unit.000109,AGENT_STAGING_INPUT_PENDING,advance,
+1487270310.7648,umgr.staging.input.0.child:MainThread,unit.000109,AGENT_STAGING_INPUT_PENDING,publish,
+1487270310.7651,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000110/
+1487270310.8731,umgr.staging.input.0.child:MainThread,unit.000110,,created sandbox,
+1487270310.8731,umgr.staging.input.0.child:MainThread,unit.000110,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270311.0907,umgr.staging.input.0.child:MainThread,unit.000110,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270311.0908,umgr.staging.input.0.child:MainThread,unit.000110,AGENT_STAGING_INPUT_PENDING,advance,
+1487270311.0912,umgr.staging.input.0.child:MainThread,unit.000110,AGENT_STAGING_INPUT_PENDING,publish,
+1487270311.0914,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000111/
+1487270311.1996,umgr.staging.input.0.child:MainThread,unit.000111,,created sandbox,
+1487270311.1996,umgr.staging.input.0.child:MainThread,unit.000111,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270311.4185,umgr.staging.input.0.child:MainThread,unit.000111,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270311.4185,umgr.staging.input.0.child:MainThread,unit.000111,AGENT_STAGING_INPUT_PENDING,advance,
+1487270311.4188,umgr.staging.input.0.child:MainThread,unit.000111,AGENT_STAGING_INPUT_PENDING,publish,
+1487270311.4191,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000112/
+1487270311.5270,umgr.staging.input.0.child:MainThread,unit.000112,,created sandbox,
+1487270311.5270,umgr.staging.input.0.child:MainThread,unit.000112,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270311.7448,umgr.staging.input.0.child:MainThread,unit.000112,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270311.7449,umgr.staging.input.0.child:MainThread,unit.000112,AGENT_STAGING_INPUT_PENDING,advance,
+1487270311.7453,umgr.staging.input.0.child:MainThread,unit.000112,AGENT_STAGING_INPUT_PENDING,publish,
+1487270311.7456,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000113/
+1487270311.8538,umgr.staging.input.0.child:MainThread,unit.000113,,created sandbox,
+1487270311.8539,umgr.staging.input.0.child:MainThread,unit.000113,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270312.0717,umgr.staging.input.0.child:MainThread,unit.000113,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270312.0717,umgr.staging.input.0.child:MainThread,unit.000113,AGENT_STAGING_INPUT_PENDING,advance,
+1487270312.0721,umgr.staging.input.0.child:MainThread,unit.000113,AGENT_STAGING_INPUT_PENDING,publish,
+1487270312.0724,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000114/
+1487270312.1811,umgr.staging.input.0.child:MainThread,unit.000114,,created sandbox,
+1487270312.1811,umgr.staging.input.0.child:MainThread,unit.000114,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270312.3997,umgr.staging.input.0.child:MainThread,unit.000114,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270312.3997,umgr.staging.input.0.child:MainThread,unit.000114,AGENT_STAGING_INPUT_PENDING,advance,
+1487270312.4001,umgr.staging.input.0.child:MainThread,unit.000114,AGENT_STAGING_INPUT_PENDING,publish,
+1487270312.4004,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000115/
+1487270312.5095,umgr.staging.input.0.child:MainThread,unit.000115,,created sandbox,
+1487270312.5095,umgr.staging.input.0.child:MainThread,unit.000115,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270312.7264,umgr.staging.input.0.child:MainThread,unit.000115,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270312.7264,umgr.staging.input.0.child:MainThread,unit.000115,AGENT_STAGING_INPUT_PENDING,advance,
+1487270312.7268,umgr.staging.input.0.child:MainThread,unit.000115,AGENT_STAGING_INPUT_PENDING,publish,
+1487270312.7270,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000116/
+1487270312.8384,umgr.staging.input.0.child:MainThread,unit.000116,,created sandbox,
+1487270312.8384,umgr.staging.input.0.child:MainThread,unit.000116,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270313.0557,umgr.staging.input.0.child:MainThread,unit.000116,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270313.0557,umgr.staging.input.0.child:MainThread,unit.000116,AGENT_STAGING_INPUT_PENDING,advance,
+1487270313.0560,umgr.staging.input.0.child:MainThread,unit.000116,AGENT_STAGING_INPUT_PENDING,publish,
+1487270313.0563,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000117/
+1487270313.1640,umgr.staging.input.0.child:MainThread,unit.000117,,created sandbox,
+1487270313.1640,umgr.staging.input.0.child:MainThread,unit.000117,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270313.3814,umgr.staging.input.0.child:MainThread,unit.000117,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270313.3815,umgr.staging.input.0.child:MainThread,unit.000117,AGENT_STAGING_INPUT_PENDING,advance,
+1487270313.3818,umgr.staging.input.0.child:MainThread,unit.000117,AGENT_STAGING_INPUT_PENDING,publish,
+1487270313.3821,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000118/
+1487270313.4907,umgr.staging.input.0.child:MainThread,unit.000118,,created sandbox,
+1487270313.4908,umgr.staging.input.0.child:MainThread,unit.000118,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270313.7070,umgr.staging.input.0.child:MainThread,unit.000118,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270313.7071,umgr.staging.input.0.child:MainThread,unit.000118,AGENT_STAGING_INPUT_PENDING,advance,
+1487270313.7073,umgr.staging.input.0.child:MainThread,unit.000118,AGENT_STAGING_INPUT_PENDING,publish,
+1487270313.7076,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000119/
+1487270313.8162,umgr.staging.input.0.child:MainThread,unit.000119,,created sandbox,
+1487270313.8163,umgr.staging.input.0.child:MainThread,unit.000119,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270314.0326,umgr.staging.input.0.child:MainThread,unit.000119,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270314.0326,umgr.staging.input.0.child:MainThread,unit.000119,AGENT_STAGING_INPUT_PENDING,advance,
+1487270314.0329,umgr.staging.input.0.child:MainThread,unit.000119,AGENT_STAGING_INPUT_PENDING,publish,
+1487270314.0332,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000120/
+1487270314.1409,umgr.staging.input.0.child:MainThread,unit.000120,,created sandbox,
+1487270314.1410,umgr.staging.input.0.child:MainThread,unit.000120,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270314.3582,umgr.staging.input.0.child:MainThread,unit.000120,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270314.3582,umgr.staging.input.0.child:MainThread,unit.000120,AGENT_STAGING_INPUT_PENDING,advance,
+1487270314.3585,umgr.staging.input.0.child:MainThread,unit.000120,AGENT_STAGING_INPUT_PENDING,publish,
+1487270314.3588,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000121/
+1487270314.4672,umgr.staging.input.0.child:MainThread,unit.000121,,created sandbox,
+1487270314.4673,umgr.staging.input.0.child:MainThread,unit.000121,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270314.6856,umgr.staging.input.0.child:MainThread,unit.000121,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270314.6857,umgr.staging.input.0.child:MainThread,unit.000121,AGENT_STAGING_INPUT_PENDING,advance,
+1487270314.6861,umgr.staging.input.0.child:MainThread,unit.000121,AGENT_STAGING_INPUT_PENDING,publish,
+1487270314.6863,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000122/
+1487270314.7950,umgr.staging.input.0.child:MainThread,unit.000122,,created sandbox,
+1487270314.7950,umgr.staging.input.0.child:MainThread,unit.000122,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270315.0125,umgr.staging.input.0.child:MainThread,unit.000122,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270315.0125,umgr.staging.input.0.child:MainThread,unit.000122,AGENT_STAGING_INPUT_PENDING,advance,
+1487270315.0129,umgr.staging.input.0.child:MainThread,unit.000122,AGENT_STAGING_INPUT_PENDING,publish,
+1487270315.0132,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000123/
+1487270315.1215,umgr.staging.input.0.child:MainThread,unit.000123,,created sandbox,
+1487270315.1215,umgr.staging.input.0.child:MainThread,unit.000123,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270315.3381,umgr.staging.input.0.child:MainThread,unit.000123,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270315.3381,umgr.staging.input.0.child:MainThread,unit.000123,AGENT_STAGING_INPUT_PENDING,advance,
+1487270315.3385,umgr.staging.input.0.child:MainThread,unit.000123,AGENT_STAGING_INPUT_PENDING,publish,
+1487270315.3388,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000124/
+1487270315.4480,umgr.staging.input.0.child:MainThread,unit.000124,,created sandbox,
+1487270315.4480,umgr.staging.input.0.child:MainThread,unit.000124,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270315.6665,umgr.staging.input.0.child:MainThread,unit.000124,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270315.6666,umgr.staging.input.0.child:MainThread,unit.000124,AGENT_STAGING_INPUT_PENDING,advance,
+1487270315.6670,umgr.staging.input.0.child:MainThread,unit.000124,AGENT_STAGING_INPUT_PENDING,publish,
+1487270315.6672,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000125/
+1487270315.7756,umgr.staging.input.0.child:MainThread,unit.000125,,created sandbox,
+1487270315.7756,umgr.staging.input.0.child:MainThread,unit.000125,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270316.0081,umgr.staging.input.0.child:MainThread,unit.000125,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270316.0082,umgr.staging.input.0.child:MainThread,unit.000125,AGENT_STAGING_INPUT_PENDING,advance,
+1487270316.0086,umgr.staging.input.0.child:MainThread,unit.000125,AGENT_STAGING_INPUT_PENDING,publish,
+1487270316.0088,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000126/
+1487270316.1360,umgr.staging.input.0.child:MainThread,unit.000126,,created sandbox,
+1487270316.1361,umgr.staging.input.0.child:MainThread,unit.000126,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270316.3560,umgr.staging.input.0.child:MainThread,unit.000126,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270316.3561,umgr.staging.input.0.child:MainThread,unit.000126,AGENT_STAGING_INPUT_PENDING,advance,
+1487270316.3565,umgr.staging.input.0.child:MainThread,unit.000126,AGENT_STAGING_INPUT_PENDING,publish,
+1487270316.3568,umgr.staging.input.0.child:MainThread,,,create sandbox,file://localhost/lustre/atlas/scratch/aleang9/csc108/radical.pilot.sandbox/rp.session.titan-ext1.aleang9.017213.0000/pilot.0000//unit.000127/
+1487270316.4845,umgr.staging.input.0.child:MainThread,unit.000127,,created sandbox,
+1487270316.4845,umgr.staging.input.0.child:MainThread,unit.000127,,umgr staging in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270316.7197,umgr.staging.input.0.child:MainThread,unit.000127,,umgr staged  in,file://localhost/autofs/nccs-svm1_home1/aleang9/misc/fireworks/topol.tpr
+1487270316.7197,umgr.staging.input.0.child:MainThread,unit.000127,AGENT_STAGING_INPUT_PENDING,advance,
+1487270316.7201,umgr.staging.input.0.child:MainThread,unit.000127,AGENT_STAGING_INPUT_PENDING,publish,
+1487270316.7205,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7205,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7205,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7206,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7206,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7206,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7206,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7206,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7206,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7206,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7207,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7208,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7209,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7210,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7210,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7210,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7210,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7212,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270316.7211,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7216,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7217,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7218,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7219,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7220,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270316.7221,umgr.staging.input.0.child:MainThread,unit.000127,UMGR_STAGING_INPUT_PENDING,work done ,
+1487270364.1021,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270424.1984,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270484.2955,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270544.3930,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270604.4898,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270664.5897,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270724.6896,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270784.7888,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270844.8878,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270904.9872,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487270965.0860,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271025.1834,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271085.2825,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271145.3808,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271205.4807,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271265.5194,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271325.6050,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271385.6996,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271445.7961,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271505.8953,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271565.8963,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271625.9941,umgr.staging.input.0.child:umgr.staging.input.0.child.idler._profile_flush_cb,,,flush,
+1487271668.1583,umgr.staging.input.0.child:MainThread,umgr.staging.input.0.child,,stopped,
+1487271668.1584,umgr.staging.input.0.child:MainThread,,,END,

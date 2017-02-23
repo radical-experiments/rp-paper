@@ -1,0 +1,17 @@
+#time,name,uid,state,event,msg
+1487288206.9324,update.0:,,,sync abs,c412-001.stampede.tacc.utexas.edu:10.15.67.187:1487288206.93:1487288206.93:sys
+1487288206.9339,update.0:MainThread,update.0,,initialize,
+1487288206.9480,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288266.9630,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288326.9905,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288387.0164,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288447.0419,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288507.0692,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288567.1180,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288627.1488,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288687.1676,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288747.2146,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288807.2411,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288867.2858,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288927.3139,update.0:update.0.idler._profile_flush_cb,,,flush,
+1487288987.4129,update.0:update.0.idler._profile_flush_cb,,,flush,

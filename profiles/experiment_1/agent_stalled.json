@@ -43,7 +43,7 @@
     #
     "bridges" : {
         "agent_staging_input_queue"  : { "log_level" : "debug",
-                                         "stall_hwm" : #16384,
+                                         "stall_hwm" : 128,
                                          "bulk_size" : 0},
         "agent_scheduling_queue"     : { "log_level" : "debug",
                                          "stall_hwm" : 1,

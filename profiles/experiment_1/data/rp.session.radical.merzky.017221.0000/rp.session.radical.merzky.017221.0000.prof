@@ -1,0 +1,10 @@
+#time,name,uid,state,event,msg
+1487895298.3651,rp.session.radical.merzky.017221.0000:,,,sync abs,radical:144.76.72.175:1487895298.29:1487895298.29:ntp
+1487895298.3656,rp.session.radical.merzky.017221.0000:MainThread,rp.session.radical.merzky.017221.0000,,start session,
+1487895298.5228,rp.session.radical.merzky.017221.0000:MainThread,rp.session.radical.merzky.017221.0000,,configs parsed,
+1487896317.1160,rp.session.radical.merzky.017221.0000:MainThread,rp.session.radical.merzky.017221.0000,,close,
+1487896320.9685,rp.session.radical.merzky.017221.0000:MainThread,umgr.0000,,closed umgr,
+1487896384.5517,rp.session.radical.merzky.017221.0000:MainThread,pmgr.0000,,closed pmgr,
+1487896385.0540,rp.session.radical.merzky.017221.0000:MainThread,rp.session.radical.merzky.017221.0000,,closing,False
+1487896385.0543,rp.session.radical.merzky.017221.0000:MainThread,rp.session.radical.merzky.017221.0000,,closed,
+1487896385.0543,rp.session.radical.merzky.017221.0000:MainThread,,,END,

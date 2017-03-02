@@ -1,0 +1,17 @@
+#time,name,uid,state,event,msg
+1488455247.0671,agent.staging.input.0:,,,sync abs,c412-001.stampede.tacc.utexas.edu:10.15.67.187:1488455247.07:1488455247.07:sys
+1488455247.0680,agent.staging.input.0:MainThread,agent.staging.input.0,,initialize,
+1488455247.0807,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455307.1570,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455367.1886,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455427.2363,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455487.2645,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455547.3210,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455607.3758,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455667.4071,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455727.4333,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455787.4803,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455847.5020,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455907.5273,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488455967.5509,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,
+1488456027.5589,agent.staging.input.0:agent.staging.input.0.idler._profile_flush_cb,,,flush,

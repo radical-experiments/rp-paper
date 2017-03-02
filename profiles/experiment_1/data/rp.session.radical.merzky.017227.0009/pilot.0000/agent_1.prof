@@ -1,0 +1,18 @@
+#time,name,uid,state,event,msg
+1488455250.3212,agent_1:,,,sync abs,c412-001.stampede.tacc.utexas.edu:10.15.67.187:1488455250.32:1488455250.32:sys
+1488455250.3219,agent_1:MainThread,agent_1,,initialize,
+1488455250.3343,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455250.3594,agent_1:MainThread,agent_1,,setup done - send alive,
+1488455310.3623,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455370.4230,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455430.4495,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455490.4944,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455550.5350,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455610.5812,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455670.6042,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455730.6547,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455790.6862,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455850.7075,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455910.7461,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488455970.7837,agent_1:agent_1.idler._profile_flush_cb,,,flush,
+1488456030.8314,agent_1:agent_1.idler._profile_flush_cb,,,flush,

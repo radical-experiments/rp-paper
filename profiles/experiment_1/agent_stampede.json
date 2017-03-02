@@ -9,7 +9,7 @@
     "staging_area"         : "staging_area",
 
     # url schema to indicate the use of staging_area
-    "staging_schema"       : "staging",
+    "staging_scheme"       : "staging",
 
     # max number of cu out/err chars to push to db
     "max_io_loglength"     : 1024,

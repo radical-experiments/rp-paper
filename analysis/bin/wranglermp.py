@@ -408,7 +408,13 @@ if __name__ == '__main__':
     for path in glob.glob('%s/%s*' % (datadir, experiment_tag)):
         for sdir in glob.glob('%s/*' % path):
 
+            # Ignore any file in the data dir. Every directory is assumed to be
+            # a RP session.
+            if os.path.isdir(sdir) == False:
+                continue
+
             # Session ID and session experiment.
+            # sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-2]
             sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-1:][0][:-5]
             exp = path.split('/')[-1:][0]
 

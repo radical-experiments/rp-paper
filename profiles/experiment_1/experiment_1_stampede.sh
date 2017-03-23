@@ -8,6 +8,8 @@ export RADICAL_PILOT_PROFILE=TRUE
 export RADICAL_PILOT_DBURL=mongodb://144.76.72.175/am
 export RADICAL_DEBUG=TRUE
 
+export SAGA_PTY_SSH_TIMEOUT=60
+
 export resource='xsede.stampede'
 
 while read ncus b c d ncores f
@@ -18,7 +20,7 @@ do
         continue
     fi
     echo 
-    cat agent_default.json | sed -e "s/###HWM###/$ncus/g" > agent_stalled.json
+    cat agent_stampede.json | sed -e "s/###HWM###/$ncus/g" > agent_stalled.json
     name="exp.1a.c$ncus.s$ncores.$b.$c.$d.$resource"
     export RADICAL_LOG_TGT="$name.log"
     echo "cus: $ncus cores: $ncores"

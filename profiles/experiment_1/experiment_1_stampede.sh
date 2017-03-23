@@ -20,7 +20,7 @@ do
         continue
     fi
     echo 
-    cat agent_default.json | sed -e "s/###HWM###/$ncus/g" > agent_stalled.json
+    cat agent_stampede.json | sed -e "s/###HWM###/$ncus/g" > agent_stalled.json
     name="exp.1a.c$ncus.s$ncores.$b.$c.$d.$resource"
     export RADICAL_LOG_TGT="$name.log"
     echo "cus: $ncus cores: $ncores"

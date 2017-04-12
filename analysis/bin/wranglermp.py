@@ -12,36 +12,47 @@ Todo:
 import os
 import sys
 import glob
+import getopt
 import numpy as np
 import pandas as pd
 import radical.analytics as ra
 
 
-def initialize_entity(ename=None):
-    entities = {'session': {'sid'          : [],     # Session ID
-                            'session'      : [],     # RA session objects
-                            'experiment'   : [],     # Experiment ID
-                            'TTC'          : [],     # Time to completion
-                            'nhost'        : [],     # #host for CU execution
-                            'nunit'        : [],     # #units
-                            'nunit_done'   : [],     # #active units
-                            'nunit_failed' : [],     # #failed units
-                            'npilot'       : [],     # #pilots
-                            'npilot_active': [],     # #active pilots
-                            'ncore'        : [],     # #cores
-                            'ncore_active' : []},    # #active cores
-                'pilot'  : {'pid'          : [],     # Pilot ID
-                            'sid'          : [],     # Session ID
-                            'hid'          : [],     # Host ID
-                            'ncore'        : [],     # #cores
-                            'nunit'        : [],     # #units executed
-                            'experiment'   : []},    # Experiment ID
-                'unit'   : {'uid'          : [],     # Unit ID
-                            'sid'          : [],     # Session ID
-                            'pid'          : [],     # Pilot ID
-                            'hid'          : [],     # Host ID
-                            'experiment'   : []}}    # Experiment ID
+# -----------------------------------------------------------------------------
+def clparse(argv):
+    clopts = {'edir' : '',  # experiment directory.
+             'etag'  : '',  # experiment tag.
+             'eid'   : '',  # experiment ID.
+             'esid'  : '',  # experiment session ID.
+             'csvdir': ''}  # directory where to save csv files.
 
+    try:
+        opts, args = getopt.getopt(argv, "hd:t:e:s:o",
+            ["edir=","etag=","eid=","sid=","csvdir="])
+    except getopt.GetoptError:
+        print usage
+        sys.exit(2)
+
+    for opt, arg in opts:
+        if opt == '-h':
+            print usage
+            sys.exit(0)
+        elif opt in ("-d", "--edir"):
+            clopts['edir'] = arg
+        elif opt in ("-t", "--etag"):
+            clopts['etag'] = arg
+        elif opt in ("-e", "--eid"):
+            clopts['eid'] = arg
+        elif opt in ("-s", "--sid"):
+            clopts['sid'] = arg
+        elif opt in ("-o", "--csvdir"):
+            clopts['csvdir'] = arg
+
+    return clopts
+
+
+# -----------------------------------------------------------------------------
+def initialize_entity(entities, ename=None):
     # Add the duration label of each state of each entity.
     for duration in pdm.keys():
         entities['session'][duration] = []
@@ -59,9 +70,10 @@ def initialize_entity(ename=None):
         sys.exit(1)
 
 
-def load_df(ename=None):
+# -----------------------------------------------------------------------------
+def load_df(entities, ename=None):
     if ename in ['session', 'pilot', 'unit']:
-        df = pd.DataFrame(initialize_entity(ename=ename))
+        df = pd.DataFrame(initialize_entity(entities, ename=ename))
         if os.path.isfile(csvs[ename]):
             df = pd.read_csv(csvs[ename], index_col=0)
         return df
@@ -71,6 +83,7 @@ def load_df(ename=None):
         sys.exit(1)
 
 
+# -----------------------------------------------------------------------------
 def store_df(new_df, stored=pd.DataFrame(), ename=None):
     # skip storing if no new data are passed.
     if new_df.empty:
@@ -98,6 +111,7 @@ def store_df(new_df, stored=pd.DataFrame(), ename=None):
             sys.exit(1)
 
 
+# -----------------------------------------------------------------------------
 def parse_osg_hostid(hostid):
     '''
     Heuristic: eliminate node-specific information from hostID.
@@ -165,12 +179,13 @@ def parse_osg_hostid(hostid):
     return domain
 
 
-def load_pilots(sid, exp, sra_pilots, pdm, pu_rels):
+# -----------------------------------------------------------------------------
+def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts, entities):
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    ps = initialize_entity(ename='pilot')
+    ps = initialize_entity(entities, ename='pilot')
 
     # Did we already store pilots of this session?
-    stored_pilots = load_df(ename='pilot')
+    stored_pilots = load_df(entities, ename='pilot')
     stored_pids = []
     if stored_pilots['sid'].any():
         stored_pilots_sid = stored_pilots.loc[
@@ -186,23 +201,36 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels):
             continue
 
         # Pilot properties.
-        sys.stdout.write('\n' + pid + ': ')
+        sys.stdout.write('\n' + pid + ':\n')
         ps['pid'].append(pid)
         ps['sid'].append(sid)
         ps['experiment'].append(exp)
 
-        # Host ID.
+        # Get pilot entity from RA session.
         pentity = sra_pilots.get(uid=pid)[0]
+
+        # Host ID.
         if pentity.cfg['hostid']:
             ps['hid'].append(parse_osg_hostid(pentity.cfg['hostid']))
         else:
-            ps['hid'].append(None)
+            ps['hid'].append(np.nan)
 
         # Number of cores of the pilot.
         ps['ncore'].append(pentity.description['cores'])
 
         # Number of units executed.
         ps['nunit'].append(len(pu_rels[pid]))
+
+        # Pilot Timestamps.
+        for state in pts.keys():
+            if state not in ps.keys():
+                ps[state] = []
+            try:
+                ps[state].append(pentity.timestamps(state=state)[0])
+            except:
+                print 'WARNING: Failed to get timestampe for state %s' % \
+                    state
+                ps[state].append(np.nan)
 
         # Pilot durations.
         for duration in pdm.keys():
@@ -214,14 +242,14 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels):
             except:
                 print '\nWARNING: Failed to calculate duration %s' % \
                     duration
-                ps[duration].append(None)
+                ps[duration].append(np.nan)
 
     # Store pilots DF to csv and reload into memory to return the complete
     # DF for the given sid.
     if ps['pid']:
         pilots = pd.DataFrame(ps)
         store_df(pilots, stored=stored_pilots, ename='pilot')
-        stored_pilots = load_df(ename='pilot')
+        stored_pilots = load_df(entities, ename='pilot')
         print '\nstored in %s.' % csvs['pilot']
 
     # Returns the DF of the stored pilots if no new pilots have been added;
@@ -229,13 +257,14 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels):
     return stored_pilots
 
 
-def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels):
+# -----------------------------------------------------------------------------
+def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts, entities):
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    us = initialize_entity(ename='unit')
+    us = initialize_entity(entities, ename='unit')
 
     # Did we already store units of this session?
-    stored_units = load_df(ename='unit')
+    stored_units = load_df(entities, ename='unit')
     stored_uids = []
     if stored_units['sid'].any():
         stored_units_sid = stored_units.loc[
@@ -252,13 +281,27 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels):
             continue
 
         # Properties.
-        sys.stdout.write('\n' + uid + ': ')
+        sys.stdout.write('\n' + uid + ':\n')
         us['uid'].append(uid)
         us['sid'].append(sid)
         us['experiment'].append(exp)
 
-        # Durations.
+        # Get unit entity from RA session
         uentity = sra_units.get(uid=uid)[0]
+
+        # Unit Timestamps.
+        for state in uts.keys():
+            if state not in us.keys():
+                us[state] = []
+            try:
+                us[state].append(uentity.timestamps(state=state)[0])
+            except:
+                if state not in 'CANCELEDFAILED':
+                    print 'WARNING: Failed to get timestampe for state %s' % \
+                        state
+                us[state].append(np.nan)
+
+        # Durations.
         for duration in udm.keys():
             if duration not in us.keys():
                 us[duration] = []
@@ -268,14 +311,14 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels):
                     if 'AGENT_STAGING_OUTPUT_PENDING' in \
                             uentity.states.keys() and \
                        'FAILED' in uentity.states.keys():
-                            us[duration].append(None)
+                            us[duration].append(np.nan)
                             continue
                 us[duration].append(uentity.duration(udm[duration]))
                 sys.stdout.write(' %s' % duration)
             except:
                 print '\nWARNING: Failed to calculate duration %s' % \
                     duration
-                us[duration].append(None)
+                us[duration].append(np.nan)
 
         # pilot and host on which the unit has been executed.
         punit = [key[0] for key in pu_rels.items() if uid in key[1]][0]
@@ -289,7 +332,7 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels):
     if us['pid']:
         units = pd.DataFrame(us)
         store_df(units, stored=stored_units, ename='unit')
-        stored_units = load_df(ename='unit')
+        stored_units = load_df(entities, ename='unit')
         print '\nstored in %s.' % csvs['unit']
 
     # Returns the DF of the stored pilots if no new pilots have been added;
@@ -297,22 +340,24 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels):
     return stored_units
 
 
+# -----------------------------------------------------------------------------
 def load_session(sid, exp, sra_session, sra_pilots, sra_units,
-                 pdm, udm, pilots, units):
+                 pdm, udm, pilots, units, entities):
 
-    # IF this session has been already stored get out, nothing to do here.
-    stored_sessions = load_df(ename='session')
+    # If this session has been already stored get out, nothing to do here.
+    stored_sessions = load_df(entities, ename='session')
     if sid in stored_sessions.index.tolist():
         sys.stdout.write('%s already stored in %s' % (sid, csvs['session']))
         return False
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    s = initialize_entity(ename='session')
+    s = initialize_entity(entities, ename='session')
 
     # Session properties: pilots and units.
     # sp = sra_session.filter(etype='pilot', inplace=False)
     # su = sra_session.filter(etype='unit', inplace=False)
     s['sid'].append(sid)
+    s['new'].append(min(sra_pilots.timestamps(state='NEW')))
     s['session'].append(None)
     s['experiment'].append(exp)
     s['TTC'].append(sra_session.ttc)
@@ -350,6 +395,12 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
 
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
+
+    clopts = clparse(sys.argv[1:])
+    print clopts
+
+    sys.exit(0)
+
     datadir = '../data/'
     experiment_tag = 'exp'
 
@@ -359,7 +410,44 @@ if __name__ == '__main__':
             'pilot'  : '%spilots.csv' % datadir,
             'unit'   : '%sunits.csv' % datadir}
 
-    # Model of pilot durations.
+    # Columns for each entity's csv
+    entities = {
+        'session': {'sid'          : [],     # Session ID
+                    'session'      : [],     # RA session objects
+                    'experiment'   : [],     # Experiment ID
+                    'TTC'          : [],     # Time to completion
+                    'nhost'        : [],     # #host for CU execution
+                    'nunit'        : [],     # #units
+                    'nunit_done'   : [],     # #active units
+                    'nunit_failed' : [],     # #failed units
+                    'npilot'       : [],     # #pilots
+                    'npilot_active': [],     # #active pilots
+                    'ncore'        : [],     # #cores
+                    'ncore_active' : []},    # #active cores
+        'pilot'  : {'pid'          : [],     # Pilot ID
+                    'sid'          : [],     # Session ID
+                    'hid'          : [],     # Host ID
+                    'ncore'        : [],     # #cores
+                    'nunit'        : [],     # #units executed
+                    'experiment'   : []},    # Experiment ID
+        'unit'   : {'uid'          : [],     # Unit ID
+                    'sid'          : [],     # Session ID
+                    'pid'          : [],     # Pilot ID
+                    'hid'          : [],     # Host ID
+                    'experiment'   : []}}    # Experiment ID
+
+
+    # Timestamps of the events of the pilot's states.
+    pts = {'NEW'                    : None,
+           'PMGR_LAUNCHING_PENDING' : None,
+           'PMGR_LAUNCHING'         : None,
+           'PMGR_ACTIVE_PENDING'    : None,
+           'PMGR_ACTIVE'            : None,
+           'DONE'                   : None,
+           'CANCELED'               : None,
+           'FAILED'                 : None}
+
+    # Pilot durations.
     pdm = {'P_PMGR_SCHEDULING': ['NEW',
                                  'PMGR_LAUNCHING_PENDING'],
            'P_PMGR_QUEUING'   : ['PMGR_LAUNCHING_PENDING',
@@ -371,11 +459,31 @@ if __name__ == '__main__':
            'P_LRMS_RUNNING'   : ['PMGR_ACTIVE',
                                  ['DONE', 'CANCELED', 'FAILED']]}
 
-    # Model of unit durations.
-    udm = {'U_UMGR_SCHEDULING'   : ['NEW',
-                                    'UMGR_SCHEDULING_PENDING'],
-           'U_UMGR_BINDING'      : ['UMGR_SCHEDULING_PENDING',
-                                    'UMGR_SCHEDULING'],
+    # Timestamps of the events of the pilot's states.
+    uts = {'NEW'                          : None,
+           'UMGR_SCHEDULING_PENDING'      : None,
+           'UMGR_SCHEDULING'              : None,
+           'UMGR_STAGING_INPUT_PENDING'   : None,
+           'UMGR_STAGING_INPUT'           : None,
+           'AGENT_STAGING_INPUT_PENDING'  : None,
+           'AGENT_STAGING_INPUT'          : None,
+           'AGENT_SCHEDULING_PENDING'     : None,
+           'AGENT_SCHEDULING'             : None,
+           'AGENT_EXECUTING_PENDING'      : None,
+           'AGENT_EXECUTING'              : None,
+           'AGENT_STAGING_OUTPUT_PENDING' : None,
+           'AGENT_STAGING_OUTPUT'         : None,
+           'UMGR_STAGING_OUTPUT_PENDING'  : None,
+           'UMGR_STAGING_OUTPUT'          : None,
+           'DONE'                         : None,
+           'CANCELED'                     : None,
+           'FAILED'                       : None}
+
+    # Unit durations.
+    udm = {'U_UMGR_SCHEDULING'            : ['NEW',
+                                             'UMGR_SCHEDULING_PENDING'],
+           'U_UMGR_BINDING'               : ['UMGR_SCHEDULING_PENDING',
+                                             'UMGR_SCHEDULING'],
            #    'I_UMGR_SCHEDULING'   : ['UMGR_SCHEDULING',
            #                             'UMGR_STAGING_INPUT_PENDING'],
            #    'I_UMGR_QUEING'       : ['UMGR_STAGING_INPUT_PENDING',
@@ -386,14 +494,14 @@ if __name__ == '__main__':
            #                             'AGENT_STAGING_INPUT'],
            #    'I_AGENT_TRANSFERRING': ['AGENT_STAGING_INPUT',
            #                             'AGENT_SCHEDULING_PENDING'],
-           'U_AGENT_QUEUING'     : ['AGENT_SCHEDULING_PENDING',
-                                    'AGENT_SCHEDULING'],
-           'U_AGENT_SCHEDULING'  : ['AGENT_SCHEDULING',
-                                    'AGENT_EXECUTING_PENDING'],
-           'U_AGENT_QUEUING_EXEC': ['AGENT_EXECUTING_PENDING',
-                                    'AGENT_EXECUTING'],
-           'U_AGENT_EXECUTING'   : ['AGENT_EXECUTING',
-                                    'AGENT_STAGING_OUTPUT_PENDING']}
+           'U_AGENT_QUEUING'              : ['AGENT_SCHEDULING_PENDING',
+                                             'AGENT_SCHEDULING'],
+           'U_AGENT_SCHEDULING'           : ['AGENT_SCHEDULING',
+                                             'AGENT_EXECUTING_PENDING'],
+           'U_AGENT_QUEUING_EXEC'         : ['AGENT_EXECUTING_PENDING',
+                                             'AGENT_EXECUTING'],
+           'U_AGENT_EXECUTING'            : ['AGENT_EXECUTING',
+                                             'AGENT_STAGING_OUTPUT_PENDING']}
     #    'O_AGENT_QUEUING'     : ['AGENT_STAGING_OUTPUT_PENDING',
     #                             'AGENT_STAGING_OUTPUT'],
     #    'O_UMGR_SCHEDULING'   : ['AGENT_STAGING_OUTPUT',
@@ -410,7 +518,7 @@ if __name__ == '__main__':
 
             # Ignore any file in the data dir. Every directory is assumed to be
             # a RP session.
-            if os.path.isdir(sdir) == False:
+            if os.path.isdir(sdir) is False:
                 continue
 
             # Session ID and session experiment.
@@ -432,18 +540,19 @@ if __name__ == '__main__':
                 # Pilots of sra: dervie properties and durations.
                 print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
                 sra_pilots = sra_session.filter(etype='pilot', inplace=False)
-                pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels)
+                pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts,
+                                     entities)
 
                 # Units of sra: dervie properties and durations.
                 print '\n\n%s -- %s -- Loading units:' % (exp, sid)
                 sra_units = sra_session.filter(etype='unit', inplace=False)
                 units = load_units(sid, exp, sra_units, udm, pilots,
-                                   sra_session, pu_rels)
+                                   sra_session, pu_rels, uts, entities)
 
                 # Session of sra: derive properties and total durations.
                 print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
                 load_session(sid, exp, sra_session, sra_pilots, sra_units,
-                             pdm, udm, pilots, units)
+                             pdm, udm, pilots, units, entities)
 
             else:
                 error = 'ERROR: session folder and json file name differ'

@@ -19,40 +19,90 @@ import radical.analytics as ra
 
 
 # -----------------------------------------------------------------------------
+def help():
+  print "\nThis is the help function\n"
+  print '%s [option]' % sys.argv[0]
+
+
+# -----------------------------------------------------------------------------
+def usage():
+  print "\nThis is the usage function\n"
+  print '%s [option]' % sys.argv[0]
+
+
+# -----------------------------------------------------------------------------
 def clparse(argv):
-    clopts = {'edir' : '',  # experiment directory.
-             'etag'  : '',  # experiment tag.
-             'eid'   : '',  # experiment ID.
-             'esid'  : '',  # experiment session ID.
-             'csvdir': ''}  # directory where to save csv files.
+    clopts = {'ddir'  : None,  # data directory (mandatory).
+              'etag'  : None,  # experiment tag (mandatory).
+              'enum'  : None,  # experiment number.
+              'esid'  : None,  # session ID.
+              'csvdir': None}  # directory where to save csv files.
 
     try:
-        opts, args = getopt.getopt(argv, "hd:t:e:s:o",
-            ["edir=","etag=","eid=","sid=","csvdir="])
-    except getopt.GetoptError:
-        print usage
+        opts, args = getopt.getopt(argv, 'hd:t:e:s:o',
+            ['help','ddir=','etag=','eid=','sid=','csvdir='])
+        if not opts:
+            print 'No options supplied'
+            usage()
+            sys.exit(1)
+
+    except getopt.GetoptError,e:
+        print e
+        usage()
         sys.exit(2)
 
     for opt, arg in opts:
-        if opt == '-h':
-            print usage
+        if opt in ('-h', '--help'):
+            help()
             sys.exit(0)
-        elif opt in ("-d", "--edir"):
-            clopts['edir'] = arg
-        elif opt in ("-t", "--etag"):
+        elif opt in ('-d', '--edir'):
+            clopts['ddir'] = arg
+        elif opt in ('-t', '--etag'):
             clopts['etag'] = arg
-        elif opt in ("-e", "--eid"):
+        elif opt in ('-e', '--eid'):
             clopts['eid'] = arg
-        elif opt in ("-s", "--sid"):
+        elif opt in ('-s', '--sid'):
             clopts['sid'] = arg
-        elif opt in ("-o", "--csvdir"):
+        elif opt in ('-o', '--csvdir'):
             clopts['csvdir'] = arg
+
+    # Check for mandatory arguments
+    if clopts['ddir'] == None or clopts['etag'] == None:
+        print 'One or more mandatory option was not supplied'
+        usage()
+        sys.exit(3)
 
     return clopts
 
 
 # -----------------------------------------------------------------------------
-def initialize_entity(entities, ename=None):
+def initialize_entity(ename=None):
+
+    # Columns for each entity's csv
+    entities = {
+        'session': {'sid'          : [],     # Session ID
+                    'session'      : [],     # RA session objects
+                    'experiment'   : [],     # Experiment ID
+                    'nhost'        : [],     # #host for CU execution
+                    'nunit'        : [],     # #units
+                    'nunit_done'   : [],     # #active units
+                    'nunit_failed' : [],     # #failed units
+                    'npilot'       : [],     # #pilots
+                    'npilot_active': [],     # #active pilots
+                    'ncore'        : [],     # #cores
+                    'ncore_active' : []},    # #active cores
+        'pilot'  : {'pid'          : [],     # Pilot ID
+                    'sid'          : [],     # Session ID
+                    'hid'          : [],     # Host ID
+                    'ncore'        : [],     # #cores
+                    'nunit'        : [],     # #units executed
+                    'experiment'   : []},    # Experiment ID
+        'unit'   : {'uid'          : [],     # Unit ID
+                    'sid'          : [],     # Session ID
+                    'pid'          : [],     # Pilot ID
+                    'hid'          : [],     # Host ID
+                    'experiment'   : []}}    # Experiment ID
+
     # Add the duration label of each state of each entity.
     for duration in pdm.keys():
         entities['session'][duration] = []
@@ -71,9 +121,9 @@ def initialize_entity(entities, ename=None):
 
 
 # -----------------------------------------------------------------------------
-def load_df(entities, ename=None):
+def load_df(ename=None):
     if ename in ['session', 'pilot', 'unit']:
-        df = pd.DataFrame(initialize_entity(entities, ename=ename))
+        df = pd.DataFrame(initialize_entity(ename=ename))
         if os.path.isfile(csvs[ename]):
             df = pd.read_csv(csvs[ename], index_col=0)
         return df
@@ -180,12 +230,12 @@ def parse_osg_hostid(hostid):
 
 
 # -----------------------------------------------------------------------------
-def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts, entities):
+def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts):
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    ps = initialize_entity(entities, ename='pilot')
+    ps = initialize_entity(ename='pilot')
 
     # Did we already store pilots of this session?
-    stored_pilots = load_df(entities, ename='pilot')
+    stored_pilots = load_df(ename='pilot')
     stored_pids = []
     if stored_pilots['sid'].any():
         stored_pilots_sid = stored_pilots.loc[
@@ -249,7 +299,7 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts, entities):
     if ps['pid']:
         pilots = pd.DataFrame(ps)
         store_df(pilots, stored=stored_pilots, ename='pilot')
-        stored_pilots = load_df(entities, ename='pilot')
+        stored_pilots = load_df(ename='pilot')
         print '\nstored in %s.' % csvs['pilot']
 
     # Returns the DF of the stored pilots if no new pilots have been added;
@@ -258,13 +308,13 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts, entities):
 
 
 # -----------------------------------------------------------------------------
-def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts, entities):
+def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts):
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    us = initialize_entity(entities, ename='unit')
+    us = initialize_entity(ename='unit')
 
     # Did we already store units of this session?
-    stored_units = load_df(entities, ename='unit')
+    stored_units = load_df(ename='unit')
     stored_uids = []
     if stored_units['sid'].any():
         stored_units_sid = stored_units.loc[
@@ -332,7 +382,7 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts, entities):
     if us['pid']:
         units = pd.DataFrame(us)
         store_df(units, stored=stored_units, ename='unit')
-        stored_units = load_df(entities, ename='unit')
+        stored_units = load_df(ename='unit')
         print '\nstored in %s.' % csvs['unit']
 
     # Returns the DF of the stored pilots if no new pilots have been added;
@@ -342,25 +392,23 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts, entities):
 
 # -----------------------------------------------------------------------------
 def load_session(sid, exp, sra_session, sra_pilots, sra_units,
-                 pdm, udm, pilots, units, entities):
+                 sdm, pdm, udm, pilots, units, sts):
 
     # If this session has been already stored get out, nothing to do here.
-    stored_sessions = load_df(entities, ename='session')
+    stored_sessions = load_df(ename='session')
     if sid in stored_sessions.index.tolist():
         sys.stdout.write('%s already stored in %s' % (sid, csvs['session']))
         return False
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    s = initialize_entity(entities, ename='session')
+    s = initialize_entity(ename='session')
 
     # Session properties: pilots and units.
     # sp = sra_session.filter(etype='pilot', inplace=False)
     # su = sra_session.filter(etype='unit', inplace=False)
     s['sid'].append(sid)
-    s['new'].append(min(sra_pilots.timestamps(state='NEW')))
     s['session'].append(None)
     s['experiment'].append(exp)
-    s['TTC'].append(sra_session.ttc)
     s['nhost'].append(len(pilots.loc[pilots['sid'] == sid]['hid'].unique()))
     s['nunit'].append(len(sra_units.get()))
     s['npilot'].append(len(sra_pilots.get()))
@@ -374,6 +422,23 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
     s['ncore'].append(pcores.ncore.sum())
     s['ncore_active'].append(pcores[pcores.P_LRMS_RUNNING > 0].ncore.sum())
     pcores = None
+
+    # Session timestamps.
+    # for state in sts.keys():
+    #     if state not in s.keys():
+    #         s[state] = []
+        # FIXME: Open a ticket requesting timestamps for session's events.
+        # s[state].append(min(sra_pilots.timestamps(state=state)))
+    s['NEW'] = []
+    s['NEW'].append(min(sra_pilots.timestamps(state='NEW')))
+
+    # Session total duration.
+    # for duration in sdm.keys():
+    #     if duration not in s.keys():
+    #         s[duration] = []
+    #     s['TTC'].append(sra_session.ttc)
+    s['TTC'] = []
+    s['TTC'].append(sra_session.ttc)
 
     # Pilots total durations.  NOTE: s initialization guarantees
     # the existence of duration keys.
@@ -396,56 +461,36 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
 
+    # Get command line options
     clopts = clparse(sys.argv[1:])
-    print clopts
 
-    sys.exit(0)
-
-    datadir = '../data/'
-    experiment_tag = 'exp'
+    # Where to find data (ddir) and how data are stored into experiments (etag)
+    ddir = clopts['ddir']  # '../data/'
+    etag = clopts['etag']  # 'exp'
 
     # Global constants
     # File names where to save the DF of each entity of each session.
-    csvs = {'session': '%ssessions.csv' % datadir,
-            'pilot'  : '%spilots.csv' % datadir,
-            'unit'   : '%sunits.csv' % datadir}
-
-    # Columns for each entity's csv
-    entities = {
-        'session': {'sid'          : [],     # Session ID
-                    'session'      : [],     # RA session objects
-                    'experiment'   : [],     # Experiment ID
-                    'TTC'          : [],     # Time to completion
-                    'nhost'        : [],     # #host for CU execution
-                    'nunit'        : [],     # #units
-                    'nunit_done'   : [],     # #active units
-                    'nunit_failed' : [],     # #failed units
-                    'npilot'       : [],     # #pilots
-                    'npilot_active': [],     # #active pilots
-                    'ncore'        : [],     # #cores
-                    'ncore_active' : []},    # #active cores
-        'pilot'  : {'pid'          : [],     # Pilot ID
-                    'sid'          : [],     # Session ID
-                    'hid'          : [],     # Host ID
-                    'ncore'        : [],     # #cores
-                    'nunit'        : [],     # #units executed
-                    'experiment'   : []},    # Experiment ID
-        'unit'   : {'uid'          : [],     # Unit ID
-                    'sid'          : [],     # Session ID
-                    'pid'          : [],     # Pilot ID
-                    'hid'          : [],     # Host ID
-                    'experiment'   : []}}    # Experiment ID
-
+    csvs = {'session': '%s/sessions.csv' % ddir,
+            'pilot'  : '%s/pilots.csv' % ddir,
+            'unit'   : '%s/units.csv' % ddir}
 
     # Timestamps of the events of the pilot's states.
-    pts = {'NEW'                    : None,
-           'PMGR_LAUNCHING_PENDING' : None,
-           'PMGR_LAUNCHING'         : None,
-           'PMGR_ACTIVE_PENDING'    : None,
-           'PMGR_ACTIVE'            : None,
-           'DONE'                   : None,
-           'CANCELED'               : None,
-           'FAILED'                 : None}
+    sts = {'NEW'     : None,
+           'DONE'    : None,
+           'CANCELED': None,
+           'FAILED'  : None}
+
+    sdm = {'TTC': None}
+
+    # Timestamps of the events of the pilot's states.
+    pts = {'NEW'                   : None,
+           'PMGR_LAUNCHING_PENDING': None,
+           'PMGR_LAUNCHING'        : None,
+           'PMGR_ACTIVE_PENDING'   : None,
+           'PMGR_ACTIVE'           : None,
+           'DONE'                  : None,
+           'CANCELED'              : None,
+           'FAILED'                : None}
 
     # Pilot durations.
     pdm = {'P_PMGR_SCHEDULING': ['NEW',
@@ -460,24 +505,24 @@ if __name__ == '__main__':
                                  ['DONE', 'CANCELED', 'FAILED']]}
 
     # Timestamps of the events of the pilot's states.
-    uts = {'NEW'                          : None,
-           'UMGR_SCHEDULING_PENDING'      : None,
-           'UMGR_SCHEDULING'              : None,
-           'UMGR_STAGING_INPUT_PENDING'   : None,
-           'UMGR_STAGING_INPUT'           : None,
-           'AGENT_STAGING_INPUT_PENDING'  : None,
-           'AGENT_STAGING_INPUT'          : None,
-           'AGENT_SCHEDULING_PENDING'     : None,
-           'AGENT_SCHEDULING'             : None,
-           'AGENT_EXECUTING_PENDING'      : None,
-           'AGENT_EXECUTING'              : None,
-           'AGENT_STAGING_OUTPUT_PENDING' : None,
-           'AGENT_STAGING_OUTPUT'         : None,
-           'UMGR_STAGING_OUTPUT_PENDING'  : None,
-           'UMGR_STAGING_OUTPUT'          : None,
-           'DONE'                         : None,
-           'CANCELED'                     : None,
-           'FAILED'                       : None}
+    uts = {'NEW'                         : None,
+           'UMGR_SCHEDULING_PENDING'     : None,
+           'UMGR_SCHEDULING'             : None,
+           'UMGR_STAGING_INPUT_PENDING'  : None,
+           'UMGR_STAGING_INPUT'          : None,
+           'AGENT_STAGING_INPUT_PENDING' : None,
+           'AGENT_STAGING_INPUT'         : None,
+           'AGENT_SCHEDULING_PENDING'    : None,
+           'AGENT_SCHEDULING'            : None,
+           'AGENT_EXECUTING_PENDING'     : None,
+           'AGENT_EXECUTING'             : None,
+           'AGENT_STAGING_OUTPUT_PENDING': None,
+           'AGENT_STAGING_OUTPUT'        : None,
+           'UMGR_STAGING_OUTPUT_PENDING' : None,
+           'UMGR_STAGING_OUTPUT'         : None,
+           'DONE'                        : None,
+           'CANCELED'                    : None,
+           'FAILED'                      : None}
 
     # Unit durations.
     udm = {'U_UMGR_SCHEDULING'            : ['NEW',
@@ -512,8 +557,8 @@ if __name__ == '__main__':
     #                             ['DONE', 'CANCELED', 'FAILED']]}
 
     # Get sessions ID, experiment number and RA object. Assume:
-    # datadir/exp*/sessiondir/session.json.
-    for path in glob.glob('%s/%s*' % (datadir, experiment_tag)):
+    # ddir/exp*/sessiondir/session.json.
+    for path in glob.glob('%s/%s*' % (ddir, etag)):
         for sdir in glob.glob('%s/*' % path):
 
             # Ignore any file in the data dir. Every directory is assumed to be
@@ -540,19 +585,18 @@ if __name__ == '__main__':
                 # Pilots of sra: dervie properties and durations.
                 print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
                 sra_pilots = sra_session.filter(etype='pilot', inplace=False)
-                pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts,
-                                     entities)
+                pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts)
 
                 # Units of sra: dervie properties and durations.
                 print '\n\n%s -- %s -- Loading units:' % (exp, sid)
                 sra_units = sra_session.filter(etype='unit', inplace=False)
                 units = load_units(sid, exp, sra_units, udm, pilots,
-                                   sra_session, pu_rels, uts, entities)
+                                   sra_session, pu_rels, uts)
 
                 # Session of sra: derive properties and total durations.
                 print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
                 load_session(sid, exp, sra_session, sra_pilots, sra_units,
-                             pdm, udm, pilots, units, entities)
+                             sdm, pdm, udm, pilots, units, sts)
 
             else:
                 error = 'ERROR: session folder and json file name differ'

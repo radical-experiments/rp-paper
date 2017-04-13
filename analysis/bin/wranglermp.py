@@ -106,7 +106,7 @@ def clparse(argv):
 
 
 # -----------------------------------------------------------------------------
-def initialize_entity(ename=None):
+def initialize_entity(etype=None):
 
     # Columns for each entity's csv
     entities = {
@@ -142,51 +142,60 @@ def initialize_entity(ename=None):
         entities['unit'][duration] = []
 
     # Return the empty data structure of the requested entity.
-    if ename in ['session', 'pilot', 'unit']:
-        return entities[ename]
+    if etype in ['session', 'pilot', 'unit']:
+        return entities[etype]
     else:
-        error = 'Cannot itialize entity %s' % ename
+        error = 'Cannot itialize entity %s' % etype
         print error
         sys.exit(1)
 
 
 # -----------------------------------------------------------------------------
-def load_df(ename=None):
-    if ename in ['session', 'pilot', 'unit']:
-        df = pd.DataFrame(initialize_entity(ename=ename))
-        if os.path.isfile(csvs[ename]):
-            df = pd.read_csv(csvs[ename], index_col=0)
+def load_df(etype=None, sid=None):
+    if etype in ['session', 'pilot', 'unit']:
+
+        # Initialize an empty DF with the entity's properties.
+        df = pd.DataFrame(initialize_entity(etype=etype))
+
+        # Load the entity's csv into a Panda DataFrame.
+        if os.path.isfile(csvs[etype]):
+            df = pd.read_csv(csvs[etype], index_col=0)
+
+            # Prune the DF to save memory.
+            if sid:
+                df = df[df.sid == sid]
+
         return df
     else:
-        error = 'Cannot itialize entity %s' % ename
+        error = 'Cannot itialize entity %s' % etype
         print error
         sys.exit(1)
 
 
 # -----------------------------------------------------------------------------
-def store_df(new_df, stored=pd.DataFrame(), ename=None):
+def store_df(new_df, stored=pd.DataFrame(), etype=None):
     # skip storing if no new data are passed.
     if new_df.empty:
         print 'WARNING: attempting to store an empty DF.'
     else:
-        if ename == 'session':
+        if etype == 'session':
             new_sessions = new_df.drop('session', axis=1)
             if stored.empty:
                 sessions = new_sessions
             else:
                 sessions = stored.append(new_sessions)
-            sessions.to_csv(csvs[ename])
+            sessions.to_csv(csvs[etype])
 
-        elif ename in ['pilot', 'unit']:
+        elif etype in ['pilot', 'unit']:
             if stored.empty:
                 df = new_df
             else:
                 df = stored.append(new_df)
             df.reset_index(inplace=True, drop=True)
-            df.to_csv(csvs[ename])
+            df.to_csv(csvs[etype])
 
         else:
-            error = 'Cannot store DF to %s' % ename
+            error = 'Cannot store DF to %s' % etype
             print error
             sys.exit(1)
 
@@ -262,10 +271,10 @@ def parse_osg_hostid(hostid):
 # -----------------------------------------------------------------------------
 def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts):
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    ps = initialize_entity(ename='pilot')
+    ps = initialize_entity(etype='pilot')
 
     # Did we already store pilots of this session?
-    stored_pilots = load_df(ename='pilot')
+    stored_pilots = load_df(etype='pilot', sid=sid)
     stored_pids = []
     if stored_pilots['sid'].any():
         stored_pilots_sid = stored_pilots.loc[
@@ -308,7 +317,7 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts):
             try:
                 ps[state].append(pentity.timestamps(state=state)[0])
             except:
-                print '  WARNING: Failed to get timestampe for state %s' % \
+                print ' WARNING: Failed to get timestampe for state %s' % \
                     state
                 ps[state].append(np.nan)
 
@@ -320,7 +329,7 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts):
                 ps[duration].append(pentity.duration(pdm[duration]))
                 sys.stdout.write(' %s' % duration)
             except:
-                print '  WARNING: Failed to calculate duration %s' % \
+                print ' WARNING: Failed to calculate duration %s' % \
                     duration
                 ps[duration].append(np.nan)
 
@@ -328,8 +337,8 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts):
     # DF for the given sid.
     if ps['pid']:
         pilots = pd.DataFrame(ps)
-        store_df(pilots, stored=stored_pilots, ename='pilot')
-        stored_pilots = load_df(ename='pilot')
+        store_df(pilots, stored=stored_pilots, etype='pilot')
+        stored_pilots = load_df(etype='pilot', sid=sid)
         print '\nstored in %s.' % csvs['pilot']
 
     # Returns the DF of the stored pilots if no new pilots have been added;
@@ -341,10 +350,10 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts):
 def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts):
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    us = initialize_entity(ename='unit')
+    us = initialize_entity(etype='unit')
 
     # Did we already store units of this session?
-    stored_units = load_df(ename='unit')
+    stored_units = load_df(etype='unit', sid=sid)
     stored_uids = []
     if stored_units['sid'].any():
         stored_units_sid = stored_units.loc[
@@ -411,8 +420,8 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts):
     # DF for the given sid.
     if us['pid']:
         units = pd.DataFrame(us)
-        store_df(units, stored=stored_units, ename='unit')
-        stored_units = load_df(ename='unit')
+        store_df(units, stored=stored_units, etype='unit')
+        stored_units = load_df(etype='unit', sid=sid)
         print '\nstored in %s.' % csvs['unit']
 
     # Returns the DF of the stored pilots if no new pilots have been added;
@@ -425,13 +434,13 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
                  sdm, pdm, udm, pilots, units, sts):
 
     # If this session has been already stored get out, nothing to do here.
-    stored_sessions = load_df(ename='session')
+    stored_sessions = load_df(etype='session', sid=sid)
     if sid in stored_sessions.index.tolist():
         sys.stdout.write('%s already stored in %s' % (sid, csvs['session']))
         return False
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
-    s = initialize_entity(ename='session')
+    s = initialize_entity(etype='session')
 
     # Session properties: pilots and units.
     # sp = sra_session.filter(etype='pilot', inplace=False)
@@ -482,7 +491,7 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
 
     # Store session.
     session = pd.DataFrame(s, index=[sid])
-    store_df(session, stored=stored_sessions, ename='session')
+    store_df(session, stored=stored_sessions, etype='session')
     print '\nstored in %s' % csvs['session']
 
     return True

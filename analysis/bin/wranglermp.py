@@ -20,30 +20,55 @@ import radical.analytics as ra
 
 # -----------------------------------------------------------------------------
 def help():
-  print "\nThis is the help function\n"
-  print '%s [option]' % sys.argv[0]
+        message = """
+        ra-wrangler.py -d <directory> -t <tag>
+                       [-e <integer>] [-s <rp_session_ID>] [-o <directory>]
+                       [-h] [-u]
+
+        -d --ddir       Name of the directory containing all the experiment
+                        directories. For example '../data'.
+        -t --etag       Name of the tag identifying each experiment directory.
+                        For example, given three experiment directories exp1,
+                        exp2, exp3, the experiment tag is 'exp'.
+        -e --eid        Number of the experiment to wrangle. For example '1'.
+                        When specified, the wrangler wrangles only the
+                        sessions wihtin this experiment directory -t+-e (exp1).
+        -s --sid        Name of the directory of a session of RADICAL Pilot.
+                        For example 'rp.session.radical.mturilli.017233.0002'.
+                        When specified, the wrangler wrangles only this
+                        session.
+        -o --odir       Name of the directory where to load and save the csv
+                        files created by the wrangler. When not specified,
+                        -d is used.
+        -h --help       Prints the help page.
+        -u --usage      Prints usage command.
+        """
+        return message
 
 
 # -----------------------------------------------------------------------------
 def usage():
-  print "\nThis is the usage function\n"
-  print '%s [option]' % sys.argv[0]
-
+        message = """
+        usage: ra-wrangler.py -d <directory> -t <tag>
+                              [-e <integer>] [-s <rp_session_ID>]
+                              [-o <directory>] [-h] [-u]
+        """
+        return message
 
 # -----------------------------------------------------------------------------
 def clparse(argv):
-    clopts = {'ddir'  : None,  # data directory (mandatory).
-              'etag'  : None,  # experiment tag (mandatory).
-              'enum'  : None,  # experiment number.
-              'esid'  : None,  # session ID.
-              'csvdir': None}  # directory where to save csv files.
+    clopts = {'ddir': None,  # data directory (mandatory).
+              'eid' : None,  # experiment tag (mandatory).
+              'enum': None,  # experiment number.
+              'sid' : None,  # session ID.
+              'odir': None}  # directory where to save csv files.
 
     try:
-        opts, args = getopt.getopt(argv, 'hd:t:e:s:o',
-            ['help','ddir=','etag=','eid=','sid=','csvdir='])
+        opts, args = getopt.getopt(argv, 'hud:t:e:s:o',
+            ['help','usage','ddir=','etag=','eid=','sid=','odir='])
         if not opts:
             print 'No options supplied'
-            usage()
+            print usage()
             sys.exit(1)
 
     except getopt.GetoptError,e:
@@ -53,7 +78,7 @@ def clparse(argv):
 
     for opt, arg in opts:
         if opt in ('-h', '--help'):
-            help()
+            print help()
             sys.exit(0)
         elif opt in ('-d', '--edir'):
             clopts['ddir'] = arg
@@ -63,13 +88,13 @@ def clparse(argv):
             clopts['eid'] = arg
         elif opt in ('-s', '--sid'):
             clopts['sid'] = arg
-        elif opt in ('-o', '--csvdir'):
-            clopts['csvdir'] = arg
+        elif opt in ('-o', '--odir'):
+            clopts['odir'] = arg
 
     # Check for mandatory arguments
     if clopts['ddir'] == None or clopts['etag'] == None:
         print 'One or more mandatory option was not supplied'
-        usage()
+        print usage()
         sys.exit(3)
 
     return clopts
@@ -459,6 +484,41 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
 
 
 # -----------------------------------------------------------------------------
+def wrangle(sid, sdir, exp, pdm, pts, udm, uts, sdm, sts):
+
+    # Consistency check: SID of json file name is the same SID of
+    # directory name.
+    if sid == sdir.split('/')[-1:][0]:
+
+        # RA objects cannot be serialize: every RA session object need
+        # to be constructed at every run.
+        sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
+
+        # Pilot-unit relationship dictionary
+        pu_rels = sra_session.describe('relations', ['pilot', 'unit'])
+
+        # Pilots of sra: dervie properties and durations.
+        print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
+        sra_pilots = sra_session.filter(etype='pilot', inplace=False)
+        pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts)
+
+        # Units of sra: dervie properties and durations.
+        print '\n\n%s -- %s -- Loading units:' % (exp, sid)
+        sra_units = sra_session.filter(etype='unit', inplace=False)
+        units = load_units(sid, exp, sra_units, udm, pilots,
+                           sra_session, pu_rels, uts)
+
+        # Session of sra: derive properties and total durations.
+        print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
+        load_session(sid, exp, sra_session, sra_pilots, sra_units,
+                     sdm, pdm, udm, pilots, units, sts)
+
+    else:
+        error = 'ERROR: session folder and json file name differ'
+        print '%s: %s != %s' % (error, sdir, sid)
+
+
+# -----------------------------------------------------------------------------
 if __name__ == '__main__':
 
     # Get command line options
@@ -529,16 +589,16 @@ if __name__ == '__main__':
                                              'UMGR_SCHEDULING_PENDING'],
            'U_UMGR_BINDING'               : ['UMGR_SCHEDULING_PENDING',
                                              'UMGR_SCHEDULING'],
-           #    'I_UMGR_SCHEDULING'   : ['UMGR_SCHEDULING',
-           #                             'UMGR_STAGING_INPUT_PENDING'],
-           #    'I_UMGR_QUEING'       : ['UMGR_STAGING_INPUT_PENDING',
-           #                             'UMGR_STAGING_INPUT'],
-           #    'I_AGENT_SCHEDULING'  : ['UMGR_STAGING_INPUT',
-           #                             'AGENT_STAGING_INPUT_PENDING'],
-           #    'I_AGENT_QUEUING'     : ['AGENT_STAGING_INPUT_PENDING',
-           #                             'AGENT_STAGING_INPUT'],
-           #    'I_AGENT_TRANSFERRING': ['AGENT_STAGING_INPUT',
-           #                             'AGENT_SCHEDULING_PENDING'],
+    #    'I_UMGR_SCHEDULING'   : ['UMGR_SCHEDULING',
+    #                             'UMGR_STAGING_INPUT_PENDING'],
+    #    'I_UMGR_QUEING'       : ['UMGR_STAGING_INPUT_PENDING',
+    #                             'UMGR_STAGING_INPUT'],
+    #    'I_AGENT_SCHEDULING'  : ['UMGR_STAGING_INPUT',
+    #                             'AGENT_STAGING_INPUT_PENDING'],
+    #    'I_AGENT_QUEUING'     : ['AGENT_STAGING_INPUT_PENDING',
+    #                             'AGENT_STAGING_INPUT'],
+    #    'I_AGENT_TRANSFERRING': ['AGENT_STAGING_INPUT',
+    #                             'AGENT_SCHEDULING_PENDING'],
            'U_AGENT_QUEUING'              : ['AGENT_SCHEDULING_PENDING',
                                              'AGENT_SCHEDULING'],
            'U_AGENT_SCHEDULING'           : ['AGENT_SCHEDULING',
@@ -556,48 +616,73 @@ if __name__ == '__main__':
     #    'O_UMGR_TRANSFERRING' : ['UMGR_STAGING_OUTPUT',
     #                             ['DONE', 'CANCELED', 'FAILED']]}
 
-    # Get sessions ID, experiment number and RA object. Assume:
-    # ddir/exp*/sessiondir/session.json.
-    for path in glob.glob('%s/%s*' % (ddir, etag)):
-        for sdir in glob.glob('%s/*' % path):
+    if clopts['sid']:
+        # Get sessions ID, experiment number and RA object. Assume:
+        # ddir/exp*/sessiondir/session.json.
+        for path in glob.glob('%s/%s*' % (ddir, etag)):
+            for sdir in glob.glob('%s/*' % path):
 
-            # Ignore any file in the data dir. Every directory is assumed to be
-            # a RP session.
-            if os.path.isdir(sdir) is False:
-                continue
+                # Ignore any file in the data dir. Every directory is assumed
+                # to be a RP session.
+                if os.path.isdir(sdir) is False:
+                    continue
 
-            # Session ID and session experiment.
-            # sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-2]
-            sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-1:][0][:-5]
-            exp = path.split('/')[-1:][0]
+                # Get session ID directory.
+                # sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-2]
+                sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-1:][0][:-5]
 
-            # Consistency check: SID of json file name is the same SID of
-            # directory name.
-            if sid == sdir.split('/')[-1:][0]:
+                # Skip session if not specified at command line.
+                if clopts['sid'] != sid:
+                    continue
 
-                # RA objects cannot be serialize: every RA session object need
-                # to be constructed at every run.
-                sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
+                # Get experiment directory.
+                exp = path.split('/')[-1:][0]
 
-                # Pilot-unit relationship dictionary
-                pu_rels = sra_session.describe('relations', ['pilot', 'unit'])
+                # Wrangle the session.
+                wrangle(sid, sdir, exp, pdm, pts, udm, uts, sdm, sts)
 
-                # Pilots of sra: dervie properties and durations.
-                print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
-                sra_pilots = sra_session.filter(etype='pilot', inplace=False)
-                pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts)
+    elif clopts['eid']:
+        # Get sessions ID, experiment number and RA object. Assume:
+        # ddir/exp*/sessiondir/session.json.
+        for path in glob.glob('%s/%s*' % (ddir, etag)):
+            for sdir in glob.glob('%s/*' % path):
 
-                # Units of sra: dervie properties and durations.
-                print '\n\n%s -- %s -- Loading units:' % (exp, sid)
-                sra_units = sra_session.filter(etype='unit', inplace=False)
-                units = load_units(sid, exp, sra_units, udm, pilots,
-                                   sra_session, pu_rels, uts)
+                # Ignore any file in the data dir. Every directory is assumed
+                # to be a RP session.
+                if os.path.isdir(sdir) is False:
+                    continue
 
-                # Session of sra: derive properties and total durations.
-                print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
-                load_session(sid, exp, sra_session, sra_pilots, sra_units,
-                             sdm, pdm, udm, pilots, units, sts)
+                # Get session ID directory.
+                # sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-2]
+                sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-1:][0][:-5]
 
-            else:
-                error = 'ERROR: session folder and json file name differ'
-                print '%s: %s != %s' % (error, sdir, sid)
+                # Get experiment directory.
+                exp = path.split('/')[-1:][0]
+
+                # Skip session if not in the experiment direcotry specified at
+                # command line.
+                if clopts['eid'] != exp[len(etag):]:
+                    continue
+
+                # Wrangle the session.
+                wrangle(sid, sdir, exp, pdm, pts, udm, uts, sdm, sts)
+
+
+    else:
+        # Get sessions ID, experiment number and RA object. Assume:
+        # ddir/exp*/sessiondir/session.json.
+        for path in glob.glob('%s/%s*' % (ddir, etag)):
+            for sdir in glob.glob('%s/*' % path):
+
+                # Ignore any file in the data dir. Every directory is assumed to be
+                # a RP session.
+                if os.path.isdir(sdir) is False:
+                    continue
+
+                # Session ID and session experiment.
+                # sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-2]
+                sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-1:][0][:-5]
+                exp = path.split('/')[-1:][0]
+
+                # Wrangle the session.
+                wrangle(sid, sdir, exp, pdm, pts, udm, uts, sdm, sts)

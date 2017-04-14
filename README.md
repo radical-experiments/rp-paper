@@ -9,9 +9,9 @@ or the performance of the interaction between the client and agent modules.
 
 We assume five use cases:
 *   [AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1).
-*   ([GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23).)
+*   ([GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23).
 *   [Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1).
-*   [Detector simulation stage of the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit).
+*   [Geant4 detector simulation for the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit).
 *   Michael Shirts workload (failing which, AMBER QM/MM CDI workload)
 
 We assume the following definitions:
@@ -71,6 +71,193 @@ input/output files as they do not affect the agent performance under the metrics
 we consider. Consistently, the experiments we perform with Synapse will have no
 input or output files.
 
+## Experiment 1 -- Weak scalability
+
+### Applications
+
+| ID | Use cases | Executables | Assegnee | Referent |
+|----|-----------|-------------|----------|----------|
+| 1  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|Synapse emulating AMBER single core|Andre|Vivek|
+| 2  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|AMBER single core|?|Vivek| 
+| 3  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|?|Vivek| 
+| 4  |[Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1)|AMBER MPI|Manuel|Antons|
+| 5  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|GROMACS single core?|Alessio|Vivek|
+| 6  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|LSDMap?|Alessio?|Vivek|
+| 7  |[Geant4 detector simulation for the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit)|Geant4 multithreading|Alessio|Sergey|
+
+### Runs
+
+#### Use Case IDs: 1,2,5,7
+
+```
+|N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
+|------|---------|-------------|---------------|---------|--------------|----------------|
+| 2    | 128     | 1           | 1             | 1       | 128          | Stampede/Titan |
+| 2    | 256     | 1           | 1             | 1       | 256          | Stampede/Titan |
+| 2    | 512     | 1           | 1             | 1       | 512          | Stampede/Titan |
+| 2    | 1024    | 1           | 1             | 1       | 1024         | Stampede/Titan |
+| 2    | 2048    | 1           | 1             | 1       | 2048         | Stampede/Titan |
+| 2    | 4096    | 1           | 1             | 1       | 4096         | Stampede/Titan |
+| 2    | 8192    | 1           | 1             | 1       | 8192         | Stampede/Titan |
+| 2    | 16384   | 1           | 1             | 1       | 16384        | Titan          |
+``` 
+
+#### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)
+```
+TBD
+``` 
+
+### Pseudo Graphs
+
+```
+                                      Titan
+                           8 groups of 7 stacked columns
+                           4 measurement for each column
+                     UCn = Use Case #n (see table applications)
+      ^
+      |
+ t    |    UC1  UC2  UC3  UC4  UC5  UC6  UC7
+ i    |     |    |    |    |    |    |    | 
+ m    |     |    |    |    |    |    |    | 
+ e    |     .    .    .    .    .    .    . Agent executing
+      |     |    |    |    |    |    |    |
+(s)   |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queueing executing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent Scheduling
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queuing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+   ---|---|--------|--------|--------|---------|---------|---------|---------|------->
+      |2^6/2^6  2^7/2^7  2^8/2^8  2^9/2^9  2^10/2^10 2^11/2^11 2^12/2^12 2^13/2^13 
+
+                                      N tasks/cores
+```
+```
+                                      Stampede
+                           6 groups of 7 stacked columns
+                           4 measurement for each column
+                     UCn = Use Case #n (see table applications)
+      ^
+      |
+ t    |    UC1  UC2  UC3  UC4  UC5  UC6  UC7
+ i    |     |    |    |    |    |    |    | 
+ m    |     |    |    |    |    |    |    | 
+ e    |     .    .    .    .    .    .    . Agent executing
+      |     |    |    |    |    |    |    |
+(s)   |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queueing executing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent Scheduling
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queuing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+   ---|---|--------|--------|--------|---------|---------|-------->
+      |2^6/2^6  2^7/2^7  2^8/2^8  2^9/2^9  2^10/2^10 2^11/2^11  
+
+                                      N tasks/cores
+```
+
+## Experiment 2 -- Strong scalability
+
+### Applications
+
+| ID | Use cases | Executables | Assegnee | Referent |
+|----|-----------|-------------|----------|----------|
+| 1  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|Synapse emulating AMBER single core|Andre|Vivek|
+| 2  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|AMBER single core|?|Vivek| 
+| 3  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|?|Vivek| 
+| 4  |[Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1)|AMBER MPI|Manuel|Antons|
+| 5  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|GROMACS single core?|Alessio|Vivek|
+| 6  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|LSDMap?|Alessio?|Vivek|
+| 7  |[Geant4 detector simulation for the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit)|Geant4 multithreading|Alessio|Sergey|
+
+### Runs
+
+#### Use Case IDs: 1,2,5,7
+
+```
+|N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
+|------|---------|-------------|---------------|---------|--------------|----------------|
+| 2    | 16384   | 1           | 128           | 1       | 128          | Stampede/Titan |
+| 2    | 16384   | 1           | 64            | 1       | 256          | Stampede/Titan |
+| 2    | 16384   | 1           | 32            | 1       | 512          | Stampede/Titan |
+| 2    | 16384   | 1           | 16            | 1       | 1024         | Stampede/Titan |
+| 2    | 16384   | 1           | 8             | 1       | 2048         | Stampede/Titan |
+| 2    | 16384   | 1           | 4             | 1       | 4096         | Stampede/Titan |
+| 2    | 16384   | 1           | 2             | 1       | 8192         | Stampede/Titan |
+| 2    | 16384   | 1           | 1             | 1       | 16384        | Titan          |
+``` 
+
+#### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)
+```
+TBD
+``` 
+
+
+### Pseudo Graphs
+
+```
+                                      Titan
+                           8 groups of 7 stacked columns
+                           4 measurement for each column
+      ^
+      |
+ t    |    UC1  UC2  UC3  UC4  UC5  UC6  UC7
+ i    |     |    |    |    |    |    |    | 
+ m    |     |    |    |    |    |    |    | 
+ e    |     .    .    .    .    .    .    . Agent executing
+      |     |    |    |    |    |    |    |
+(s)   |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queueing executing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent Scheduling
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queuing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+   ---|---|--------|--------|--------|---------|---------|---------|---------|------->
+      |2^6/2^6  2^7/2^7  2^8/2^8  2^9/2^9  2^10/2^10 2^11/2^11 2^12/2^12 2^13/2^13 
+
+                                      N tasks/cores
+```
+```
+                                      Stampede
+                           6 groups of 7 stacked columns
+                           4 measurement for each column
+      ^
+      |
+ t    |    UC1  UC2  UC3  UC4  UC5  UC6  UC7
+ i    |     |    |    |    |    |    |    | 
+ m    |     |    |    |    |    |    |    | 
+ e    |     .    .    .    .    .    .    . Agent executing
+      |     |    |    |    |    |    |    |
+(s)   |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queueing executing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent Scheduling
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+      |     .    .    .    .    .    .    . Agent queuing
+      |     |    |    |    |    |    |    |
+      |     |    |    |    |    |    |    |
+   ---|---|--------|--------|--------|---------|---------|-------->
+      |2^6/2^6  2^7/2^7  2^8/2^8  2^9/2^9  2^10/2^10 2^11/2^11 
+
+                                      N tasks/cores
+```
+
+
+# OLD - PLEASE IGNORE
 ## Experiment 1
 
 *   Use case: AMBER/CoCo ensembles for molecular sciences.

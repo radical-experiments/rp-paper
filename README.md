@@ -32,7 +32,9 @@ or the performance of the interaction between the client and agent modules.
 | 2    | 2048    | 1           | 1             | 1       | 2048         | Stampede/Titan |
 | 2    | 4096    | 1           | 1             | 1       | 4096         | Stampede/Titan |
 | 2    | 8192    | 1           | 1             | 1       | 8192         | Stampede/Titan |
-| 2    | 16384   | 1           | 1             | 1       | 16384        | Titan          |
+| 2    | 16384   | 1           | 1             | 1       | 16384        | Stampede/Titan |
+| 2    | 32768   | 1           | 1             | 1       | 32768        | Titan          |
+| 2    | 64000   | 1           | 1             | 1       | 64000        | Titan          |
 ``` 
 
 #### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)

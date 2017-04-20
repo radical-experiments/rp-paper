@@ -24,23 +24,13 @@
 #    4096  1   1   1   4096   Stampede/Titan
 #    8192  1   1   1   8192   Stampede/Titan
 #   16384  1   1   1  16384   Titan
-      256  1   1   1    128   Stampede/Titan
-      512  1   1   1    256   Stampede/Titan
-     1024  1   1   1    512   Stampede/Titan
-     2048  1   1   1   1024   Stampede/Titan
-     4096  1   1   1   2048   Stampede/Titan
-     8192  1   1   1   4096   Stampede/Titan
-      256  1   1   1    128   Stampede/Titan
-      512  1   1   1    256   Stampede/Titan
-     1024  1   1   1    512   Stampede/Titan
-     2048  1   1   1   1024   Stampede/Titan
-     4096  1   1   1   2048   Stampede/Titan
-     8192  1   1   1   4096   Stampede/Titan
-      256  1   1   1    128   Stampede/Titan
+# 
+#     256  1   1   1    128   Stampede/Titan
       512  1   1   1    256   Stampede/Titan
      1024  1   1   1    512   Stampede/Titan
      2048  1   1   1   1024   Stampede/Titan
      4096  1   1   1   2048   Stampede/Titan
      8192  1   1   1   4096   Stampede/Titan
     16384  1   1   1   8192   Stampede/Titan
-    32768  1   1   1  16384   Titan
+    16384  1   1   1   8192   Stampede/Titan
+#   32768  1   1   1  16384   Titan

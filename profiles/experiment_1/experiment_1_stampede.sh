@@ -36,6 +36,7 @@ do
     mv    $sid.json      data/$sid/$sid.json
     mv    $name.*        data/$sid/
     rm -rf $sid
+    echo "$name  $sid" >> sessions.dat
 done < experiment_1.ctrl
 
 

@@ -56,3 +56,16 @@ exp.1a.c8192.s8192.1.1.1.ornl.titan_lib         rp.session.titan-ext1.merzky1.01
 exp.1a.c16384.s16384.1.1.1.ornl.titan_lib       rp.session.titan-ext1.merzky1.017241.0008
 exp.1a.c16384.s16384.1.1.1.ornl.titan_lib       rp.session.titan-ext1.merzky1.017242.0005
 
+exp.1a.c256.s128.1.1.1.xsede.stampede           rp.session.one.merzky.017248.0001 
+exp.1a.c256.s128.1.1.1.xsede.stampede           rp.session.one.merzky.017252.0000 
+exp.1a.c512.s256.1.1.1.xsede.stampede           rp.session.one.merzky.017249.0000 
+exp.1a.c1024.s512.1.1.1.xsede.stampede          rp.session.one.merzky.017250.0000 
+exp.1a.c2048.s1024.1.1.1.xsede.stampede         rp.session.one.merzky.017251.0000 
+exp.1a.c4096.s2048.1.1.1.xsede.stampede         rp.session.one.merzky.017251.0001 
+exp.1a.c8192.s4096.1.1.1.xsede.stampede         rp.session.one.merzky.017251.0002 
+exp.1a.c512.s256.1.1.1.xsede.stampede  rp.session.one.merzky.017276.0001
+exp.1a.c1024.s512.1.1.1.xsede.stampede  rp.session.one.merzky.017276.0002
+exp.1a.c2048.s1024.1.1.1.xsede.stampede  rp.session.one.merzky.017276.0003
+exp.1a.c4096.s2048.1.1.1.xsede.stampede  rp.session.one.merzky.017276.0004
+exp.1a.c8192.s4096.1.1.1.xsede.stampede  rp.session.one.merzky.017276.0005
+exp.1a.c16384.s8192.1.1.1.xsede.stampede  

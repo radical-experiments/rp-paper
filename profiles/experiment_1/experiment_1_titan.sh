@@ -8,7 +8,9 @@ export RADICAL_PILOT_PROFILE=TRUE
 export RADICAL_PILOT_DBURL=mongodb://144.76.72.175/am
 export RADICAL_DEBUG=TRUE
 
-export resource='ornl.titan'
+export SAGA_PTY_SSH_TIMEOUT=60
+
+export resource='ornl.titan_lib'
 
 while read ncus b c d ncores f
 do

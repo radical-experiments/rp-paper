@@ -10,6 +10,7 @@ import glob
 import radical.pilot as rp
 import radical.utils as ru
 
+cores_per_node = 16
 
 # ------------------------------------------------------------------------------
 #
@@ -31,7 +32,7 @@ if __name__ == '__main__':
     ncores   = int(sys.argv[2])
     resource = sys.argv[3]
     sandbox  = '/lustre/atlas2/csc230/scratch/merzky1/radical.pilot.sandbox/'
-    profs    = glob.glob('%s/profiles/workload_1/stage_2/*.json' % sandbox)
+    profs    = glob.glob('%s/profiles/workload_1/stage_3/*.json' % sandbox)
 
 
     # Create a new session. No need to try/except this: if session creation
@@ -58,13 +59,13 @@ if __name__ == '__main__':
         # Here we use a dict to initialize the description object
         pd_init = {
                 'resource'      : resource,
-                'runtime'       : 120,  # pilot runtime (min)
+                'runtime'       : 60 ,  # pilot runtime (min)
                 'exit_on_error' : True,
                 'project'       : config[resource]['project'],
                 'queue'         : config[resource]['queue'],
                 'access_schema' : config[resource]['schema'],
-                'cores'         : ncores,
-                'config'        : '%s/agent_stalled.json' % os.getcwd()
+                'cores'         : ncores + cores_per_node, # plus one node for agent
+                '_config'       : '%s/agent_stalled.json' % os.getcwd()
                 }
         pdesc = rp.ComputePilotDescription(pd_init)
 
@@ -113,14 +114,14 @@ if __name__ == '__main__':
         # Something unexpected happened in the pilot code above
         report.error('caught Exception: %s\n' % e)
         raise
-
+ 
     except (KeyboardInterrupt, SystemExit) as e:
         # the callback called sys.exit(), and we can here catch the
         # corresponding KeyboardInterrupt exception for shutdown.  We also catch
         # SystemExit (which gets raised if the main threads exits for some other
         # reason).
         report.warn('exit requested\n')
-
+ 
     finally:
         # always clean up the session, no matter if we caught an exception or
         # not.  This will kill all remaining pilots.

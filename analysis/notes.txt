@@ -1,0 +1,91 @@
+
+scu = sras[4096][3].concurrency(state=['AGENT_SCHEDULING_PENDING', 'AGENT_SCHEDULING'])\n",
+"x = [item[0] for item in scu]\n",
+"y = [item[1] for item in scu]\n",
+"ax.plot(x, y, color=tableau20[6])\n",
+
+We use 'stalling' on agent ingest to decouple the agent from the outer world: on
+unit ingest, we stall unit progression until a certain configurable number of
+units arrived, and then move them to `AGENT_SCHEDULING` all at once.  This way
+we avoid agent performance to be influence by ingest rate, which in turn is
+dominated by the DB communication performance.
+
+
+"scu = sras[4096][3].concurrency(state=['AGENT_SCHEDULING', 'AGENT_EXECUTING_PENDING'])\n",
+"x = [item[0] for item in scu]\n",
+"y = [item[1] for item in scu]\n",
+"ax.plot(x, y, color=tableau20[4])\n",
+
+Due to the stalling, we basically start out with 4k Units in `AGENT_SCHEDULING`
+state.  The scheduler performance is dominated by the speed with which python
+searches to the scheduler's data structures (list of cores), which somewhat
+changes depending on what search position in the structure we are.
+
+
+"scu = sras[4096][3].concurrency(state=['AGENT_EXECUTING_PENDING', 'AGENT_EXECUTING'])\n",
+"x = [item[0] for item in scu]\n",
+"y = [item[1] for item in scu]\n",
+"ax.plot(x, y, color=tableau20[2])\n",
+
+
+The ingest slope of the `ExecutingPending` queue should basically be the same as
+the output slope of the `AgentScheduling` state.  The ouput slope of the queue
+is dominated by the rate with which the executor pulls units for execution from
+it - that rate appears to be rather static below.
+
+
+"for s1 in sras[4096]:\n",
+"    \n",
+"    # Plot concurrent scheduled units\n",
+"    scu = s1.concurrency(state=['AGENT_SCHEDULING', 'AGENT_EXECUTING_PENDING'])\n",
+"    x = [item[0] for item in scu]\n",
+"    y = [item[1] for item in scu]\n",
+"    ax.plot(x, y, color=tableau20[4])\n",
+"\n",
+"    # Plot concurrent queued units\n",
+"    scu = s1.concurrency(state=['AGENT_EXECUTING_PENDING', 'AGENT_EXECUTING'])\n",
+"    x = [item[0] for item in scu]\n",
+"    y = [item[1] for item in scu]\n",
+"    ax.plot(x, y, color=tableau20[2])\n",
+"\n",
+"    # Plot concurrent active units\n",
+"    scu = s1.concurrency(state=['AGENT_EXECUTING', 'AGENT_STAGING_OUTPUT_PENDING'])\n",
+"    x = [item[0] for item in scu]\n",
+"    y = [item[1] for item in scu]\n",
+"    ax.plot(x, y, color=tableau20[0])\n",
+"\n",
+
+The green scheduler slope is very condensed below - but note that it is *not* a
+peak!  All experiments seem to show the same pattern: fast scheduling, queue
+fills up because executor has a larger ingest slope, executor has very
+consistent throughput.
+
+
+
+
+"# Plot concurrent scheduled units\n",
+"scu = sras[4096][3].concurrency(state=['AGENT_SCHEDULING', 'AGENT_EXECUTING_PENDING'])\n",
+"x = [item[0] for item in scu]\n",
+"y = [item[1] for item in scu]\n",
+"ax.plot(x, y, color=tableau20[4])\n",
+"\n",
+"# Plot concurrent queued units\n",
+"scu = sras[4096][3].concurrency(state=['AGENT_EXECUTING_PENDING', 'AGENT_EXECUTING'])\n",
+"x = [item[0] for item in scu]\n",
+"y = [item[1] for item in scu]\n",
+"ax.plot(x, y, color=tableau20[2])\n",
+"\n",
+"# Plot concurrent active units\n",
+"scu = sras[4096][3].concurrency(state=['AGENT_EXECUTING', 'AGENT_STAGING_OUTPUT_PENDING'])\n",
+"x = [item[0] for item in scu]\n",
+"y = [item[1] for item in scu]\n",
+"ax.plot(x, y, color=tableau20[0])\n",
+
+The executor ingest slope reflects the time needed to create a unit sandbox and
+some temptorary files, and to start the CU application process on the target
+node.  The output slope obviously reflects the input slope, but can also be
+influenced by unit collectio delays.
+
+
+
+

@@ -5,10 +5,7 @@ module of [RADICAL-Pilot](https://github.com/radical-cybertools/radical.pilot)
 (RP). Accordingly, we do not characterize the performance of the client module
 or the performance of the interaction between the client and agent modules.
 
-
-## Experiment 1 -- Weak scalability
-
-### Applications
+## Use cases
 
 | ID | Use cases | Executables | Assegnee | Referent |
 |----|-----------|-------------|----------|----------|
@@ -20,7 +17,8 @@ or the performance of the interaction between the client and agent modules.
 | 6  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|LSDMap?|Alessio?|Vivek|
 | 7  |[Geant4 detector simulation for the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit)|Geant4 multithreading|Alessio|Sergey|
 
-### Runs
+
+## Experiment 1 -- Weak scalability
 
 #### Use Case IDs: 1,2,5,7
 

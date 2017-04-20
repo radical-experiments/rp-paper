@@ -20,7 +20,7 @@ or the performance of the interaction between the client and agent modules.
 
 ## Experiment 1 -- Weak scalability
 
-#### Use Case IDs: 1,2,5,7
+#### Use Case IDs: 1,~~2~~,5,7
 
 ```
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
@@ -37,7 +37,7 @@ or the performance of the interaction between the client and agent modules.
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 ``` 
 
-#### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)
+#### Use Case IDs: ~~3 (up to 128 cores per task)~~, 4 (different number of cores?), ~~6 (MPI at all?)~~
 ```
 TBD
 ``` 
@@ -106,14 +106,16 @@ TBD
 ```
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
-| 2    | 16384   | 1           | 128           | 1       | 128          | Stampede/Titan |
-| 2    | 16384   | 1           | 64            | 1       | 256          | Stampede/Titan |
-| 2    | 16384   | 1           | 32            | 1       | 512          | Stampede/Titan |
-| 2    | 16384   | 1           | 16            | 1       | 1024         | Stampede/Titan |
-| 2    | 16384   | 1           | 8             | 1       | 2048         | Stampede/Titan |
-| 2    | 16384   | 1           | 4             | 1       | 4096         | Stampede/Titan |
-| 2    | 16384   | 1           | 2             | 1       | 8192         | Stampede/Titan |
-| 2    | 16384   | 1           | 1             | 1       | 16384        | Titan          |
+| 2    | 65536   | 1           | 512           | 1       | 128          | Stampede/Titan |
+| 2    | 65536   | 1           | 256           | 1       | 256          | Stampede/Titan |
+| 2    | 65536   | 1           | 128           | 1       | 512          | Stampede/Titan |
+| 2    | 65536   | 1           | 64            | 1       | 1024         | Stampede/Titan |
+| 2    | 65536   | 1           | 32            | 1       | 2048         | Stampede/Titan |
+| 2    | 65536   | 1           | 16            | 1       | 4096         | Stampede/Titan |
+| 2    | 65536   | 1           | 8             | 1       | 8192         | Stampede/Titan |
+| 2    | 65536   | 1           | 4             | 1       | 16384        | Stampede/Titan |
+| 2    | 65536   | 1           | 2             | 1       | 32768        | Titan          |
+| 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 ``` 
 
 #### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)

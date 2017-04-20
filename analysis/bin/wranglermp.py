@@ -1,7 +1,28 @@
 #!/usr/bin/env python
-"""This script does x.
 
-Example:
+"""
+This is a wrangler for RADICAL-Pilot (RP) sessions. It assumes the following:
+
+* One RP session corresponds to one experiment run.
+* One experiment has multiple runs.
+* Profiles and json file have been collected for each RP session.
+* Data for each session are collected into a directory with the same name as
+  the session ID. For example: 'rp.session.titan-ext1.merzky1.017242.0012'.
+* All the session directories are collected into a single experiment directory.
+* All the experiment directories are collected within a single data directory.
+
+The wrangler cycles through all the experiment directories within the data
+directory and calculates all the durations for each session, pilot, and unit.
+Durations and associated timestamps are saved into three csv files:
+sessions.csv for the session entities; pilots.csv for pilot entities; and
+units.csv for unit entities.
+
+CSV files are written incrementally
+
+Examples:
+
+* Typically, data are organized in a directory trhee similar to:
+  data/exp1/rp.session.titan-ext1.merzky1.017242.0012
 
 Attributes:
 
@@ -21,10 +42,6 @@ import radical.analytics as ra
 # -----------------------------------------------------------------------------
 def help():
         message = """
-        ra-wrangler.py -d <directory> -t <tag>
-                       [-e <integer>] [-s <rp_session_ID>] [-o <directory>]
-                       [-h] [-u]
-
         -d --ddir       Name of the directory containing all the experiment
                         directories. For example '../data'.
         -t --etag       Name of the tag identifying each experiment directory.
@@ -43,15 +60,15 @@ def help():
         -h --help       Prints the help page.
         -u --usage      Prints usage command.
         """
-        return message
+        return usage()+message
 
 
 # -----------------------------------------------------------------------------
 def usage():
         message = """
-        usage: ra-wrangler.py -d <directory> -t <tag>
-                              [-e <integer>] [-s <rp_session_ID>]
-                              [-o <directory>] [-h] [-u]
+        ra-wrangler.py -d <directory> -t <tag>
+                       [-e <integer>] [-s <rp_session_ID>][-o <directory>]
+                       [-h] [-u]
         """
         return message
 
@@ -565,13 +582,20 @@ if __name__ == '__main__':
 
     # Where to find data (ddir) and how data are stored into experiments
     # (etag).
-    ddir = clopts['ddir']  # '../data/'
+    calldir = os.getcwd()
+    ddir = '%s/%s' % (calldir, clopts['ddir'])  # '../data/'
     etag = clopts['etag']  # 'exp'
 
     # File names where to save the DF of each entity of each session.
-    csvs = {'session': '%s/sessions.csv' % clopts['odir'],
-            'pilot'  : '%s/pilots.csv' % clopts['odir'],
-            'unit'   : '%s/units.csv' % clopts['odir']}
+    csvs = {'session': '%s/%s/sessions.csv' % (calldir, clopts['odir']),
+            'pilot'  : '%s/%s/pilots.csv' % (calldir, clopts['odir']),
+            'unit'   : '%s/%s/units.csv' % (calldir, clopts['odir'])}
+
+    # print ddir
+    # print etag
+    # print csvs
+
+    # sys.exit()
 
     # FIXME: Define timestamps of the events of the pilot's states.
     sts = {'NEW'     : None,

@@ -22,7 +22,6 @@ or the performance of the interaction between the client and agent modules.
 
 #### Use Case IDs: 1,~~2~~,5,7
 
-```
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
 | 2    | 128     | 1           | 1             | 1       | 128          | Stampede/Titan |
@@ -35,7 +34,7 @@ or the performance of the interaction between the client and agent modules.
 | 2    | 16384   | 1           | 1             | 1       | 16384        | Stampede/Titan |
 | 2    | 32768   | 1           | 1             | 1       | 32768        | Titan          |
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
-``` 
+
 
 #### Use Case IDs: ~~3 (up to 128 cores per task)~~, 4 (different number of cores?), ~~6 (MPI at all?)~~
 
@@ -46,7 +45,6 @@ We assume:
 * a fixed ratio between number of tasks and number of cores/pilot;
 * 32 cores for each MPI task and between 4 and 2048 MPI tasks.
 
-```
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
 | 2    | 4       | 128         | 1             | 1       | 128          | Stampede/Titan |
@@ -59,7 +57,6 @@ We assume:
 | 2    | 512     | 16384       | 1             | 1       | 16384        | Stampede/Titan |
 | 2    | 1024    | 32768       | 1             | 1       | 32768        | Titan          |
 | 2    | 2048    | 65536       | 1             | 1       | 65536        | Titan          |
-``` 
 
 
 ### Pseudo Graphs
@@ -123,7 +120,6 @@ We assume:
 
 #### Use Case IDs: 1,2,5,7
 
-```
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
 | 2    | 65536   | 1           | 512           | 1       | 128          | Stampede/Titan |
@@ -136,7 +132,7 @@ We assume:
 | 2    | 65536   | 1           | 4             | 1       | 16384        | Stampede/Titan |
 | 2    | 65536   | 1           | 2             | 1       | 32768        | Titan          |
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
-``` 
+
 
 #### Use Case IDs: ~~3 (up to 128 cores per task),~~ 4 (different number of cores?)~~, 6 (MPI at all?)~~
 
@@ -147,7 +143,6 @@ We assume:
 * a proportional ratio between number of tasks and number of cores/pilot;
 * between 32 and 16384 cores for each MPI task and 4 MPI tasks for each run.
 
-```
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
 | 2    | 4       | 128         | 1             | 1       | 128          | Stampede/Titan |
@@ -160,7 +155,7 @@ We assume:
 | 2    | 4       | 16384       | 128           | 1       | 16384        | Stampede/Titan |
 | 2    | 4       | 32768       | 256           | 1       | 32768        | Titan          |
 | 2    | 4       | 65536       | 512           | 1       | 65536        | Titan          |
-``` 
+
 
 ### Pseudo Graphs
 
@@ -221,7 +216,7 @@ We assume:
 # OLD - PLEASE IGNORE
 ## Design
 
-We assume five use cases:
+~~We assume five use cases:
 *   [AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1).
 *   ([GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23).
 *   [Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1).
@@ -538,4 +533,3 @@ $ cd radical.synapse; git checkout master                ; pip install .; cd ..
 
 $ cd ..
 ```
-

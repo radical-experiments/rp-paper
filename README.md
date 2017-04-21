@@ -138,7 +138,7 @@ We assume:
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 ``` 
 
-#### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)
+#### Use Case IDs: ~~3 (up to 128 cores per task),~~ 4 (different number of cores?)~~, 6 (MPI at all?)~~
 
 We assume:
 * 16 cores per worker node;

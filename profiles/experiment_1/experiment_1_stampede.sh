@@ -12,7 +12,7 @@ export SAGA_PTY_SSH_TIMEOUT=60
 
 export resource='xsede.stampede'
 
-while read ncus b c d ncores f
+while read ncus gen c d ncores f
 do
     if test "$ncus" = "#"
     then
@@ -20,12 +20,13 @@ do
         continue
     fi
     echo 
-    cat agent_stampede.json | sed -e "s/###HWM###/$ncus/g" > agent_stalled.json
-    name="exp.1a.c$ncus.s$ncores.$b.$c.$d.$resource"
+    tot_cus=$((ncus*gen))
+    cat agent_stampede.json | sed -e "s/###HWM###/$tot_cus/g" > agent_stalled.json
+    name="exp.1a.c$ncus.g$gen.s$ncores.$b.$c.$d.$resource"
     export RADICAL_LOG_TGT="$name.log"
-    echo "cus: $ncus cores: $ncores"
-    echo python ./experiment_1_stampede.py $ncus $ncores $resource
-         python ./experiment_1_stampede.py $ncus $ncores $resource | tee $name.out
+    echo "cus: $ncus gen: $gen cores: $ncores"
+    echo python ./experiment_1_stampede.py $tot_cus $ncores $resource
+         python ./experiment_1_stampede.py $tot_cus $ncores $resource | tee $name.out
     sid=$(cat $name.out | grep "SID:" | cut -f 2 -d ':')
     sleep 60 # let stampede FS settle down
     radicalpilot-fetch-profiles $sid -t data -s

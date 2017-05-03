@@ -21,7 +21,7 @@
     "bulk_collection_time" : 5.0,
 
     # time to sleep between database polls (seconds)
-    "db_poll_sleeptime"    : 1.0,
+    "db_poll_sleeptime"    : 30.0,
 
     "agent_layout" : {
         "agent_1"   : {
@@ -43,7 +43,7 @@
     #
     "bridges" : {
         "agent_staging_input_queue"  : { "log_level" : "debug",
-                                         "stall_hwm" : 256,
+                                         "stall_hwm" : 16384,
                                          "bulk_size" : 0},
         "agent_scheduling_queue"     : { "log_level" : "debug",
                                          "stall_hwm" : 1,

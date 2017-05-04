@@ -10,8 +10,8 @@
         "xsede.stampede" : {
             "project"  : "TG-MCB090174",
           # "queue"    : "development",
-          # "queue"    : "normal",
-            "queue"    : "large",
+            "queue"    : "normal",
+          # "queue"    : "large",
             "schema"   : "gsissh",
             "cores"    : 16
         },

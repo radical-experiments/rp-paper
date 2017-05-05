@@ -41,22 +41,19 @@ or the performance of the interaction between the client and agent modules.
 We assume:
 * 16 cores per worker node;
 * at least 2 worker nodes for each MPI job to enable message passing;
-* a maximum of 16384 cores per task (from REPEX publication);
-* a fixed ratio between number of tasks and number of cores/pilot;
-* 32 cores for each MPI task and between 4 and 2048 MPI tasks.
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
-| 2    | 4       | 128         | 1             | 1       | 128          | Stampede/Titan |
-| 2    | 8       | 256         | 1             | 1       | 256          | Stampede/Titan |
-| 2    | 16      | 512         | 1             | 1       | 512          | Stampede/Titan |
-| 2    | 32      | 1024        | 1             | 1       | 1024         | Stampede/Titan |
-| 2    | 64      | 2048        | 1             | 1       | 2048         | Stampede/Titan |
-| 2    | 128     | 4096        | 1             | 1       | 4096         | Stampede/Titan |
-| 2    | 256     | 8192        | 1             | 1       | 8192         | Stampede/Titan |
-| 2    | 512     | 16384       | 1             | 1       | 16384        | Stampede/Titan |
-| 2    | 1024    | 32768       | 1             | 1       | 32768        | Titan          |
-| 2    | 2048    | 65536       | 1             | 1       | 65536        | Titan          |
+| 2    | 2       | 64          | 1             | 1       | 128          | Stampede/Titan |
+| 2    | 4       | 64          | 1             | 1       | 256          | Stampede/Titan |
+| 2    | 8       | 64          | 1             | 1       | 512          | Stampede/Titan |
+| 2    | 16      | 64          | 1             | 1       | 1024         | Stampede/Titan |
+| 2    | 32      | 64          | 1             | 1       | 2048         | Stampede/Titan |
+| 2    | 64      | 64          | 1             | 1       | 4096         | Stampede/Titan |
+| 2    | 128     | 64          | 1             | 1       | 8192         | Stampede/Titan |
+| 2    | 256     | 64          | 1             | 1       | 16384        | Stampede/Titan |
+| 2    | 512     | 64          | 1             | 1       | 32768        | Titan          |
+| 2    | 1024    | 64          | 1             | 1       | 65536        | Titan          |
 
 
 ### Pseudo Graphs
@@ -139,22 +136,20 @@ We assume:
 We assume:
 * 16 cores per worker node;
 * at least 2 worker nodes for each MPI job to enable message passing;
-* a maximum of 16384 cores per task (from REPEX publication);
-* a proportional ratio between number of tasks and number of cores/pilot;
-* between 32 and 16384 cores for each MPI task and 4 MPI tasks for each run.
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
-| 2    | 4       | 128         | 1             | 1       | 128          | Stampede/Titan |
-| 2    | 4       | 256         | 2             | 1       | 256          | Stampede/Titan |
-| 2    | 4       | 512         | 4             | 1       | 512          | Stampede/Titan |
-| 2    | 4       | 1024        | 8             | 1       | 1024         | Stampede/Titan |
-| 2    | 4       | 2048        | 16            | 1       | 2048         | Stampede/Titan |
-| 2    | 4       | 4096        | 32            | 1       | 4096         | Stampede/Titan |
-| 2    | 4       | 8192        | 64            | 1       | 8192         | Stampede/Titan |
-| 2    | 4       | 16384       | 128           | 1       | 16384        | Stampede/Titan |
-| 2    | 4       | 32768       | 256           | 1       | 32768        | Titan          |
-| 2    | 4       | 65536       | 512           | 1       | 65536        | Titan          |
+| 2    | 1024    | 64          | 512           | 1       | 128          | Stampede/Titan |
+| 2    | 1024    | 64          | 256           | 1       | 256          | Stampede/Titan |
+| 2    | 1024    | 64          | 128           | 1       | 512          | Stampede/Titan |
+| 2    | 1024    | 64          | 64            | 1       | 1024         | Stampede/Titan |
+| 2    | 1024    | 64          | 32            | 1       | 2048         | Stampede/Titan |
+| 2    | 1024    | 64          | 16            | 1       | 4096         | Stampede/Titan |
+| 2    | 1024    | 64          | 8             | 1       | 8192         | Stampede/Titan |
+| 2    | 1024    | 64          | 4             | 1       | 16384        | Stampede/Titan |
+| 2    | 1024    | 64          | 2             | 1       | 32768        | Titan          |
+| 2    | 1024    | 64          | 1             | 1       | 65536        | Titan          |
+
 
 
 ### Pseudo Graphs

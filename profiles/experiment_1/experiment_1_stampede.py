@@ -54,7 +54,7 @@ if __name__ == '__main__':
         # Here we use a dict to initialize the description object
         pd_init = {
                 'resource'      : resource,
-                'runtime'       : 120,  # pilot runtime (min)
+                'runtime'       : 1440,  # pilot runtime (min)
                 'exit_on_error' : True,
                 'project'       : config[resource]['project'],
                 'queue'         : config[resource]['queue'],

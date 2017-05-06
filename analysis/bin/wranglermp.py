@@ -597,8 +597,13 @@ def get_new_sessions(sids):
     pilots = load_df(etype='pilot')
     units = load_df(etype='unit')
 
-    # Add session to wrangler when it is not in the sessions DF or when not all
-    # its units or pilots are not in the units or pilots DFs.
+    # All sessions are new if we have no stored sessions.
+    if sessions.empty:
+        return sids
+
+    # Add a session to wrangler when the sesison is not in the sessions DF or
+    # when not all the session's units or pilots are not in the units or pilots
+    # DFs.
     for sdir, sid in sids.iteritems():
         nurequest = sessions[sessions.sid == sid].nunit.tolist()
         nprequest = sessions[sessions.sid == sid].npilot.tolist()

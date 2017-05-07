@@ -26,10 +26,9 @@ Examples:
 
 Todo:
 
-1. Parse the existing sessions before starting to wrangle.
-2. Intercept and handle more errors from ra:
+1. Intercept and handle more errors from ra:
   - ValueError: no duration defined for given constraints
-3. Eliminate records in units/pilots when session fails to wrangle
+2. Eliminate records in units/pilots when session fails to wrangle
    (transactions).
 
 """
@@ -622,6 +621,35 @@ def get_new_sessions(sids):
 
 
 # -----------------------------------------------------------------------------
+def wrangle_session(sdir, sid):
+    # Get the experiment tag for the current sdir.
+    exp = sdir.split('/')[-2:][0]
+
+    # RA objects cannot be serialize: every RA session object need
+    # to be constructed at every run.
+    sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
+
+    # Pilot-unit relationship dictionary
+    pu_rels = sra_session.describe('relations', ['pilot', 'unit'])
+
+    # Pilots of sra: dervie properties and durations.
+    print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
+    sra_pilots = sra_session.filter(etype='pilot', inplace=False)
+    pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts)
+
+    # Units of sra: dervie properties and durations.
+    print '\n\n%s -- %s -- Loading units:' % (exp, sid)
+    sra_units = sra_session.filter(etype='unit', inplace=False)
+    units = load_units(sid, exp, sra_units, udm, pilots,
+                       sra_session, pu_rels, uts)
+
+    # Session of sra: derive properties and total durations.
+    print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
+    load_session(sid, exp, sra_session, sra_pilots, sra_units,
+                 sdm, pdm, udm, pilots, units, sts)
+
+
+# =============================================================================
 if __name__ == '__main__':
 
     # Get command line options
@@ -729,31 +757,6 @@ if __name__ == '__main__':
     # Wrangle the new sessions.
     if sids:
         for sdir,sid in sids.iteritems():
-
-            # Get the experiment tag for the current sdir.
-            exp = sdir.split('/')[-2:][0]
-
-            # RA objects cannot be serialize: every RA session object need
-            # to be constructed at every run.
-            sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
-
-            # Pilot-unit relationship dictionary
-            pu_rels = sra_session.describe('relations', ['pilot', 'unit'])
-
-            # Pilots of sra: dervie properties and durations.
-            print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
-            sra_pilots = sra_session.filter(etype='pilot', inplace=False)
-            pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts)
-
-            # Units of sra: dervie properties and durations.
-            print '\n\n%s -- %s -- Loading units:' % (exp, sid)
-            sra_units = sra_session.filter(etype='unit', inplace=False)
-            units = load_units(sid, exp, sra_units, udm, pilots,
-                               sra_session, pu_rels, uts)
-
-            # Session of sra: derive properties and total durations.
-            print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
-            load_session(sid, exp, sra_session, sra_pilots, sra_units,
-                         sdm, pdm, udm, pilots, units, sts)
+            wrangle_session(sdir, sid)
     else:
         print 'No new sessions to wrangle found.'

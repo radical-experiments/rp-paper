@@ -20,7 +20,7 @@ or the performance of the interaction between the client and agent modules.
 
 ## Experiment 1 -- Weak scalability
 
-#### Use Case IDs: 1,~~2~~,5,7
+#### Use Case IDs: 1,5,7
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
@@ -36,7 +36,7 @@ or the performance of the interaction between the client and agent modules.
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
 
-#### Use Case IDs: ~~3 (up to 128 cores per task)~~, 4 (different number of cores?), ~~6 (MPI at all?)~~
+#### Use Case IDs: 3, 4
 
 We assume:
 * 16 cores per worker node;
@@ -115,7 +115,7 @@ We assume:
 
 ## Experiment 2 -- Strong scalability
 
-#### Use Case IDs: 1,~~2~~,5,7
+#### Use Case IDs: 1,5,7
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
@@ -131,7 +131,7 @@ We assume:
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
 
-#### Use Case IDs: ~~3 (up to 128 cores per task),~~ 4 (different number of cores?)~~, 6 (MPI at all?)~~
+#### Use Case IDs: 3,4
 
 We assume:
 * 16 cores per worker node;

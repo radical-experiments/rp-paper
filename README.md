@@ -11,7 +11,7 @@ or the performance of the interaction between the client and agent modules.
 |----|-----------|-------------|----------|----------|
 | 1  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|Synapse emulating AMBER single core|Andre|Vivek|
 | ~~2~~ |~~[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)~~|~~AMBER single core~~|~~?~~|~~Vivek~~| 
-| ~~3~~ |~~[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)~~|~~CoCo MPI~~|~~?~~|~~Vivek~~| 
+| 3 |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|?|Vivek| 
 | 4  |[Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1)|AMBER MPI|Manuel|Antons|
 | 5  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|GROMACS single core|Alessio|Vivek|
 | ~~6~~ |~~[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)~~|~~LSDMap?~~|~~?~~|~~Vivek~~|
@@ -20,7 +20,7 @@ or the performance of the interaction between the client and agent modules.
 
 ## Experiment 1 -- Weak scalability
 
-#### Use Case IDs: 1,~~2~~,5,7
+#### Use Case IDs: 1,5,7
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
@@ -36,27 +36,24 @@ or the performance of the interaction between the client and agent modules.
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
 
-#### Use Case IDs: ~~3 (up to 128 cores per task)~~, 4 (different number of cores?), ~~6 (MPI at all?)~~
+#### Use Case IDs: 3, 4
 
 We assume:
 * 16 cores per worker node;
 * at least 2 worker nodes for each MPI job to enable message passing;
-* a maximum of 16384 cores per task (from REPEX publication);
-* a fixed ratio between number of tasks and number of cores/pilot;
-* 32 cores for each MPI task and between 4 and 2048 MPI tasks.
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
-| 2    | 4       | 128         | 1             | 1       | 128          | Stampede/Titan |
-| 2    | 8       | 256         | 1             | 1       | 256          | Stampede/Titan |
-| 2    | 16      | 512         | 1             | 1       | 512          | Stampede/Titan |
-| 2    | 32      | 1024        | 1             | 1       | 1024         | Stampede/Titan |
-| 2    | 64      | 2048        | 1             | 1       | 2048         | Stampede/Titan |
-| 2    | 128     | 4096        | 1             | 1       | 4096         | Stampede/Titan |
-| 2    | 256     | 8192        | 1             | 1       | 8192         | Stampede/Titan |
-| 2    | 512     | 16384       | 1             | 1       | 16384        | Stampede/Titan |
-| 2    | 1024    | 32768       | 1             | 1       | 32768        | Titan          |
-| 2    | 2048    | 65536       | 1             | 1       | 65536        | Titan          |
+| 2    | 2       | 64          | 1             | 1       | 128          | Stampede/Titan |
+| 2    | 4       | 64          | 1             | 1       | 256          | Stampede/Titan |
+| 2    | 8       | 64          | 1             | 1       | 512          | Stampede/Titan |
+| 2    | 16      | 64          | 1             | 1       | 1024         | Stampede/Titan |
+| 2    | 32      | 64          | 1             | 1       | 2048         | Stampede/Titan |
+| 2    | 64      | 64          | 1             | 1       | 4096         | Stampede/Titan |
+| 2    | 128     | 64          | 1             | 1       | 8192         | Stampede/Titan |
+| 2    | 256     | 64          | 1             | 1       | 16384        | Stampede/Titan |
+| 2    | 512     | 64          | 1             | 1       | 32768        | Titan          |
+| 2    | 1024    | 64          | 1             | 1       | 65536        | Titan          |
 
 
 ### Pseudo Graphs
@@ -118,7 +115,7 @@ We assume:
 
 ## Experiment 2 -- Strong scalability
 
-#### Use Case IDs: 1,~~2~~,5,7
+#### Use Case IDs: 1,5,7
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
@@ -134,27 +131,25 @@ We assume:
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
 
-#### Use Case IDs: ~~3 (up to 128 cores per task),~~ 4 (different number of cores?)~~, 6 (MPI at all?)~~
+#### Use Case IDs: 3,4
 
 We assume:
 * 16 cores per worker node;
 * at least 2 worker nodes for each MPI job to enable message passing;
-* a maximum of 16384 cores per task (from REPEX publication);
-* a proportional ratio between number of tasks and number of cores/pilot;
-* between 32 and 16384 cores for each MPI task and 4 MPI tasks for each run.
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
-| 2    | 4       | 128         | 1             | 1       | 128          | Stampede/Titan |
-| 2    | 4       | 256         | 2             | 1       | 256          | Stampede/Titan |
-| 2    | 4       | 512         | 4             | 1       | 512          | Stampede/Titan |
-| 2    | 4       | 1024        | 8             | 1       | 1024         | Stampede/Titan |
-| 2    | 4       | 2048        | 16            | 1       | 2048         | Stampede/Titan |
-| 2    | 4       | 4096        | 32            | 1       | 4096         | Stampede/Titan |
-| 2    | 4       | 8192        | 64            | 1       | 8192         | Stampede/Titan |
-| 2    | 4       | 16384       | 128           | 1       | 16384        | Stampede/Titan |
-| 2    | 4       | 32768       | 256           | 1       | 32768        | Titan          |
-| 2    | 4       | 65536       | 512           | 1       | 65536        | Titan          |
+| 2    | 1024    | 64          | 512           | 1       | 128          | Stampede/Titan |
+| 2    | 1024    | 64          | 256           | 1       | 256          | Stampede/Titan |
+| 2    | 1024    | 64          | 128           | 1       | 512          | Stampede/Titan |
+| 2    | 1024    | 64          | 64            | 1       | 1024         | Stampede/Titan |
+| 2    | 1024    | 64          | 32            | 1       | 2048         | Stampede/Titan |
+| 2    | 1024    | 64          | 16            | 1       | 4096         | Stampede/Titan |
+| 2    | 1024    | 64          | 8             | 1       | 8192         | Stampede/Titan |
+| 2    | 1024    | 64          | 4             | 1       | 16384        | Stampede/Titan |
+| 2    | 1024    | 64          | 2             | 1       | 32768        | Titan          |
+| 2    | 1024    | 64          | 1             | 1       | 65536        | Titan          |
+
 
 
 ### Pseudo Graphs

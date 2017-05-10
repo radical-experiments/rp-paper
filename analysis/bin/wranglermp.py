@@ -24,9 +24,12 @@ Examples:
 * Typically, data are organized in a directory trhee similar to:
   data/exp1/rp.session.titan-ext1.merzky1.017242.0012
 
-Attributes:
-
 Todo:
+
+1. Intercept and handle more errors from ra:
+  - ValueError: no duration defined for given constraints
+2. Eliminate records in units/pilots when session fails to wrangle
+   (transactions).
 
 """
 
@@ -431,7 +434,14 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts):
                 us[duration].append(np.nan)
 
         # pilot and host on which the unit has been executed.
-        punit = [key[0] for key in pu_rels.items() if uid in key[1]][0]
+
+        punit = [key[0] for key in pu_rels.items() if uid in key[1]]
+        if punit:
+            punit = punit[0]
+        else:
+            print 'DEBUG: pu_rels.items():\n' % pu_rels.items()
+            print 'WARNING: empty pilot name for unit %s' % uid
+            punit = None
         hid = pilots[(pilots['sid'] == sid) &
                      (pilots['pid'] == punit)]['hid'].tolist()[0]
         us['pid'].append(punit)
@@ -521,11 +531,14 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
     store_df(session, stored=stored_sessions, etype='session')
     print '\nstored in %s' % csvs['session']
 
-    return True
+    return stored_sessions
 
 
 # -----------------------------------------------------------------------------
-def wrangle(ddir, etag, pdm, pts, udm, uts, sdm, sts):
+def get_raw_sessions(ddir, etag, clopts):
+
+    sids = {}
+
     # Get sessions ID, experiment number and RA object. Assume:
     # ddir/exp*/sessiondir/session.json.
     for path in glob.glob('%s/%s*' % (ddir, etag)):
@@ -534,6 +547,7 @@ def wrangle(ddir, etag, pdm, pts, udm, uts, sdm, sts):
             # Ignore any file in the data dir. Every directory is assumed
             # to be a RP session.
             if os.path.isdir(sdir) is False:
+                print 'Ignore file %s; looking for session directories' % sdir
                 continue
 
             # Get session ID directory if json file exists.
@@ -542,11 +556,13 @@ def wrangle(ddir, etag, pdm, pts, udm, uts, sdm, sts):
                 sid = glob.glob('%s/*.json' % sdir)[0].split('/')[-1:][0][:-5]
             else:
                 print "ERROR: %s is missing the json file" % sdir
-                print "Skipping %s" % sdir
+                print "Skip %s" % sdir
                 continue
 
             # Skip session if not specified at command line.
             if clopts['sid'] and clopts['sid'] != sid:
+                print 'Ignore directory %s; waiting for %s' % (sdir,
+                    clopts['sid'])
                 continue
 
             # Get experiment directory.
@@ -555,41 +571,85 @@ def wrangle(ddir, etag, pdm, pts, udm, uts, sdm, sts):
             # Skip session if not in the experiment direcotry specified at
             # command line.
             if clopts['eid'] and clopts['eid'] != exp[len(etag):]:
+                print 'Ignore %s; looking for directories in %s' % (
+                    exp[len(etag):], clopts['eid'])
                 continue
 
             # Consistency check: SID of json file name is the same SID of
             # directory name.
             if sid == sdir.split('/')[-1:][0]:
-
-                # RA objects cannot be serialize: every RA session object need
-                # to be constructed at every run.
-                sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
-
-                # Pilot-unit relationship dictionary
-                pu_rels = sra_session.describe('relations', ['pilot', 'unit'])
-
-                # Pilots of sra: dervie properties and durations.
-                print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
-                sra_pilots = sra_session.filter(etype='pilot', inplace=False)
-                pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts)
-
-                # Units of sra: dervie properties and durations.
-                print '\n\n%s -- %s -- Loading units:' % (exp, sid)
-                sra_units = sra_session.filter(etype='unit', inplace=False)
-                units = load_units(sid, exp, sra_units, udm, pilots,
-                                   sra_session, pu_rels, uts)
-
-                # Session of sra: derive properties and total durations.
-                print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
-                load_session(sid, exp, sra_session, sra_pilots, sra_units,
-                             sdm, pdm, udm, pilots, units, sts)
-
+                sids[sdir] = sid
             else:
                 error = 'ERROR: session folder and json file name differ'
                 print '%s: %s != %s' % (error, sdir, sid)
 
+    return sids
+
 
 # -----------------------------------------------------------------------------
+def get_new_sessions(sids):
+
+    towrangle = {}
+
+    # Load current sessions, pilots, units DFs
+    sessions = load_df(etype='session')
+    pilots = load_df(etype='pilot')
+    units = load_df(etype='unit')
+
+    # All sessions are new if we have no stored sessions.
+    if sessions.empty:
+        return sids
+
+    # Add a session to wrangler when the sesison is not in the sessions DF or
+    # when not all the session's units or pilots are not in the units or pilots
+    # DFs.
+    for sdir, sid in sids.iteritems():
+        nurequest = sessions[sessions.sid == sid].nunit.tolist()
+        nprequest = sessions[sessions.sid == sid].npilot.tolist()
+
+        # Duplicates in sessions need to be addressed manually by the user.
+        if (len(nurequest) > 1) or (len(nprequest) > 1):
+            print 'ERROR: Duplicate entries for sid %s in sessions df' % sid
+            sys.exit(1)
+
+        if (sid not in sessions.sid.tolist()) or \
+                (units[units.sid == sid].shape[0] < nurequest[0]) or \
+                (pilots[pilots.sid == sid].shape[0] < nprequest[0]):
+            towrangle[sdir] = sid
+
+    return towrangle
+
+
+# -----------------------------------------------------------------------------
+def wrangle_session(sdir, sid):
+    # Get the experiment tag for the current sdir.
+    exp = sdir.split('/')[-2:][0]
+
+    # RA objects cannot be serialize: every RA session object need
+    # to be constructed at every run.
+    sra_session = ra.Session(sid, 'radical.pilot', src=sdir)
+
+    # Pilot-unit relationship dictionary
+    pu_rels = sra_session.describe('relations', ['pilot', 'unit'])
+
+    # Pilots of sra: dervie properties and durations.
+    print '\n\n%s -- %s -- Loading pilots:' % (exp, sid)
+    sra_pilots = sra_session.filter(etype='pilot', inplace=False)
+    pilots = load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts)
+
+    # Units of sra: dervie properties and durations.
+    print '\n\n%s -- %s -- Loading units:' % (exp, sid)
+    sra_units = sra_session.filter(etype='unit', inplace=False)
+    units = load_units(sid, exp, sra_units, udm, pilots,
+                       sra_session, pu_rels, uts)
+
+    # Session of sra: derive properties and total durations.
+    print '\n\n%s -- %s -- Loading session:\n' % (exp, sid)
+    load_session(sid, exp, sra_session, sra_pilots, sra_units,
+                 sdm, pdm, udm, pilots, units, sts)
+
+
+# =============================================================================
 if __name__ == '__main__':
 
     # Get command line options
@@ -598,19 +658,13 @@ if __name__ == '__main__':
     # Where to find data (ddir) and how data are stored into experiments
     # (etag).
     calldir = os.getcwd()
-    ddir = '%s/%s' % (calldir, clopts['ddir'])  # '../data/'
-    etag = clopts['etag']  # 'exp'
+    ddir = '%s/%s' % (calldir, clopts['ddir'])  # e.g., '../data/'
+    etag = clopts['etag']                       # e.g., 'exp'
 
     # File names where to save the DF of each entity of each session.
     csvs = {'session': '%s/%s/sessions.csv' % (calldir, clopts['odir']),
             'pilot'  : '%s/%s/pilots.csv' % (calldir, clopts['odir']),
             'unit'   : '%s/%s/units.csv' % (calldir, clopts['odir'])}
-
-    # print ddir
-    # print etag
-    # print csvs
-
-    # sys.exit()
 
     # FIXME: Define timestamps of the events of the pilot's states.
     sts = {'NEW'     : None,
@@ -696,5 +750,13 @@ if __name__ == '__main__':
     #                             ['DONE', 'CANCELED', 'FAILED']]}
 
 
-    # Call the wrangler.
-    wrangle(ddir, etag, pdm, pts, udm, uts, sdm, sts)
+    # Find out what sessions need to be wrangled.
+    rawsids = get_raw_sessions(ddir, etag, clopts)
+    sids = get_new_sessions(rawsids)
+
+    # Wrangle the new sessions.
+    if sids:
+        for sdir,sid in sids.iteritems():
+            wrangle_session(sdir, sid)
+    else:
+        print 'No new sessions to wrangle found.'

@@ -137,6 +137,7 @@ We assume:
 * 16 cores per worker node;
 * at least 2 worker nodes for each MPI job to enable message passing;
 * Tasks (replicas) do NOT terminate when performing an exchange! We need to fix the number of exchanges for the experiments with Repex. This will give us an indirect measure of how filesystem performance affects $T_x$
+* Generations is overloaded. Generations here do NOT refer to the generations of the workload but of the resources.
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|

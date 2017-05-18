@@ -35,6 +35,14 @@ or the performance of the interaction between the client and agent modules.
 | 2    | 32768   | 1           | 1             | 1       | 32768        | Titan          |
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
+Use case 5:
+* Stampede: max 4096 task/cores  
+* SuperMIC: 
+* Titan: max at 16384 task/cores
+
+Use case 5:
+* SuperMIC: max 1280 task/cores
+* Titan: max at 1024 task/cores
 
 #### Use Case IDs: 3, 4
 

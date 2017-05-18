@@ -1,0 +1,175 @@
+2017-05-17 11:12:16,063: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-05-17 11:12:16,067: agent.staging.output.0: MainProcess                     : MainThread     : INFO    :                      pid: 108116
+2017-05-17 11:12:16,067: agent.staging.output.0: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2017-05-17 11:12:16,067: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:16,068: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : start process
+2017-05-17 11:12:16,071: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : child (me) initializing
+2017-05-17 11:12:16,072: agent.staging.output.0: agent.staging.output.0          : MainThread     : DEBUG   : start thread
+2017-05-17 11:12:16,072: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: INFO    : child (me) initializing
+2017-05-17 11:12:16,072: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:16,072: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-05-17 11:12:16,072: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: INFO    : send alive
+2017-05-17 11:12:16,072: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: INFO    : send message: alive
+2017-05-17 11:12:16,073: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:16,073: agent.staging.output.0: agent.staging.output.0          : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:16,074: agent.staging.output.0: agent.staging.output.0          : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:16,074: agent.staging.output.0: agent.staging.output.0          : MainThread     : DEBUG   : child thread agent.staging.output.0.child.watch started
+2017-05-17 11:12:16,074: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : child (me) is alive
+2017-05-17 11:12:16,108: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : send alive
+2017-05-17 11:12:16,108: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : send message: alive
+2017-05-17 11:12:16,108: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:16,109: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : start thread
+2017-05-17 11:12:16,109: agent.staging.output.0: MainProcess                     : agent.staging.output.0.watch: INFO    : child (me) initializing
+2017-05-17 11:12:16,109: agent.staging.output.0: MainProcess                     : agent.staging.output.0.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:16,109: agent.staging.output.0: MainProcess                     : agent.staging.output.0.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-05-17 11:12:16,109: agent.staging.output.0: MainProcess                     : agent.staging.output.0.watch: INFO    : send alive
+2017-05-17 11:12:16,109: agent.staging.output.0: MainProcess                     : agent.staging.output.0.watch: INFO    : send message: alive
+2017-05-17 11:12:16,110: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:16,110: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:16,110: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:16,110: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : child thread agent.staging.output.0.watch started
+2017-05-17 11:12:16,110: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : child is alive
+2017-05-17 11:12:16,111: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:16,111: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : initialize agent.staging.output.0
+2017-05-17 11:12:16,118: agent.staging.output.0: MainProcess                     : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_1',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.11:44286',
+                                       'addr_out': 'tcp://204.90.41.11:46786',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:39052',
+                                         'addr_out': 'tcp://204.90.41.11:36106',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.11:45640',
+                                        'addr_out': 'tcp://204.90.41.11:35082',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.11:32912',
+                                           'addr_out': 'tcp://204.90.41.11:41858',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.11:41714',
+                                            'addr_out': 'tcp://204.90.41.11:43171',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:40116',
+                                         'addr_out': 'tcp://204.90.41.11:43031',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.11:40907',
+                                'addr_out': 'tcp://204.90.41.11:41207',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.11:43563',
+                            'addr_out': 'tcp://204.90.41.11:36293',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.11:45833',
+                              'addr_out': 'tcp://204.90.41.11:38405',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentStagingOutputComponent',
+ 'components': {},
+ 'cores': 40,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://144.76.72.175/alessio',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'global_sandbox': '/work/aangius/radical.pilot.sandbox',
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic011', 'smic042']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_1',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv': '%(global_sandbox)s/ve_supermic',
+                  'virtenv_mode': 'create'},
+ 'runtime': 120,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.aangius.017303.0013',
+ 'session_sandbox': '/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_1',
+ 'workdir': '/worka/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000'}
+2017-05-17 11:12:16,119: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : START: agent.staging.output.0 register publisher log_pubsub
+2017-05-17 11:12:16,119: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.11:43563 for pubsub log_pubsub
+2017-05-17 11:12:16,120: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub
+2017-05-17 11:12:16,120: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : START: agent.staging.output.0 register publisher state_pubsub
+2017-05-17 11:12:16,120: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.11:45833 for pubsub state_pubsub
+2017-05-17 11:12:16,121: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub
+2017-05-17 11:12:16,121: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : START: agent.staging.output.0 register publisher control_pubsub
+2017-05-17 11:12:16,121: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.11:40907 for pubsub control_pubsub
+2017-05-17 11:12:16,122: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub
+2017-05-17 11:12:16,122: agent.staging.output.0: MainProcess                     : MainThread     : DEBUG   : child process started
+2017-05-17 11:12:24,083: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: WARNING : endpoint disappeard
+2017-05-17 11:12:24,083: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: WARNING : watcher failed
+2017-05-17 11:12:24,083: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: INFO    : send message: work finished
+2017-05-17 11:12:24,083: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: DEBUG   : ru_finalize_child (NOOP)
+2017-05-17 11:12:24,083: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: DEBUG   : ru_finalize_common (NOOP)
+2017-05-17 11:12:24,083: agent.staging.output.0: agent.staging.output.0          : agent.staging.output.0.child.watch: INFO    : send message: terminating
+2017-05-17 11:12:24,900: agent.staging.output.0: agent.staging.output.0          : MainThread     : WARNING : alive check failed - stop [False - True]
+2017-05-17 11:12:24,986: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : parent stops child
+2017-05-17 11:12:24,987: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : parent stops child
+2017-05-17 11:12:24,987: agent.staging.output.0: agent.staging.output.0          : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-05-17 11:12:24,987: agent.staging.output.0: agent.staging.output.0          : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2017-05-17 11:12:25,153: agent.staging.output.0: agent.staging.output.0          : MainThread     : INFO    : send message: terminating
+2017-05-17 11:12:25,153: agent.staging.output.0: agent.staging.output.0          : MainThread     : ERROR   : term msg error not sent: error(9, 'Bad file descriptor')
+Traceback (most recent call last):
+  File "/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/utils/process.py", line 578, in _run
+    self._ru_msg_send('terminating')
+  File "/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/utils/process.py", line 163, in _ru_msg_send
+    self._ru_endpoint.send(msg)
+error: [Errno 9] Bad file descriptor

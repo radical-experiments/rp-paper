@@ -1,0 +1,45 @@
+2017-05-17 11:12:13,818: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-05-17 11:12:13,825: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    :                      pid: 107982
+2017-05-17 11:12:13,825: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2017-05-17 11:12:13,825: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:13,825: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    : create state_pubsub - bridge - tcp://*:*
+2017-05-17 11:12:13,834: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : start process
+2017-05-17 11:12:13,837: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : INFO    : child (me) initializing
+2017-05-17 11:12:13,838: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : DEBUG   : start thread
+2017-05-17 11:12:13,838: state.pubsub.bridge : state.pubsub.bridge             : state.pubsub.bridge.child.watch: INFO    : child (me) initializing
+2017-05-17 11:12:13,838: state.pubsub.bridge : state.pubsub.bridge             : state.pubsub.bridge.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,838: state.pubsub.bridge : state.pubsub.bridge             : state.pubsub.bridge.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-05-17 11:12:13,838: state.pubsub.bridge : state.pubsub.bridge             : state.pubsub.bridge.child.watch: INFO    : send alive
+2017-05-17 11:12:13,839: state.pubsub.bridge : state.pubsub.bridge             : state.pubsub.bridge.child.watch: INFO    : send message: alive
+2017-05-17 11:12:13,839: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:13,839: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,840: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:13,840: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : DEBUG   : child thread state.pubsub.bridge.child.watch started
+2017-05-17 11:12:13,840: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : INFO    : child (me) is alive
+2017-05-17 11:12:13,840: state.pubsub.bridge : state.pubsub.bridge             : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,846: state.pubsub.bridge : state.pubsub.bridge.child       : MainThread     : INFO    : send alive
+2017-05-17 11:12:13,846: state.pubsub.bridge : state.pubsub.bridge.child       : MainThread     : INFO    : send message: alive
+2017-05-17 11:12:13,846: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:13,847: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : start thread
+2017-05-17 11:12:13,847: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: INFO    : child (me) initializing
+2017-05-17 11:12:13,847: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,847: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-05-17 11:12:13,847: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: INFO    : send alive
+2017-05-17 11:12:13,847: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: INFO    : send message: alive
+2017-05-17 11:12:13,848: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:13,848: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,848: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:13,849: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : child thread state.pubsub.bridge.watch started
+2017-05-17 11:12:13,849: state.pubsub.bridge : MainProcess                     : MainThread     : INFO    : child is alive
+2017-05-17 11:12:13,849: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,849: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:13,849: state.pubsub.bridge : MainProcess                     : MainThread     : DEBUG   : child process started
+2017-05-17 11:12:23,890: state.pubsub.bridge : MainProcess                     : agent_0.idler._agent_command_cb: INFO    : parent stops child
+2017-05-17 11:12:23,890: state.pubsub.bridge : MainProcess                     : agent_0.idler._agent_command_cb: DEBUG   : ru_finalize_parent (NOOP)
+2017-05-17 11:12:23,890: state.pubsub.bridge : MainProcess                     : agent_0.idler._agent_command_cb: DEBUG   : ru_finalize_common (NOOP)
+2017-05-17 11:12:23,890: state.pubsub.bridge : MainProcess                     : agent_0.idler._agent_command_cb: INFO    : signal stop for state.pubsub.bridge.watch - do not join
+2017-05-17 11:12:23,966: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: INFO    : send message: work finished
+2017-05-17 11:12:23,966: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: DEBUG   : ru_finalize_child (NOOP)
+2017-05-17 11:12:23,966: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: DEBUG   : ru_finalize_common (NOOP)
+2017-05-17 11:12:23,966: state.pubsub.bridge : MainProcess                     : state.pubsub.bridge.watch: INFO    : send message: terminating
+2017-05-17 11:12:23,990: state.pubsub.bridge : MainProcess                     : agent_0.idler._agent_command_cb: WARNING : failed to stop child - terminate

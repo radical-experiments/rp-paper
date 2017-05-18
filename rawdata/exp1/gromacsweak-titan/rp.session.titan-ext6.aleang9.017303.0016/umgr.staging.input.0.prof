@@ -1,0 +1,5 @@
+#time,name,uid,state,event,msg
+1495063263.3705,umgr.staging.input.0:,,,sync abs,titan-ext6.ccs.ornl.gov:127.0.0.1:1495063263.32:1495063263.32:ntp
+1495063263.3739,umgr.staging.input.0:MainThread,umgr.staging.input.0,,initialize,
+1495067476.1838,umgr.staging.input.0:MainThread,umgr.staging.input.0,,stopped,
+1495067476.1838,umgr.staging.input.0:MainThread,,,END,

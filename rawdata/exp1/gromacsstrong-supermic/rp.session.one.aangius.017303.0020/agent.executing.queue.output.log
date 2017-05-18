@@ -1,0 +1,5 @@
+2017-05-17 11:12:15,828: agent.executing.queue.output: agent.executing.0               : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-05-17 11:12:15,832: agent.executing.queue.output: agent.executing.0               : MainThread     : INFO    :                      pid: 108229
+2017-05-17 11:12:15,832: agent.executing.queue.output: agent.executing.0               : MainThread     : INFO    :                      tid: MainThread
+2017-05-17 11:12:15,832: agent.executing.queue.output: agent.executing.0               : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:15,832: agent.executing.queue.output: agent.executing.0               : MainThread     : INFO    : create agent_executing_queue - output - tcp://204.90.41.11:46786

@@ -5,26 +5,23 @@ module of [RADICAL-Pilot](https://github.com/radical-cybertools/radical.pilot)
 (RP). Accordingly, we do not characterize the performance of the client module
 or the performance of the interaction between the client and agent modules.
 
-
-## Experiment 1 -- Weak scalability
-
-### Applications
+## Use cases
 
 | ID | Use cases | Executables | Assegnee | Referent |
 |----|-----------|-------------|----------|----------|
 | 1  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|Synapse emulating AMBER single core|Andre|Vivek|
-| 2  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|AMBER single core|?|Vivek| 
-| 3  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|?|Vivek| 
+| ~~2~~ |~~[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)~~|~~AMBER single core~~|~~?~~|~~Vivek~~| 
+| 3 |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|?|Vivek| 
 | 4  |[Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1)|AMBER MPI|Manuel|Antons|
-| 5  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|GROMACS single core?|Alessio|Vivek|
-| 6  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|LSDMap?|Alessio?|Vivek|
+| 5  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|GROMACS single core|Alessio|Vivek|
+| ~~6~~ |~~[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)~~|~~LSDMap?~~|~~?~~|~~Vivek~~|
 | 7  |[Geant4 detector simulation for the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit)|Geant4 multithreading|Alessio|Sergey|
 
-### Runs
 
-#### Use Case IDs: 1,2,5,7
+## Experiment 1 -- Weak scalability
 
-```
+#### Use Case IDs: 1,5,7
+
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
 | 2    | 128     | 1           | 1             | 1       | 128          | Stampede/Titan |
@@ -34,13 +31,30 @@ or the performance of the interaction between the client and agent modules.
 | 2    | 2048    | 1           | 1             | 1       | 2048         | Stampede/Titan |
 | 2    | 4096    | 1           | 1             | 1       | 4096         | Stampede/Titan |
 | 2    | 8192    | 1           | 1             | 1       | 8192         | Stampede/Titan |
-| 2    | 16384   | 1           | 1             | 1       | 16384        | Titan          |
-``` 
+| 2    | 16384   | 1           | 1             | 1       | 16384        | Stampede/Titan |
+| 2    | 32768   | 1           | 1             | 1       | 32768        | Titan          |
+| 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
-#### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)
-```
-TBD
-``` 
+
+#### Use Case IDs: 3, 4
+
+We assume:
+* 16 cores per worker node;
+* at least 2 worker nodes for each MPI job to enable message passing;
+
+|N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
+|------|---------|-------------|---------------|---------|--------------|----------------|
+| 2    | 2       | 64          | 1             | 1       | 128          | Stampede/Titan |
+| 2    | 4       | 64          | 1             | 1       | 256          | Stampede/Titan |
+| 2    | 8       | 64          | 1             | 1       | 512          | Stampede/Titan |
+| 2    | 16      | 64          | 1             | 1       | 1024         | Stampede/Titan |
+| 2    | 32      | 64          | 1             | 1       | 2048         | Stampede/Titan |
+| 2    | 64      | 64          | 1             | 1       | 4096         | Stampede/Titan |
+| 2    | 128     | 64          | 1             | 1       | 8192         | Stampede/Titan |
+| 2    | 256     | 64          | 1             | 1       | 16384        | Stampede/Titan |
+| 2    | 512     | 64          | 1             | 1       | 32768        | Titan          |
+| 2    | 1024    | 64          | 1             | 1       | 65536        | Titan          |
+
 
 ### Pseudo Graphs
 
@@ -101,39 +115,43 @@ TBD
 
 ## Experiment 2 -- Strong scalability
 
-### Applications
+#### Use Case IDs: 1,5,7
 
-| ID | Use cases | Executables | Assegnee | Referent |
-|----|-----------|-------------|----------|----------|
-| 1  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|Synapse emulating AMBER single core|Andre|Vivek|
-| 2  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|AMBER single core|?|Vivek| 
-| 3  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|?|Vivek| 
-| 4  |[Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1)|AMBER MPI|Manuel|Antons|
-| 5  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|GROMACS single core?|Alessio|Vivek|
-| 6  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|LSDMap?|Alessio?|Vivek|
-| 7  |[Geant4 detector simulation for the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit)|Geant4 multithreading|Alessio|Sergey|
-
-### Runs
-
-#### Use Case IDs: 1,2,5,7
-
-```
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
-| 2    | 16384   | 1           | 128           | 1       | 128          | Stampede/Titan |
-| 2    | 16384   | 1           | 64            | 1       | 256          | Stampede/Titan |
-| 2    | 16384   | 1           | 32            | 1       | 512          | Stampede/Titan |
-| 2    | 16384   | 1           | 16            | 1       | 1024         | Stampede/Titan |
-| 2    | 16384   | 1           | 8             | 1       | 2048         | Stampede/Titan |
-| 2    | 16384   | 1           | 4             | 1       | 4096         | Stampede/Titan |
-| 2    | 16384   | 1           | 2             | 1       | 8192         | Stampede/Titan |
-| 2    | 16384   | 1           | 1             | 1       | 16384        | Titan          |
-``` 
+| 2    | 65536   | 1           | 512           | 1       | 128          | Stampede/Titan |
+| 2    | 65536   | 1           | 256           | 1       | 256          | Stampede/Titan |
+| 2    | 65536   | 1           | 128           | 1       | 512          | Stampede/Titan |
+| 2    | 65536   | 1           | 64            | 1       | 1024         | Stampede/Titan |
+| 2    | 65536   | 1           | 32            | 1       | 2048         | Stampede/Titan |
+| 2    | 65536   | 1           | 16            | 1       | 4096         | Stampede/Titan |
+| 2    | 65536   | 1           | 8             | 1       | 8192         | Stampede/Titan |
+| 2    | 65536   | 1           | 4             | 1       | 16384        | Stampede/Titan |
+| 2    | 65536   | 1           | 2             | 1       | 32768        | Titan          |
+| 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
-#### Use Case IDs: 3 (up to 128 cores per task), 4 (different number of cores?), 6 (MPI at all?)
-```
-TBD
-``` 
+
+#### Use Case IDs: 3,4
+
+We assume:
+* 16 cores per worker node;
+* at least 2 worker nodes for each MPI job to enable message passing;
+* Tasks (replicas) do NOT terminate when performing an exchange! We need to fix the number of exchanges for the experiments with Repex. This will give us an indirect measure of how filesystem performance affects $T_x$
+* Generations is overloaded. Generations here do NOT refer to the generations of the workload but of the resources.
+
+|N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
+|------|---------|-------------|---------------|---------|--------------|----------------|
+| 2    | 1024    | 64          | 512           | 1       | 128          | Stampede/Titan |
+| 2    | 1024    | 64          | 256           | 1       | 256          | Stampede/Titan |
+| 2    | 1024    | 64          | 128           | 1       | 512          | Stampede/Titan |
+| 2    | 1024    | 64          | 64            | 1       | 1024         | Stampede/Titan |
+| 2    | 1024    | 64          | 32            | 1       | 2048         | Stampede/Titan |
+| 2    | 1024    | 64          | 16            | 1       | 4096         | Stampede/Titan |
+| 2    | 1024    | 64          | 8             | 1       | 8192         | Stampede/Titan |
+| 2    | 1024    | 64          | 4             | 1       | 16384        | Stampede/Titan |
+| 2    | 1024    | 64          | 2             | 1       | 32768        | Titan          |
+| 2    | 1024    | 64          | 1             | 1       | 65536        | Titan          |
+
 
 
 ### Pseudo Graphs
@@ -195,7 +213,7 @@ TBD
 # OLD - PLEASE IGNORE
 ## Design
 
-We assume five use cases:
+~~We assume five use cases:
 *   [AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1).
 *   ([GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23).
 *   [Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1).
@@ -512,4 +530,3 @@ $ cd radical.synapse; git checkout master                ; pip install .; cd ..
 
 $ cd ..
 ```
-

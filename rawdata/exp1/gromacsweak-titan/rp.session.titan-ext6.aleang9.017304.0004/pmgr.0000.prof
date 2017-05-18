@@ -1,0 +1,15 @@
+#time,name,uid,state,event,msg
+1495082324.3780,pmgr.0000:,,,sync abs,titan-ext6.ccs.ornl.gov:127.0.0.1:1495082324.35:1495082324.35:ntp
+1495082324.3813,pmgr.0000:MainThread,pmgr.0000,,initialize,
+1495082324.7560,pmgr.0000:MainThread,pmgr.0000,,create pmgr,
+1495082325.0060,pmgr.0000:MainThread,,,PMGR setup done,
+1495082332.4147,pmgr.0000:MainThread,pilot.0000,NEW,advance,
+1495082332.5260,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,advance,
+1495082332.5265,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,publish,
+1495082332.5269,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,put,pmgr.launching.queue.input
+1495082332.5312,pmgr.0000:pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_LAUNCHING,advance,
+1495082369.6019,pmgr.0000:pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_ACTIVE_PENDING,advance,
+1495084333.3027,pmgr.0000:pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,advance,
+1495084333.3034,pmgr.0000:pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,publish,
+1495091520.5902,pmgr.0000:MainThread,pmgr.0000,,stopped,
+1495091520.5902,pmgr.0000:MainThread,,,END,

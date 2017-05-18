@@ -1,0 +1,36 @@
+2017-05-17 11:12:13,963: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-05-17 11:12:13,967: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    :                      pid: 107982
+2017-05-17 11:12:13,967: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2017-05-17 11:12:13,967: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:13,968: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    : create agent_executing_queue - bridge - tcp://*:*
+2017-05-17 11:12:13,968: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : start process
+2017-05-17 11:12:13,971: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : INFO    : child (me) initializing
+2017-05-17 11:12:13,972: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : DEBUG   : start thread
+2017-05-17 11:12:13,972: agent.executing.queue.bridge: agent.executing.queue.bridge    : agent.executing.queue.bridge.child.watch: INFO    : child (me) initializing
+2017-05-17 11:12:13,972: agent.executing.queue.bridge: agent.executing.queue.bridge    : agent.executing.queue.bridge.child.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,973: agent.executing.queue.bridge: agent.executing.queue.bridge    : agent.executing.queue.bridge.child.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-05-17 11:12:13,973: agent.executing.queue.bridge: agent.executing.queue.bridge    : agent.executing.queue.bridge.child.watch: INFO    : send alive
+2017-05-17 11:12:13,973: agent.executing.queue.bridge: agent.executing.queue.bridge    : agent.executing.queue.bridge.child.watch: INFO    : send message: alive
+2017-05-17 11:12:13,974: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:13,974: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,974: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:13,974: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : DEBUG   : child thread agent.executing.queue.bridge.child.watch started
+2017-05-17 11:12:13,974: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : INFO    : child (me) is alive
+2017-05-17 11:12:13,974: agent.executing.queue.bridge: agent.executing.queue.bridge    : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,980: agent.executing.queue.bridge: agent.executing.queue.bridge.child: MainThread     : INFO    : send alive
+2017-05-17 11:12:13,980: agent.executing.queue.bridge: agent.executing.queue.bridge.child: MainThread     : INFO    : send message: alive
+2017-05-17 11:12:13,980: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:13,981: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : start thread
+2017-05-17 11:12:13,981: agent.executing.queue.bridge: MainProcess                     : agent.executing.queue.bridge.watch: INFO    : child (me) initializing
+2017-05-17 11:12:13,981: agent.executing.queue.bridge: MainProcess                     : agent.executing.queue.bridge.watch: DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,981: agent.executing.queue.bridge: MainProcess                     : agent.executing.queue.bridge.watch: DEBUG   : ru_initialize_child (NOOP)
+2017-05-17 11:12:13,981: agent.executing.queue.bridge: MainProcess                     : agent.executing.queue.bridge.watch: INFO    : send alive
+2017-05-17 11:12:13,981: agent.executing.queue.bridge: MainProcess                     : agent.executing.queue.bridge.watch: INFO    : send message: alive
+2017-05-17 11:12:13,982: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:13,982: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,982: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:13,982: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : child thread agent.executing.queue.bridge.watch started
+2017-05-17 11:12:13,982: agent.executing.queue.bridge: MainProcess                     : MainThread     : INFO    : child is alive
+2017-05-17 11:12:13,982: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:13,983: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:13,983: agent.executing.queue.bridge: MainProcess                     : MainThread     : DEBUG   : child process started

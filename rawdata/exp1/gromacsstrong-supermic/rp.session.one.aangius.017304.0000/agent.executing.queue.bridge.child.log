@@ -1,0 +1,26 @@
+2017-05-17 11:12:13,975: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-05-17 11:12:13,979: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : INFO    :                      pid: 108067
+2017-05-17 11:12:13,979: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : INFO    :                      tid: MainThread
+2017-05-17 11:12:13,979: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:13,979: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : INFO    : start bridge agent.executing.queue.bridge.child on tcp://*:*
+2017-05-17 11:12:13,980: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : INFO    : bound bridge agent.executing.queue.bridge.child to tcp://0.0.0.0:44286 : tcp://0.0.0.0:46786
+2017-05-17 11:12:16,057: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,067: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,075: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,083: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,091: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,101: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,109: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,117: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,125: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,133: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,143: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,151: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,159: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,167: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,176: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,185: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,193: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,201: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,209: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]
+2017-05-17 11:12:16,218: agent.executing.queue.bridge.child: agent.executing.queue.bridge.child: MainThread     : DEBUG   : sent  1 [hwm: 1]

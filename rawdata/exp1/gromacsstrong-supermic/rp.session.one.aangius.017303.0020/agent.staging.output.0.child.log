@@ -1,0 +1,266 @@
+2017-05-17 11:12:16,075: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-05-17 11:12:16,079: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    :                      pid: 108311
+2017-05-17 11:12:16,079: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    :                      tid: MainThread
+2017-05-17 11:12:16,079: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:16,080: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    : initialize agent.staging.output.0.child
+2017-05-17 11:12:16,087: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_1',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.11:44286',
+                                       'addr_out': 'tcp://204.90.41.11:46786',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:39052',
+                                         'addr_out': 'tcp://204.90.41.11:36106',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.11:45640',
+                                        'addr_out': 'tcp://204.90.41.11:35082',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.11:32912',
+                                           'addr_out': 'tcp://204.90.41.11:41858',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.11:41714',
+                                            'addr_out': 'tcp://204.90.41.11:43171',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:40116',
+                                         'addr_out': 'tcp://204.90.41.11:43031',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.11:40907',
+                                'addr_out': 'tcp://204.90.41.11:41207',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.11:43563',
+                            'addr_out': 'tcp://204.90.41.11:36293',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.11:45833',
+                              'addr_out': 'tcp://204.90.41.11:38405',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'cname': 'AgentStagingOutputComponent',
+ 'components': {},
+ 'cores': 40,
+ 'cores_per_node': 20,
+ 'count': 1,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://144.76.72.175/alessio',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'global_sandbox': '/work/aangius/radical.pilot.sandbox',
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic011', 'smic042']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'number': 0,
+ 'owner': 'agent_1',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv': '%(global_sandbox)s/ve_supermic',
+                  'virtenv_mode': 'create'},
+ 'runtime': 120,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.aangius.017303.0013',
+ 'session_sandbox': '/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_1',
+ 'workdir': '/worka/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000'}
+2017-05-17 11:12:16,088: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : start components: {}
+2017-05-17 11:12:16,088: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : START: agent.staging.output.0.child register publisher log_pubsub
+2017-05-17 11:12:16,088: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : using addr tcp://204.90.41.11:43563 for pubsub log_pubsub
+2017-05-17 11:12:16,089: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub
+2017-05-17 11:12:16,089: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : START: agent.staging.output.0.child register publisher state_pubsub
+2017-05-17 11:12:16,089: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : using addr tcp://204.90.41.11:45833 for pubsub state_pubsub
+2017-05-17 11:12:16,091: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub
+2017-05-17 11:12:16,091: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : START: agent.staging.output.0.child register publisher control_pubsub
+2017-05-17 11:12:16,091: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : using addr tcp://204.90.41.11:40907 for pubsub control_pubsub
+2017-05-17 11:12:16,092: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub
+2017-05-17 11:12:16,093: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : START: agent.staging.output.0.child register subscriber agent.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-05-17 11:12:16,093: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : using addr tcp://204.90.41.11:41207 for pubsub control_pubsub
+2017-05-17 11:12:16,099: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : start thread
+2017-05-17 11:12:16,099: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : child (me) initializing
+2017-05-17 11:12:16,099: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:16,100: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_initialize_child (NOOP)
+2017-05-17 11:12:16,100: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send alive
+2017-05-17 11:12:16,100: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send message: alive
+2017-05-17 11:12:16,101: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    : recv message: alive
+2017-05-17 11:12:16,101: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : ru_initialize_common (NOOP)
+2017-05-17 11:12:16,101: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : ru_initialize_parent (NOOP)
+2017-05-17 11:12:16,101: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : child thread agent.staging.output.0.child.subscriber._cancel_monitor_cb started
+2017-05-17 11:12:16,101: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : agent.staging.output.0.child registered control_pubsub subscriber agent.staging.output.0.child.subscriber._cancel_monitor_cb
+2017-05-17 11:12:16,101: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : using addr tcp://204.90.41.11:43171 for input agent_staging_output_queue
+2017-05-17 11:12:16,107: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : registered input agent.staging.output.0.child.work.AGENT_STAGING_OUTPUT_PENDING
+2017-05-17 11:12:16,107: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : START: agent.staging.output.0.child register input AGENT_STAGING_OUTPUT_PENDING: agent.staging.output.0.child.work.AGENT_STAGING_OUTPUT_PENDING
+2017-05-17 11:12:16,108: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : registered worker work [AGENT_STAGING_OUTPUT_PENDING]
+2017-05-17 11:12:16,108: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : START: agent.staging.output.0.child register output UMGR_STAGING_OUTPUT_PENDING
+2017-05-17 11:12:17,851: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000000)
+2017-05-17 11:12:17,851: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,851: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000000 [1]
+2017-05-17 11:12:17,853: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,853: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000000 [1]
+2017-05-17 11:12:17,854: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000002)
+2017-05-17 11:12:17,854: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,854: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000002 [1]
+2017-05-17 11:12:17,855: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,855: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000002 [1]
+2017-05-17 11:12:17,856: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000004)
+2017-05-17 11:12:17,856: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,856: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000004 [1]
+2017-05-17 11:12:17,857: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,857: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000004 [1]
+2017-05-17 11:12:17,858: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000006)
+2017-05-17 11:12:17,858: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,858: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000006 [1]
+2017-05-17 11:12:17,859: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,859: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000006 [1]
+2017-05-17 11:12:17,860: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000008)
+2017-05-17 11:12:17,860: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,860: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000008 [1]
+2017-05-17 11:12:17,861: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,861: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000008 [1]
+2017-05-17 11:12:17,862: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000010)
+2017-05-17 11:12:17,862: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,862: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000010 [1]
+2017-05-17 11:12:17,863: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,863: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000010 [1]
+2017-05-17 11:12:17,864: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000012)
+2017-05-17 11:12:17,864: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,864: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000012 [1]
+2017-05-17 11:12:17,865: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,865: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000012 [1]
+2017-05-17 11:12:17,866: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000014)
+2017-05-17 11:12:17,866: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,866: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000014 [1]
+2017-05-17 11:12:17,867: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,867: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000014 [1]
+2017-05-17 11:12:17,868: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000016)
+2017-05-17 11:12:17,868: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,868: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000016 [1]
+2017-05-17 11:12:17,869: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,869: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000016 [1]
+2017-05-17 11:12:17,870: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000018)
+2017-05-17 11:12:17,870: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,870: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000018 [1]
+2017-05-17 11:12:17,871: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,872: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000018 [1]
+2017-05-17 11:12:17,872: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000001)
+2017-05-17 11:12:17,872: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,872: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000001 [1]
+2017-05-17 11:12:17,874: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,874: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000001 [1]
+2017-05-17 11:12:17,874: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000005)
+2017-05-17 11:12:17,874: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,874: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000005 [1]
+2017-05-17 11:12:17,875: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,876: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000005 [1]
+2017-05-17 11:12:17,876: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000009)
+2017-05-17 11:12:17,876: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,876: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000009 [1]
+2017-05-17 11:12:17,877: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,878: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000009 [1]
+2017-05-17 11:12:17,878: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000013)
+2017-05-17 11:12:17,878: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,878: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000013 [1]
+2017-05-17 11:12:17,879: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,880: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000013 [1]
+2017-05-17 11:12:17,880: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000017)
+2017-05-17 11:12:17,880: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,880: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000017 [1]
+2017-05-17 11:12:17,881: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,882: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000017 [1]
+2017-05-17 11:12:17,882: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000003)
+2017-05-17 11:12:17,882: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,882: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000003 [1]
+2017-05-17 11:12:17,883: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,884: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000003 [1]
+2017-05-17 11:12:17,884: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000011)
+2017-05-17 11:12:17,884: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,884: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000011 [1]
+2017-05-17 11:12:17,886: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,886: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000011 [1]
+2017-05-17 11:12:17,886: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000019)
+2017-05-17 11:12:17,886: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,886: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000019 [1]
+2017-05-17 11:12:17,888: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,888: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000019 [1]
+2017-05-17 11:12:17,888: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000007)
+2017-05-17 11:12:17,888: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,888: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000007 [1]
+2017-05-17 11:12:17,890: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,890: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000007 [1]
+2017-05-17 11:12:17,890: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : got unit (unit.000015)
+2017-05-17 11:12:17,890: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,890: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000015 [1]
+2017-05-17 11:12:17,892: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk size: 1 [False, True]
+2017-05-17 11:12:17,892: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : advance bulk: unit.000015 [1]
+2017-05-17 11:12:24,900: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : ru_finalize_common()
+2017-05-17 11:12:24,986: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : stop agent.staging.output.0.child (108311 : 108311 : MainThread) [radical.utils.process.Default.is_valid]
+2017-05-17 11:12:24,986: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : ru_finalize_common()
+2017-05-17 11:12:24,986: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : TERM : agent.staging.output.0.child unregister publisher state_pubsub
+2017-05-17 11:12:24,987: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : unregistered publisher state_pubsub
+2017-05-17 11:12:24,987: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : TERM : agent.staging.output.0.child unregister publisher control_pubsub
+2017-05-17 11:12:24,987: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : unregistered publisher control_pubsub
+2017-05-17 11:12:24,987: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : agent.staging.output.0.child close prof
+2017-05-17 11:12:24,988: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    : parent stops child
+2017-05-17 11:12:24,988: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : ru_finalize_parent (NOOP)
+2017-05-17 11:12:24,988: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : ru_finalize_common (NOOP)
+2017-05-17 11:12:25,137: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_child (NOOP)
+2017-05-17 11:12:25,137: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: DEBUG   : ru_finalize_common (NOOP)
+2017-05-17 11:12:25,137: agent.staging.output.0.child: agent.staging.output.0          : agent.staging.output.0.child.subscriber._cancel_monitor_cb: INFO    : send message: terminating
+2017-05-17 11:12:25,151: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : WARNING : component agent.staging.output.0.child is invalid
+2017-05-17 11:12:25,153: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : stop agent.staging.output.0.child (108311 : 108311 : MainThread) [radical.pilot.utils.component.Default.is_valid]
+2017-05-17 11:12:25,153: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : WARNING : publisher state_pubsub is not registered
+2017-05-17 11:12:25,153: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : WARNING : publisher control_pubsub is not registered
+2017-05-17 11:12:25,153: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : DEBUG   : agent.staging.output.0.child close prof
+2017-05-17 11:12:25,154: agent.staging.output.0.child: agent.staging.output.0          : MainThread     : INFO    : parent stops child

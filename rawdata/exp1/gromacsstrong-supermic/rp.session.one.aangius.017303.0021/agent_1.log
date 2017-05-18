@@ -1,0 +1,324 @@
+2017-05-17 11:12:15,597: agent_1             : MainProcess                     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
+2017-05-17 11:12:15,604: agent_1             : MainProcess                     : MainThread     : INFO    :                      pid: 108116
+2017-05-17 11:12:15,604: agent_1             : MainProcess                     : MainThread     : INFO    :                      tid: MainThread
+2017-05-17 11:12:15,604: agent_1             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:15,605: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_das5.json
+2017-05-17 11:12:15,607: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for das5.fs1_ssh
+2017-05-17 11:12:15,608: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_local.json
+2017-05-17 11:12:15,619: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for local.localhost_orte
+2017-05-17 11:12:15,620: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for local.localhost_anaconda
+2017-05-17 11:12:15,620: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for local.localhost_ortelib
+2017-05-17 11:12:15,621: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for local.localhost
+2017-05-17 11:12:15,621: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for local.localhost_spark
+2017-05-17 11:12:15,621: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for local.localhost_spark_anaconda
+2017-05-17 11:12:15,622: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for local.localhost_yarn
+2017-05-17 11:12:15,622: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_iu.json
+2017-05-17 11:12:15,626: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for iu.bigred2_ccm_ssh
+2017-05-17 11:12:15,626: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for iu.bigred2_aprun
+2017-05-17 11:12:15,627: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_ornl.json
+2017-05-17 11:12:15,633: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ornl.titan_orte
+2017-05-17 11:12:15,633: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ornl.titan_aprun
+2017-05-17 11:12:15,634: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ornl.titan_ortelib
+2017-05-17 11:12:15,634: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_lumc.json
+2017-05-17 11:12:15,638: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for lumc.gb-ui_ssh
+2017-05-17 11:12:15,638: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for lumc.shark_ssh
+2017-05-17 11:12:15,639: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_nersc.json
+2017-05-17 11:12:15,650: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for nersc.edison_ccm_ssh
+2017-05-17 11:12:15,650: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for nersc.hopper_orte
+2017-05-17 11:12:15,651: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for nersc.hopper_ccm_ssh
+2017-05-17 11:12:15,651: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for nersc.edison_aprun
+2017-05-17 11:12:15,652: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for nersc.hopper_aprun
+2017-05-17 11:12:15,652: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for nersc.edison_orte
+2017-05-17 11:12:15,652: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_aliases.json
+2017-05-17 11:12:15,653: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_futuregrid.json
+2017-05-17 11:12:15,663: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for futuregrid.delta_ssh
+2017-05-17 11:12:15,663: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for futuregrid.india_ssh
+2017-05-17 11:12:15,664: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for futuregrid.echo_ssh
+2017-05-17 11:12:15,664: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for futuregrid.xray_ccm
+2017-05-17 11:12:15,665: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for futuregrid.bravo_ssh
+2017-05-17 11:12:15,665: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for futuregrid.xray_aprun
+2017-05-17 11:12:15,665: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_osg.json
+2017-05-17 11:12:15,670: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for osg.xsede-virt-clust
+2017-05-17 11:12:15,670: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for osg.connect
+2017-05-17 11:12:15,671: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_epsrc.json
+2017-05-17 11:12:15,675: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for epsrc.archer_orte
+2017-05-17 11:12:15,675: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for epsrc.archer_aprun
+2017-05-17 11:12:15,676: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_chameleon.json
+2017-05-17 11:12:15,678: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for chameleon.cloud_vm_yarn
+2017-05-17 11:12:15,678: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_ncsa.json
+2017-05-17 11:12:15,687: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ncsa.bw_orte
+2017-05-17 11:12:15,687: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ncsa.bw_ccm_ssh
+2017-05-17 11:12:15,687: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ncsa.bw_ortelib
+2017-05-17 11:12:15,688: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ncsa.bw_aprun
+2017-05-17 11:12:15,688: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ncsa.bw_local_orte
+2017-05-17 11:12:15,689: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_rice.json
+2017-05-17 11:12:15,693: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for rice.davinci_ssh
+2017-05-17 11:12:15,693: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for rice.biou_ssh
+2017-05-17 11:12:15,693: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_xsede.json
+2017-05-17 11:12:15,726: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.wrangler_spark
+2017-05-17 11:12:15,726: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.stampede_yarn
+2017-05-17 11:12:15,727: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.gordon_ssh
+2017-05-17 11:12:15,727: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.stampede_ssh
+2017-05-17 11:12:15,728: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.lonestar_ssh
+2017-05-17 11:12:15,728: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.supermic_spark
+2017-05-17 11:12:15,728: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.wrangler_ssh
+2017-05-17 11:12:15,729: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.wrangler_yarn
+2017-05-17 11:12:15,729: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.supermic_ssh
+2017-05-17 11:12:15,730: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.stampede_orte
+2017-05-17 11:12:15,730: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.greenfield
+2017-05-17 11:12:15,731: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.comet_spark
+2017-05-17 11:12:15,731: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.trestles_ssh
+2017-05-17 11:12:15,732: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.comet_ssh
+2017-05-17 11:12:15,732: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.stampede_spark
+2017-05-17 11:12:15,732: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.comet_orte
+2017-05-17 11:12:15,733: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.comet_ortelib
+2017-05-17 11:12:15,733: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.blacklight_ssh
+2017-05-17 11:12:15,734: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for xsede.stampede_ortelib
+2017-05-17 11:12:15,734: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_das4.json
+2017-05-17 11:12:15,736: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for das4.fs2_ssh
+2017-05-17 11:12:15,737: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_radical.json
+2017-05-17 11:12:15,739: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for radical.tutorial
+2017-05-17 11:12:15,739: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_fub.json
+2017-05-17 11:12:15,742: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for fub.allegro_rsh
+2017-05-17 11:12:15,742: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_yale.json
+2017-05-17 11:12:15,744: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for yale.grace_ssh
+2017-05-17 11:12:15,745: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_ncar.json
+2017-05-17 11:12:15,747: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for ncar.yellowstone_ssh
+2017-05-17 11:12:15,747: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_stfc.json
+2017-05-17 11:12:15,749: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for stfc.joule_runjob
+2017-05-17 11:12:15,750: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations from /work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/rp_install/lib/python2.7/site-packages/radical/pilot/configs/resource_lrz.json
+2017-05-17 11:12:15,752: agent_1             : MainProcess                     : MainThread     : INFO    : Load resource configurations for lrz.supermuc_ssh
+2017-05-17 11:12:15,753: agent_1             : MainProcess                     : MainThread     : INFO    : New Session created: rp.session.one.aangius.017303.0013.
+2017-05-17 11:12:15,755: agent_1             : MainProcess                     : MainThread     : DEBUG   : start bridges   : {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.11:44286',
+                           'addr_out': 'tcp://204.90.41.11:46786',
+                           'bulk_size': 0,
+                           'log_level': 'debug',
+                           'stall_hwm': 1},
+ 'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:39052',
+                             'addr_out': 'tcp://204.90.41.11:36106',
+                             'bulk_size': 0,
+                             'log_level': 'debug',
+                             'stall_hwm': 1},
+ 'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.11:45640',
+                            'addr_out': 'tcp://204.90.41.11:35082',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+ 'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.11:32912',
+                               'addr_out': 'tcp://204.90.41.11:41858',
+                               'bulk_size': 0,
+                               'log_level': 'debug',
+                               'stall_hwm': 1},
+ 'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.11:41714',
+                                'addr_out': 'tcp://204.90.41.11:43171',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+ 'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:40116',
+                             'addr_out': 'tcp://204.90.41.11:43031',
+                             'bulk_size': 0,
+                             'log_level': 'debug',
+                             'stall_hwm': 1},
+ 'control_pubsub': {'addr_in': 'tcp://204.90.41.11:40907',
+                    'addr_out': 'tcp://204.90.41.11:41207',
+                    'bulk_size': 0,
+                    'log_level': 'debug',
+                    'stall_hwm': 1},
+ 'log_pubsub': {'addr_in': 'tcp://204.90.41.11:43563',
+                'addr_out': 'tcp://204.90.41.11:36293',
+                'bulk_size': 0,
+                'log_level': 'debug',
+                'stall_hwm': 1},
+ 'state_pubsub': {'addr_in': 'tcp://204.90.41.11:45833',
+                  'addr_out': 'tcp://204.90.41.11:38405',
+                  'bulk_size': 0,
+                  'log_level': 'debug',
+                  'stall_hwm': 1}}
+2017-05-17 11:12:15,755: agent_1             : MainProcess                     : MainThread     : DEBUG   : start components: {}
+2017-05-17 11:12:15,763: agent_1             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:15,763: agent_1             : MainProcess                     : MainThread     : DEBUG   : start process
+2017-05-17 11:12:15,763: agent_1             : MainProcess                     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
+2017-05-17 11:12:15,763: agent_1             : MainProcess                     : MainThread     : INFO    : initialize agent_1
+2017-05-17 11:12:15,770: agent_1             : MainProcess                     : MainThread     : INFO    : cfg: {'agent_launch_method': 'SSH',
+ 'agent_name': 'agent_1',
+ 'agents': {},
+ 'bridges': {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.11:44286',
+                                       'addr_out': 'tcp://204.90.41.11:46786',
+                                       'bulk_size': 0,
+                                       'log_level': 'debug',
+                                       'stall_hwm': 1},
+             'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:39052',
+                                         'addr_out': 'tcp://204.90.41.11:36106',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.11:45640',
+                                        'addr_out': 'tcp://204.90.41.11:35082',
+                                        'bulk_size': 0,
+                                        'log_level': 'debug',
+                                        'stall_hwm': 1},
+             'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.11:32912',
+                                           'addr_out': 'tcp://204.90.41.11:41858',
+                                           'bulk_size': 0,
+                                           'log_level': 'debug',
+                                           'stall_hwm': 1},
+             'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.11:41714',
+                                            'addr_out': 'tcp://204.90.41.11:43171',
+                                            'bulk_size': 0,
+                                            'log_level': 'debug',
+                                            'stall_hwm': 1},
+             'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:40116',
+                                         'addr_out': 'tcp://204.90.41.11:43031',
+                                         'bulk_size': 0,
+                                         'log_level': 'debug',
+                                         'stall_hwm': 1},
+             'control_pubsub': {'addr_in': 'tcp://204.90.41.11:40907',
+                                'addr_out': 'tcp://204.90.41.11:41207',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+             'log_pubsub': {'addr_in': 'tcp://204.90.41.11:43563',
+                            'addr_out': 'tcp://204.90.41.11:36293',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+             'state_pubsub': {'addr_in': 'tcp://204.90.41.11:45833',
+                              'addr_out': 'tcp://204.90.41.11:38405',
+                              'bulk_size': 0,
+                              'log_level': 'debug',
+                              'stall_hwm': 1}},
+ 'bulk_collection_size': 100,
+ 'bulk_collection_time': 1.0,
+ 'components': {'AgentExecutingComponent': {'count': 1},
+                'AgentSchedulingComponent': {'count': 1},
+                'AgentStagingInputComponent': {'count': 1},
+                'AgentStagingOutputComponent': {'count': 1}},
+ 'cores': 40,
+ 'cores_per_node': 20,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': None,
+ 'db_poll_sleeptime': 1.0,
+ 'dburl': 'mongodb://144.76.72.175/alessio',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'global_sandbox': '/work/aangius/radical.pilot.sandbox',
+ 'logdir': '.',
+ 'lrms': 'TORQUE',
+ 'lrms_info': {'agent_nodes': {},
+               'cores_per_node': 20,
+               'lm_info': {},
+               'name': 'Torque',
+               'node_list': ['smic011', 'smic042']},
+ 'max_io_loglength': 1024,
+ 'mode': 'shared',
+ 'mpi_launch_method': 'MPIEXEC',
+ 'owner': 'agent_0',
+ 'pilot_id': 'pilot.0000',
+ 'pilot_sandbox': '/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000/',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': '20',
+                  'default_queue': 'workq',
+                  'default_remote_workdir': '/work/$USER',
+                  'description': "SuperMIC (pronounced 'Super Mick') is Louisiana State University's (LSU) newest supercomputer funded by the National Science Foundation's (NSF) Major Research Instrumentation (MRI) award to the Center for Computation & Technology. (https://portal.xsede.org/lsu-supermic)",
+                  'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://supermic.cct-lsu.xsede.org:2222/',
+                             'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/'},
+                  'job_manager_endpoint': 'torque+gsissh://supermic.cct-lsu.xsede.org:2222/',
+                  'label': 'xsede.supermic_ssh',
+                  'lrms': 'TORQUE',
+                  'mpi_launch_method': 'MPIEXEC',
+                  'notes': 'Partially allocated through XSEDE. Primary access through GSISSH. Allows SSH key authentication too.',
+                  'pre_bootstrap_1': ['module load python'],
+                  'python_dist': 'default',
+                  'rp_version': 'local',
+                  'schemas': ['gsissh', 'ssh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://supermic.cct-lsu.xsede.org/',
+                          'job_manager_endpoint': 'torque+ssh://supermic.cct-lsu.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/work'],
+                  'virtenv': '%(global_sandbox)s/ve_supermic',
+                  'virtenv_mode': 'create'},
+ 'runtime': 120,
+ 'scheduler': 'CONTINUOUS',
+ 'session_id': 'rp.session.one.aangius.017303.0013',
+ 'session_sandbox': '/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013',
+ 'spawner': 'POPEN',
+ 'staging_area': 'staging_area',
+ 'staging_schema': 'staging',
+ 'target': 'local',
+ 'task_launch_method': 'SSH',
+ 'uid': 'agent_0',
+ 'workdir': '/worka/work/aangius/radical.pilot.sandbox/rp.session.one.aangius.017303.0013/pilot.0000'}
+2017-05-17 11:12:15,773: agent_1             : MainProcess                     : MainThread     : DEBUG   : start bridges   : {'agent_executing_queue': {'addr_in': 'tcp://204.90.41.11:44286',
+                           'addr_out': 'tcp://204.90.41.11:46786',
+                           'bulk_size': 0,
+                           'log_level': 'debug',
+                           'stall_hwm': 1},
+ 'agent_reschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:39052',
+                             'addr_out': 'tcp://204.90.41.11:36106',
+                             'bulk_size': 0,
+                             'log_level': 'debug',
+                             'stall_hwm': 1},
+ 'agent_scheduling_queue': {'addr_in': 'tcp://204.90.41.11:45640',
+                            'addr_out': 'tcp://204.90.41.11:35082',
+                            'bulk_size': 0,
+                            'log_level': 'debug',
+                            'stall_hwm': 1},
+ 'agent_staging_input_queue': {'addr_in': 'tcp://204.90.41.11:32912',
+                               'addr_out': 'tcp://204.90.41.11:41858',
+                               'bulk_size': 0,
+                               'log_level': 'debug',
+                               'stall_hwm': 1},
+ 'agent_staging_output_queue': {'addr_in': 'tcp://204.90.41.11:41714',
+                                'addr_out': 'tcp://204.90.41.11:43171',
+                                'bulk_size': 0,
+                                'log_level': 'debug',
+                                'stall_hwm': 1},
+ 'agent_unschedule_pubsub': {'addr_in': 'tcp://204.90.41.11:40116',
+                             'addr_out': 'tcp://204.90.41.11:43031',
+                             'bulk_size': 0,
+                             'log_level': 'debug',
+                             'stall_hwm': 1},
+ 'control_pubsub': {'addr_in': 'tcp://204.90.41.11:40907',
+                    'addr_out': 'tcp://204.90.41.11:41207',
+                    'bulk_size': 0,
+                    'log_level': 'debug',
+                    'stall_hwm': 1},
+ 'log_pubsub': {'addr_in': 'tcp://204.90.41.11:43563',
+                'addr_out': 'tcp://204.90.41.11:36293',
+                'bulk_size': 0,
+                'log_level': 'debug',
+                'stall_hwm': 1},
+ 'state_pubsub': {'addr_in': 'tcp://204.90.41.11:45833',
+                  'addr_out': 'tcp://204.90.41.11:38405',
+                  'bulk_size': 0,
+                  'log_level': 'debug',
+                  'stall_hwm': 1}}
+2017-05-17 11:12:15,773: agent_1             : MainProcess                     : MainThread     : DEBUG   : start components: {'AgentExecutingComponent': {'count': 1},
+ 'AgentSchedulingComponent': {'count': 1},
+ 'AgentStagingInputComponent': {'count': 1},
+ 'AgentStagingOutputComponent': {'count': 1}}
+2017-05-17 11:12:15,773: agent_1             : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) AgentExecutingComponent
+2017-05-17 11:12:15,868: agent_1             : agent.executing.0               : MainThread     : INFO    : Discovered launch command: '/usr/bin/ssh -o StrictHostKeyChecking=no -o ControlMaster=auto'.
+2017-05-17 11:12:15,869: agent_1             : agent.executing.0               : MainThread     : INFO    : Discovered launch command: '/usr/local/packages/mvapich2/2.0/INTEL-14.0.2/bin/mpiexec'.
+2017-05-17 11:12:15,895: agent_1             : MainProcess                     : MainThread     : INFO    : agent_1                        starts agent.executing.0
+2017-05-17 11:12:15,895: agent_1             : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) AgentSchedulingComponent
+2017-05-17 11:12:15,993: agent_1             : MainProcess                     : MainThread     : INFO    : agent_1                        starts agent.scheduling.0
+2017-05-17 11:12:15,993: agent_1             : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) AgentStagingInputComponent
+2017-05-17 11:12:16,057: agent_1             : MainProcess                     : MainThread     : INFO    : agent_1                        starts agent.staging.input.0
+2017-05-17 11:12:16,057: agent_1             : MainProcess                     : MainThread     : DEBUG   : start 1 component(s) AgentStagingOutputComponent
+2017-05-17 11:12:16,122: agent_1             : MainProcess                     : MainThread     : INFO    : agent_1                        starts agent.staging.output.0
+2017-05-17 11:12:16,123: agent_1             : MainProcess                     : MainThread     : DEBUG   : START: agent_1 register publisher log_pubsub
+2017-05-17 11:12:16,123: agent_1             : MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.11:43563 for pubsub log_pubsub
+2017-05-17 11:12:16,124: agent_1             : MainProcess                     : MainThread     : DEBUG   : registered publisher : log_pubsub : log.pubsub.pub
+2017-05-17 11:12:16,124: agent_1             : MainProcess                     : MainThread     : DEBUG   : START: agent_1 register publisher state_pubsub
+2017-05-17 11:12:16,124: agent_1             : MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.11:45833 for pubsub state_pubsub
+2017-05-17 11:12:16,125: agent_1             : MainProcess                     : MainThread     : DEBUG   : registered publisher : state_pubsub : state.pubsub.pub
+2017-05-17 11:12:16,125: agent_1             : MainProcess                     : MainThread     : DEBUG   : START: agent_1 register publisher control_pubsub
+2017-05-17 11:12:16,125: agent_1             : MainProcess                     : MainThread     : DEBUG   : using addr tcp://204.90.41.11:40907 for pubsub control_pubsub
+2017-05-17 11:12:16,126: agent_1             : MainProcess                     : MainThread     : DEBUG   : registered publisher : control_pubsub : control.pubsub.pub
+2017-05-17 11:12:16,126: agent_1             : MainProcess                     : MainThread     : DEBUG   : msg [agent_1] : agent_0 [agent]
+2017-05-17 11:12:16,126: agent_1             : MainProcess                     : MainThread     : DEBUG   : child process started

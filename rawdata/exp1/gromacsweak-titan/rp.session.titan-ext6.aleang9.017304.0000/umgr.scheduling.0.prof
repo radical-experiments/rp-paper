@@ -1,0 +1,5 @@
+#time,name,uid,state,event,msg
+1495067524.6481,umgr.scheduling.0:,,,sync abs,titan-ext6.ccs.ornl.gov:127.0.0.1:1495067524.63:1495067524.63:ntp
+1495067524.6515,umgr.scheduling.0:MainThread,umgr.scheduling.0,,initialize,
+1495070302.9333,umgr.scheduling.0:MainThread,umgr.scheduling.0,,stopped,
+1495070302.9334,umgr.scheduling.0:MainThread,,,END,

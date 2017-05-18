@@ -138,6 +138,17 @@ We assume:
 | 2    | 65536   | 1           | 2             | 1       | 32768        | Titan          |
 | 2    | 65536   | 1           | 1             | 1       | 65536        | Titan          |
 
+TODO:
+* Specify the tables accounting for machines' walltimes
+
+Use 1:
+* Stampede: max 4096 (16K units)
+* SuperMIC:
+* Titan:
+
+Use 5:
+* SuperMIC: 
+
 
 #### Use Case IDs: 3,4
 

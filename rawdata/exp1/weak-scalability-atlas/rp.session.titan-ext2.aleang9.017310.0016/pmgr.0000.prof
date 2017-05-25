@@ -1,0 +1,17 @@
+#time,name,uid,state,event,msg
+1495617103.2502,pmgr.0000:,,,sync abs,titan-ext2.ccs.ornl.gov:127.0.0.1:1495617103.01:1495617103.02:ntp
+1495617103.2535,pmgr.0000:MainThread,pmgr.0000,,initialize,
+1495617103.9913,pmgr.0000:MainThread,pmgr.0000,,create pmgr,
+1495617104.2456,pmgr.0000:MainThread,,,PMGR setup done,
+1495617111.7668,pmgr.0000:MainThread,pilot.0000,NEW,advance,
+1495617111.8855,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,advance,
+1495617111.8860,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,publish,
+1495617111.8864,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,put,pmgr.launching.queue.input
+1495617111.9390,pmgr.0000:pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_LAUNCHING,advance,
+1495617157.3336,pmgr.0000:pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_ACTIVE_PENDING,advance,
+1495617206.8276,pmgr.0000:pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,advance,
+1495617206.8283,pmgr.0000:pmgr.0000.idler._state_pull_cb,pilot.0000,PMGR_ACTIVE,publish,
+1495618414.1526,pmgr.0000:pmgr.0000.idler._state_pull_cb,pilot.0000,CANCELED,advance,
+1495618414.1532,pmgr.0000:pmgr.0000.idler._state_pull_cb,pilot.0000,CANCELED,publish,
+1495618414.6261,pmgr.0000:MainThread,pmgr.0000,,stopped,
+1495618414.6262,pmgr.0000:MainThread,,,END,

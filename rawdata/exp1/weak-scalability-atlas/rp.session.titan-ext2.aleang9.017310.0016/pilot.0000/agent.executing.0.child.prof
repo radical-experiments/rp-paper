@@ -1,0 +1,548 @@
+#time,name,uid,state,event,msg
+1495617213.3678,agent.executing.0.child:,,,sync abs,nid16499:10.128.64.244:1495617213.37:1495617213.37:sys
+1495617213.3681,agent.executing.0.child:MainThread,agent.executing.0.child,,initialize,
+1495617213.7117,agent.executing.0.child:Watcher,pilot.0000,,run,
+1495617215.2428,agent.executing.0.child:MainThread,unit.000000,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.2428,agent.executing.0.child:MainThread,unit.000000,AGENT_EXECUTING_PENDING,work start,
+1495617215.2429,agent.executing.0.child:MainThread,unit.000000,AGENT_EXECUTING,advance,
+1495617215.2436,agent.executing.0.child:MainThread,unit.000000,AGENT_EXECUTING,publish,
+1495617215.2637,agent.executing.0.child:MainThread,unit.000000,,exec,unit launch
+1495617215.2638,agent.executing.0.child:MainThread,unit.000000,,spawn,unit spawn
+1495617215.2664,agent.executing.0.child:MainThread,unit.000000,,command,launch command constructed
+1495617215.2788,agent.executing.0.child:MainThread,unit.000000,,spawn,spawning passed to orte
+1495617215.2793,agent.executing.0.child:MainThread,unit.000000,AGENT_EXECUTING_PENDING,work done ,
+1495617215.2805,agent.executing.0.child:MainThread,unit.000001,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.2805,agent.executing.0.child:MainThread,unit.000001,AGENT_EXECUTING_PENDING,work start,
+1495617215.2805,agent.executing.0.child:MainThread,unit.000001,AGENT_EXECUTING,advance,
+1495617215.2810,agent.executing.0.child:MainThread,unit.000001,AGENT_EXECUTING,publish,
+1495617215.2812,agent.executing.0.child:MainThread,unit.000001,,exec,unit launch
+1495617215.2812,agent.executing.0.child:MainThread,unit.000001,,spawn,unit spawn
+1495617215.2839,agent.executing.0.child:MainThread,unit.000001,,command,launch command constructed
+1495617215.2955,agent.executing.0.child:MainThread,unit.000001,,spawn,spawning passed to orte
+1495617215.2957,agent.executing.0.child:MainThread,unit.000001,AGENT_EXECUTING_PENDING,work done ,
+1495617215.2962,agent.executing.0.child:MainThread,unit.000002,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.2962,agent.executing.0.child:MainThread,unit.000002,AGENT_EXECUTING_PENDING,work start,
+1495617215.2963,agent.executing.0.child:MainThread,unit.000002,AGENT_EXECUTING,advance,
+1495617215.2967,agent.executing.0.child:MainThread,unit.000002,AGENT_EXECUTING,publish,
+1495617215.2969,agent.executing.0.child:MainThread,unit.000002,,exec,unit launch
+1495617215.2969,agent.executing.0.child:MainThread,unit.000002,,spawn,unit spawn
+1495617215.3049,agent.executing.0.child:MainThread,unit.000002,,command,launch command constructed
+1495617215.3166,agent.executing.0.child:MainThread,unit.000002,,spawn,spawning passed to orte
+1495617215.3169,agent.executing.0.child:MainThread,unit.000002,AGENT_EXECUTING_PENDING,work done ,
+1495617215.3174,agent.executing.0.child:MainThread,unit.000003,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.3174,agent.executing.0.child:MainThread,unit.000003,AGENT_EXECUTING_PENDING,work start,
+1495617215.3174,agent.executing.0.child:MainThread,unit.000003,AGENT_EXECUTING,advance,
+1495617215.3178,agent.executing.0.child:MainThread,unit.000003,AGENT_EXECUTING,publish,
+1495617215.3180,agent.executing.0.child:MainThread,unit.000003,,exec,unit launch
+1495617215.3180,agent.executing.0.child:MainThread,unit.000003,,spawn,unit spawn
+1495617215.3182,agent.executing.0.child:Dummy-1,unit.000000,,passed,ExecWatcher picked up unit
+1495617215.3186,agent.executing.0.child:Dummy-1,unit.000000,AGENT_EXECUTING,advance,
+1495617215.3190,agent.executing.0.child:Dummy-1,unit.000000,AGENT_EXECUTING,publish,
+1495617215.3237,agent.executing.0.child:MainThread,unit.000003,,command,launch command constructed
+1495617215.3354,agent.executing.0.child:MainThread,unit.000003,,spawn,spawning passed to orte
+1495617215.3357,agent.executing.0.child:MainThread,unit.000003,AGENT_EXECUTING_PENDING,work done ,
+1495617215.3366,agent.executing.0.child:MainThread,unit.000004,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.3366,agent.executing.0.child:MainThread,unit.000004,AGENT_EXECUTING_PENDING,work start,
+1495617215.3367,agent.executing.0.child:MainThread,unit.000004,AGENT_EXECUTING,advance,
+1495617215.3371,agent.executing.0.child:MainThread,unit.000004,AGENT_EXECUTING,publish,
+1495617215.3372,agent.executing.0.child:MainThread,unit.000004,,exec,unit launch
+1495617215.3373,agent.executing.0.child:MainThread,unit.000004,,spawn,unit spawn
+1495617215.3388,agent.executing.0.child:Dummy-1,unit.000001,,passed,ExecWatcher picked up unit
+1495617215.3390,agent.executing.0.child:Dummy-1,unit.000001,AGENT_EXECUTING,advance,
+1495617215.3394,agent.executing.0.child:Dummy-1,unit.000001,AGENT_EXECUTING,publish,
+1495617215.3425,agent.executing.0.child:MainThread,unit.000004,,command,launch command constructed
+1495617215.3540,agent.executing.0.child:MainThread,unit.000004,,spawn,spawning passed to orte
+1495617215.3542,agent.executing.0.child:Dummy-1,unit.000002,,passed,ExecWatcher picked up unit
+1495617215.3544,agent.executing.0.child:MainThread,unit.000004,AGENT_EXECUTING_PENDING,work done ,
+1495617215.3551,agent.executing.0.child:MainThread,unit.000005,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.3551,agent.executing.0.child:MainThread,unit.000005,AGENT_EXECUTING_PENDING,work start,
+1495617215.3549,agent.executing.0.child:Dummy-1,unit.000002,AGENT_EXECUTING,advance,
+1495617215.3559,agent.executing.0.child:Dummy-1,unit.000002,AGENT_EXECUTING,publish,
+1495617215.3552,agent.executing.0.child:MainThread,unit.000005,AGENT_EXECUTING,advance,
+1495617215.3560,agent.executing.0.child:MainThread,unit.000005,AGENT_EXECUTING,publish,
+1495617215.3563,agent.executing.0.child:MainThread,unit.000005,,exec,unit launch
+1495617215.3563,agent.executing.0.child:MainThread,unit.000005,,spawn,unit spawn
+1495617215.3587,agent.executing.0.child:MainThread,unit.000005,,command,launch command constructed
+1495617215.3702,agent.executing.0.child:MainThread,unit.000005,,spawn,spawning passed to orte
+1495617215.3704,agent.executing.0.child:Dummy-1,unit.000003,,passed,ExecWatcher picked up unit
+1495617215.3708,agent.executing.0.child:MainThread,unit.000005,AGENT_EXECUTING_PENDING,work done ,
+1495617215.3715,agent.executing.0.child:MainThread,unit.000006,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.3715,agent.executing.0.child:MainThread,unit.000006,AGENT_EXECUTING_PENDING,work start,
+1495617215.3709,agent.executing.0.child:Dummy-1,unit.000003,AGENT_EXECUTING,advance,
+1495617215.3719,agent.executing.0.child:Dummy-1,unit.000003,AGENT_EXECUTING,publish,
+1495617215.3715,agent.executing.0.child:MainThread,unit.000006,AGENT_EXECUTING,advance,
+1495617215.3722,agent.executing.0.child:MainThread,unit.000006,AGENT_EXECUTING,publish,
+1495617215.3724,agent.executing.0.child:MainThread,unit.000006,,exec,unit launch
+1495617215.3724,agent.executing.0.child:MainThread,unit.000006,,spawn,unit spawn
+1495617215.3750,agent.executing.0.child:MainThread,unit.000006,,command,launch command constructed
+1495617215.3866,agent.executing.0.child:MainThread,unit.000006,,spawn,spawning passed to orte
+1495617215.3868,agent.executing.0.child:Dummy-1,unit.000004,,passed,ExecWatcher picked up unit
+1495617215.3870,agent.executing.0.child:MainThread,unit.000006,AGENT_EXECUTING_PENDING,work done ,
+1495617215.3878,agent.executing.0.child:MainThread,unit.000007,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.3878,agent.executing.0.child:MainThread,unit.000007,AGENT_EXECUTING_PENDING,work start,
+1495617215.3873,agent.executing.0.child:Dummy-1,unit.000004,AGENT_EXECUTING,advance,
+1495617215.3882,agent.executing.0.child:Dummy-1,unit.000004,AGENT_EXECUTING,publish,
+1495617215.3879,agent.executing.0.child:MainThread,unit.000007,AGENT_EXECUTING,advance,
+1495617215.3885,agent.executing.0.child:MainThread,unit.000007,AGENT_EXECUTING,publish,
+1495617215.3887,agent.executing.0.child:MainThread,unit.000007,,exec,unit launch
+1495617215.3887,agent.executing.0.child:MainThread,unit.000007,,spawn,unit spawn
+1495617215.3911,agent.executing.0.child:MainThread,unit.000007,,command,launch command constructed
+1495617215.4028,agent.executing.0.child:MainThread,unit.000007,,spawn,spawning passed to orte
+1495617215.4029,agent.executing.0.child:Dummy-1,unit.000005,,passed,ExecWatcher picked up unit
+1495617215.4032,agent.executing.0.child:MainThread,unit.000007,AGENT_EXECUTING_PENDING,work done ,
+1495617215.4039,agent.executing.0.child:MainThread,unit.000008,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.4039,agent.executing.0.child:MainThread,unit.000008,AGENT_EXECUTING_PENDING,work start,
+1495617215.4034,agent.executing.0.child:Dummy-1,unit.000005,AGENT_EXECUTING,advance,
+1495617215.4043,agent.executing.0.child:Dummy-1,unit.000005,AGENT_EXECUTING,publish,
+1495617215.4040,agent.executing.0.child:MainThread,unit.000008,AGENT_EXECUTING,advance,
+1495617215.4046,agent.executing.0.child:MainThread,unit.000008,AGENT_EXECUTING,publish,
+1495617215.4048,agent.executing.0.child:MainThread,unit.000008,,exec,unit launch
+1495617215.4048,agent.executing.0.child:MainThread,unit.000008,,spawn,unit spawn
+1495617215.4073,agent.executing.0.child:MainThread,unit.000008,,command,launch command constructed
+1495617215.4191,agent.executing.0.child:MainThread,unit.000008,,spawn,spawning passed to orte
+1495617215.4192,agent.executing.0.child:Dummy-1,unit.000006,,passed,ExecWatcher picked up unit
+1495617215.4195,agent.executing.0.child:MainThread,unit.000008,AGENT_EXECUTING_PENDING,work done ,
+1495617215.4203,agent.executing.0.child:MainThread,unit.000009,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.4203,agent.executing.0.child:MainThread,unit.000009,AGENT_EXECUTING_PENDING,work start,
+1495617215.4197,agent.executing.0.child:Dummy-1,unit.000006,AGENT_EXECUTING,advance,
+1495617215.4207,agent.executing.0.child:Dummy-1,unit.000006,AGENT_EXECUTING,publish,
+1495617215.4203,agent.executing.0.child:MainThread,unit.000009,AGENT_EXECUTING,advance,
+1495617215.4210,agent.executing.0.child:MainThread,unit.000009,AGENT_EXECUTING,publish,
+1495617215.4212,agent.executing.0.child:MainThread,unit.000009,,exec,unit launch
+1495617215.4212,agent.executing.0.child:MainThread,unit.000009,,spawn,unit spawn
+1495617215.4235,agent.executing.0.child:MainThread,unit.000009,,command,launch command constructed
+1495617215.4354,agent.executing.0.child:MainThread,unit.000009,,spawn,spawning passed to orte
+1495617215.4355,agent.executing.0.child:Dummy-1,unit.000007,,passed,ExecWatcher picked up unit
+1495617215.4359,agent.executing.0.child:MainThread,unit.000009,AGENT_EXECUTING_PENDING,work done ,
+1495617215.4366,agent.executing.0.child:MainThread,unit.000010,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.4367,agent.executing.0.child:MainThread,unit.000010,AGENT_EXECUTING_PENDING,work start,
+1495617215.4361,agent.executing.0.child:Dummy-1,unit.000007,AGENT_EXECUTING,advance,
+1495617215.4371,agent.executing.0.child:Dummy-1,unit.000007,AGENT_EXECUTING,publish,
+1495617215.4367,agent.executing.0.child:MainThread,unit.000010,AGENT_EXECUTING,advance,
+1495617215.4374,agent.executing.0.child:MainThread,unit.000010,AGENT_EXECUTING,publish,
+1495617215.4376,agent.executing.0.child:MainThread,unit.000010,,exec,unit launch
+1495617215.4376,agent.executing.0.child:MainThread,unit.000010,,spawn,unit spawn
+1495617215.4400,agent.executing.0.child:MainThread,unit.000010,,command,launch command constructed
+1495617215.4515,agent.executing.0.child:MainThread,unit.000010,,spawn,spawning passed to orte
+1495617215.4517,agent.executing.0.child:Dummy-1,unit.000008,,passed,ExecWatcher picked up unit
+1495617215.4519,agent.executing.0.child:MainThread,unit.000010,AGENT_EXECUTING_PENDING,work done ,
+1495617215.4526,agent.executing.0.child:MainThread,unit.000011,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.4526,agent.executing.0.child:MainThread,unit.000011,AGENT_EXECUTING_PENDING,work start,
+1495617215.4524,agent.executing.0.child:Dummy-1,unit.000008,AGENT_EXECUTING,advance,
+1495617215.4534,agent.executing.0.child:Dummy-1,unit.000008,AGENT_EXECUTING,publish,
+1495617215.4526,agent.executing.0.child:MainThread,unit.000011,AGENT_EXECUTING,advance,
+1495617215.4535,agent.executing.0.child:MainThread,unit.000011,AGENT_EXECUTING,publish,
+1495617215.4537,agent.executing.0.child:MainThread,unit.000011,,exec,unit launch
+1495617215.4537,agent.executing.0.child:MainThread,unit.000011,,spawn,unit spawn
+1495617215.4561,agent.executing.0.child:MainThread,unit.000011,,command,launch command constructed
+1495617215.4677,agent.executing.0.child:MainThread,unit.000011,,spawn,spawning passed to orte
+1495617215.4679,agent.executing.0.child:Dummy-1,unit.000009,,passed,ExecWatcher picked up unit
+1495617215.4682,agent.executing.0.child:MainThread,unit.000011,AGENT_EXECUTING_PENDING,work done ,
+1495617215.4690,agent.executing.0.child:MainThread,unit.000012,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.4690,agent.executing.0.child:MainThread,unit.000012,AGENT_EXECUTING_PENDING,work start,
+1495617215.4685,agent.executing.0.child:Dummy-1,unit.000009,AGENT_EXECUTING,advance,
+1495617215.4693,agent.executing.0.child:Dummy-1,unit.000009,AGENT_EXECUTING,publish,
+1495617215.4691,agent.executing.0.child:MainThread,unit.000012,AGENT_EXECUTING,advance,
+1495617215.4697,agent.executing.0.child:MainThread,unit.000012,AGENT_EXECUTING,publish,
+1495617215.4698,agent.executing.0.child:MainThread,unit.000012,,exec,unit launch
+1495617215.4698,agent.executing.0.child:MainThread,unit.000012,,spawn,unit spawn
+1495617215.4723,agent.executing.0.child:MainThread,unit.000012,,command,launch command constructed
+1495617215.4839,agent.executing.0.child:MainThread,unit.000012,,spawn,spawning passed to orte
+1495617215.4840,agent.executing.0.child:Dummy-1,unit.000010,,passed,ExecWatcher picked up unit
+1495617215.4846,agent.executing.0.child:MainThread,unit.000012,AGENT_EXECUTING_PENDING,work done ,
+1495617215.4852,agent.executing.0.child:MainThread,unit.000013,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.4852,agent.executing.0.child:MainThread,unit.000013,AGENT_EXECUTING_PENDING,work start,
+1495617215.4843,agent.executing.0.child:Dummy-1,unit.000010,AGENT_EXECUTING,advance,
+1495617215.4856,agent.executing.0.child:Dummy-1,unit.000010,AGENT_EXECUTING,publish,
+1495617215.4853,agent.executing.0.child:MainThread,unit.000013,AGENT_EXECUTING,advance,
+1495617215.4859,agent.executing.0.child:MainThread,unit.000013,AGENT_EXECUTING,publish,
+1495617215.4861,agent.executing.0.child:MainThread,unit.000013,,exec,unit launch
+1495617215.4861,agent.executing.0.child:MainThread,unit.000013,,spawn,unit spawn
+1495617215.4884,agent.executing.0.child:MainThread,unit.000013,,command,launch command constructed
+1495617215.5001,agent.executing.0.child:MainThread,unit.000013,,spawn,spawning passed to orte
+1495617215.5001,agent.executing.0.child:Dummy-1,unit.000011,,passed,ExecWatcher picked up unit
+1495617215.5007,agent.executing.0.child:MainThread,unit.000013,AGENT_EXECUTING_PENDING,work done ,
+1495617215.5014,agent.executing.0.child:MainThread,unit.000014,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.5014,agent.executing.0.child:MainThread,unit.000014,AGENT_EXECUTING_PENDING,work start,
+1495617215.5004,agent.executing.0.child:Dummy-1,unit.000011,AGENT_EXECUTING,advance,
+1495617215.5018,agent.executing.0.child:Dummy-1,unit.000011,AGENT_EXECUTING,publish,
+1495617215.5014,agent.executing.0.child:MainThread,unit.000014,AGENT_EXECUTING,advance,
+1495617215.5021,agent.executing.0.child:MainThread,unit.000014,AGENT_EXECUTING,publish,
+1495617215.5023,agent.executing.0.child:MainThread,unit.000014,,exec,unit launch
+1495617215.5023,agent.executing.0.child:MainThread,unit.000014,,spawn,unit spawn
+1495617215.5046,agent.executing.0.child:MainThread,unit.000014,,command,launch command constructed
+1495617215.5164,agent.executing.0.child:MainThread,unit.000014,,spawn,spawning passed to orte
+1495617215.5166,agent.executing.0.child:Dummy-1,unit.000012,,passed,ExecWatcher picked up unit
+1495617215.5168,agent.executing.0.child:MainThread,unit.000014,AGENT_EXECUTING_PENDING,work done ,
+1495617215.5175,agent.executing.0.child:MainThread,unit.000015,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.5175,agent.executing.0.child:MainThread,unit.000015,AGENT_EXECUTING_PENDING,work start,
+1495617215.5173,agent.executing.0.child:Dummy-1,unit.000012,AGENT_EXECUTING,advance,
+1495617215.5183,agent.executing.0.child:Dummy-1,unit.000012,AGENT_EXECUTING,publish,
+1495617215.5176,agent.executing.0.child:MainThread,unit.000015,AGENT_EXECUTING,advance,
+1495617215.5184,agent.executing.0.child:MainThread,unit.000015,AGENT_EXECUTING,publish,
+1495617215.5186,agent.executing.0.child:MainThread,unit.000015,,exec,unit launch
+1495617215.5186,agent.executing.0.child:MainThread,unit.000015,,spawn,unit spawn
+1495617215.5210,agent.executing.0.child:MainThread,unit.000015,,command,launch command constructed
+1495617215.5328,agent.executing.0.child:MainThread,unit.000015,,spawn,spawning passed to orte
+1495617215.5329,agent.executing.0.child:Dummy-1,unit.000013,,passed,ExecWatcher picked up unit
+1495617215.5332,agent.executing.0.child:MainThread,unit.000015,AGENT_EXECUTING_PENDING,work done ,
+1495617215.5338,agent.executing.0.child:MainThread,unit.000016,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.5339,agent.executing.0.child:MainThread,unit.000016,AGENT_EXECUTING_PENDING,work start,
+1495617215.5336,agent.executing.0.child:Dummy-1,unit.000013,AGENT_EXECUTING,advance,
+1495617215.5346,agent.executing.0.child:Dummy-1,unit.000013,AGENT_EXECUTING,publish,
+1495617215.5339,agent.executing.0.child:MainThread,unit.000016,AGENT_EXECUTING,advance,
+1495617215.5348,agent.executing.0.child:MainThread,unit.000016,AGENT_EXECUTING,publish,
+1495617215.5350,agent.executing.0.child:MainThread,unit.000016,,exec,unit launch
+1495617215.5350,agent.executing.0.child:MainThread,unit.000016,,spawn,unit spawn
+1495617215.5373,agent.executing.0.child:MainThread,unit.000016,,command,launch command constructed
+1495617215.5492,agent.executing.0.child:MainThread,unit.000016,,spawn,spawning passed to orte
+1495617215.5494,agent.executing.0.child:Dummy-1,unit.000014,,passed,ExecWatcher picked up unit
+1495617215.5500,agent.executing.0.child:MainThread,unit.000016,AGENT_EXECUTING_PENDING,work done ,
+1495617215.5507,agent.executing.0.child:MainThread,unit.000017,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.5507,agent.executing.0.child:MainThread,unit.000017,AGENT_EXECUTING_PENDING,work start,
+1495617215.5505,agent.executing.0.child:Dummy-1,unit.000014,AGENT_EXECUTING,advance,
+1495617215.5507,agent.executing.0.child:MainThread,unit.000017,AGENT_EXECUTING,advance,
+1495617215.5516,agent.executing.0.child:Dummy-1,unit.000014,AGENT_EXECUTING,publish,
+1495617215.5516,agent.executing.0.child:MainThread,unit.000017,AGENT_EXECUTING,publish,
+1495617215.5518,agent.executing.0.child:MainThread,unit.000017,,exec,unit launch
+1495617215.5518,agent.executing.0.child:MainThread,unit.000017,,spawn,unit spawn
+1495617215.5542,agent.executing.0.child:MainThread,unit.000017,,command,launch command constructed
+1495617215.5660,agent.executing.0.child:MainThread,unit.000017,,spawn,spawning passed to orte
+1495617215.5662,agent.executing.0.child:Dummy-1,unit.000015,,passed,ExecWatcher picked up unit
+1495617215.5667,agent.executing.0.child:MainThread,unit.000017,AGENT_EXECUTING_PENDING,work done ,
+1495617215.5668,agent.executing.0.child:Dummy-1,unit.000015,AGENT_EXECUTING,advance,
+1495617215.5675,agent.executing.0.child:Dummy-1,unit.000015,AGENT_EXECUTING,publish,
+1495617215.5676,agent.executing.0.child:MainThread,unit.000018,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.5676,agent.executing.0.child:MainThread,unit.000018,AGENT_EXECUTING_PENDING,work start,
+1495617215.5676,agent.executing.0.child:MainThread,unit.000018,AGENT_EXECUTING,advance,
+1495617215.5680,agent.executing.0.child:MainThread,unit.000018,AGENT_EXECUTING,publish,
+1495617215.5682,agent.executing.0.child:MainThread,unit.000018,,exec,unit launch
+1495617215.5682,agent.executing.0.child:MainThread,unit.000018,,spawn,unit spawn
+1495617215.5705,agent.executing.0.child:MainThread,unit.000018,,command,launch command constructed
+1495617215.5825,agent.executing.0.child:MainThread,unit.000018,,spawn,spawning passed to orte
+1495617215.5825,agent.executing.0.child:Dummy-1,unit.000016,,passed,ExecWatcher picked up unit
+1495617215.5832,agent.executing.0.child:MainThread,unit.000018,AGENT_EXECUTING_PENDING,work done ,
+1495617215.5829,agent.executing.0.child:Dummy-1,unit.000016,AGENT_EXECUTING,advance,
+1495617215.5840,agent.executing.0.child:Dummy-1,unit.000016,AGENT_EXECUTING,publish,
+1495617215.5840,agent.executing.0.child:MainThread,unit.000019,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.5840,agent.executing.0.child:MainThread,unit.000019,AGENT_EXECUTING_PENDING,work start,
+1495617215.5841,agent.executing.0.child:MainThread,unit.000019,AGENT_EXECUTING,advance,
+1495617215.5845,agent.executing.0.child:MainThread,unit.000019,AGENT_EXECUTING,publish,
+1495617215.5846,agent.executing.0.child:MainThread,unit.000019,,exec,unit launch
+1495617215.5846,agent.executing.0.child:MainThread,unit.000019,,spawn,unit spawn
+1495617215.5869,agent.executing.0.child:MainThread,unit.000019,,command,launch command constructed
+1495617215.5989,agent.executing.0.child:MainThread,unit.000019,,spawn,spawning passed to orte
+1495617215.5990,agent.executing.0.child:Dummy-1,unit.000017,,passed,ExecWatcher picked up unit
+1495617215.5994,agent.executing.0.child:MainThread,unit.000019,AGENT_EXECUTING_PENDING,work done ,
+1495617215.5995,agent.executing.0.child:Dummy-1,unit.000017,AGENT_EXECUTING,advance,
+1495617215.6001,agent.executing.0.child:Dummy-1,unit.000017,AGENT_EXECUTING,publish,
+1495617215.6002,agent.executing.0.child:MainThread,unit.000020,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.6003,agent.executing.0.child:MainThread,unit.000020,AGENT_EXECUTING_PENDING,work start,
+1495617215.6003,agent.executing.0.child:MainThread,unit.000020,AGENT_EXECUTING,advance,
+1495617215.6007,agent.executing.0.child:MainThread,unit.000020,AGENT_EXECUTING,publish,
+1495617215.6009,agent.executing.0.child:MainThread,unit.000020,,exec,unit launch
+1495617215.6009,agent.executing.0.child:MainThread,unit.000020,,spawn,unit spawn
+1495617215.6034,agent.executing.0.child:MainThread,unit.000020,,command,launch command constructed
+1495617215.6156,agent.executing.0.child:MainThread,unit.000020,,spawn,spawning passed to orte
+1495617215.6158,agent.executing.0.child:Dummy-1,unit.000018,,passed,ExecWatcher picked up unit
+1495617215.6161,agent.executing.0.child:MainThread,unit.000020,AGENT_EXECUTING_PENDING,work done ,
+1495617215.6168,agent.executing.0.child:MainThread,unit.000021,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.6168,agent.executing.0.child:MainThread,unit.000021,AGENT_EXECUTING_PENDING,work start,
+1495617215.6166,agent.executing.0.child:Dummy-1,unit.000018,AGENT_EXECUTING,advance,
+1495617215.6176,agent.executing.0.child:Dummy-1,unit.000018,AGENT_EXECUTING,publish,
+1495617215.6169,agent.executing.0.child:MainThread,unit.000021,AGENT_EXECUTING,advance,
+1495617215.6178,agent.executing.0.child:MainThread,unit.000021,AGENT_EXECUTING,publish,
+1495617215.6180,agent.executing.0.child:MainThread,unit.000021,,exec,unit launch
+1495617215.6180,agent.executing.0.child:MainThread,unit.000021,,spawn,unit spawn
+1495617215.6216,agent.executing.0.child:MainThread,unit.000021,,command,launch command constructed
+1495617215.6335,agent.executing.0.child:MainThread,unit.000021,,spawn,spawning passed to orte
+1495617215.6337,agent.executing.0.child:Dummy-1,unit.000019,,passed,ExecWatcher picked up unit
+1495617215.6340,agent.executing.0.child:MainThread,unit.000021,AGENT_EXECUTING_PENDING,work done ,
+1495617215.6347,agent.executing.0.child:MainThread,unit.000022,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.6347,agent.executing.0.child:MainThread,unit.000022,AGENT_EXECUTING_PENDING,work start,
+1495617215.6345,agent.executing.0.child:Dummy-1,unit.000019,AGENT_EXECUTING,advance,
+1495617215.6355,agent.executing.0.child:Dummy-1,unit.000019,AGENT_EXECUTING,publish,
+1495617215.6348,agent.executing.0.child:MainThread,unit.000022,AGENT_EXECUTING,advance,
+1495617215.6357,agent.executing.0.child:MainThread,unit.000022,AGENT_EXECUTING,publish,
+1495617215.6358,agent.executing.0.child:MainThread,unit.000022,,exec,unit launch
+1495617215.6358,agent.executing.0.child:MainThread,unit.000022,,spawn,unit spawn
+1495617215.6382,agent.executing.0.child:MainThread,unit.000022,,command,launch command constructed
+1495617215.6498,agent.executing.0.child:MainThread,unit.000022,,spawn,spawning passed to orte
+1495617215.6500,agent.executing.0.child:Dummy-1,unit.000020,,passed,ExecWatcher picked up unit
+1495617215.6503,agent.executing.0.child:MainThread,unit.000022,AGENT_EXECUTING_PENDING,work done ,
+1495617215.6511,agent.executing.0.child:MainThread,unit.000023,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.6511,agent.executing.0.child:MainThread,unit.000023,AGENT_EXECUTING_PENDING,work start,
+1495617215.6506,agent.executing.0.child:Dummy-1,unit.000020,AGENT_EXECUTING,advance,
+1495617215.6515,agent.executing.0.child:Dummy-1,unit.000020,AGENT_EXECUTING,publish,
+1495617215.6512,agent.executing.0.child:MainThread,unit.000023,AGENT_EXECUTING,advance,
+1495617215.6519,agent.executing.0.child:MainThread,unit.000023,AGENT_EXECUTING,publish,
+1495617215.6520,agent.executing.0.child:MainThread,unit.000023,,exec,unit launch
+1495617215.6520,agent.executing.0.child:MainThread,unit.000023,,spawn,unit spawn
+1495617215.6544,agent.executing.0.child:MainThread,unit.000023,,command,launch command constructed
+1495617215.6662,agent.executing.0.child:MainThread,unit.000023,,spawn,spawning passed to orte
+1495617215.6664,agent.executing.0.child:Dummy-1,unit.000021,,passed,ExecWatcher picked up unit
+1495617215.6667,agent.executing.0.child:MainThread,unit.000023,AGENT_EXECUTING_PENDING,work done ,
+1495617215.6675,agent.executing.0.child:MainThread,unit.000024,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.6675,agent.executing.0.child:MainThread,unit.000024,AGENT_EXECUTING_PENDING,work start,
+1495617215.6670,agent.executing.0.child:Dummy-1,unit.000021,AGENT_EXECUTING,advance,
+1495617215.6679,agent.executing.0.child:Dummy-1,unit.000021,AGENT_EXECUTING,publish,
+1495617215.6676,agent.executing.0.child:MainThread,unit.000024,AGENT_EXECUTING,advance,
+1495617215.6683,agent.executing.0.child:MainThread,unit.000024,AGENT_EXECUTING,publish,
+1495617215.6684,agent.executing.0.child:MainThread,unit.000024,,exec,unit launch
+1495617215.6684,agent.executing.0.child:MainThread,unit.000024,,spawn,unit spawn
+1495617215.6708,agent.executing.0.child:MainThread,unit.000024,,command,launch command constructed
+1495617215.6826,agent.executing.0.child:MainThread,unit.000024,,spawn,spawning passed to orte
+1495617215.6829,agent.executing.0.child:MainThread,unit.000024,AGENT_EXECUTING_PENDING,work done ,
+1495617215.6834,agent.executing.0.child:MainThread,unit.000025,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.6834,agent.executing.0.child:MainThread,unit.000025,AGENT_EXECUTING_PENDING,work start,
+1495617215.6835,agent.executing.0.child:MainThread,unit.000025,AGENT_EXECUTING,advance,
+1495617215.6839,agent.executing.0.child:MainThread,unit.000025,AGENT_EXECUTING,publish,
+1495617215.6840,agent.executing.0.child:MainThread,unit.000025,,exec,unit launch
+1495617215.6840,agent.executing.0.child:MainThread,unit.000025,,spawn,unit spawn
+1495617215.6864,agent.executing.0.child:MainThread,unit.000025,,command,launch command constructed
+1495617215.6983,agent.executing.0.child:MainThread,unit.000025,,spawn,spawning passed to orte
+1495617215.6985,agent.executing.0.child:Dummy-1,unit.000022,,passed,ExecWatcher picked up unit
+1495617215.6988,agent.executing.0.child:MainThread,unit.000025,AGENT_EXECUTING_PENDING,work done ,
+1495617215.6996,agent.executing.0.child:MainThread,unit.000026,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.6996,agent.executing.0.child:MainThread,unit.000026,AGENT_EXECUTING_PENDING,work start,
+1495617215.6991,agent.executing.0.child:Dummy-1,unit.000022,AGENT_EXECUTING,advance,
+1495617215.7000,agent.executing.0.child:Dummy-1,unit.000022,AGENT_EXECUTING,publish,
+1495617215.6996,agent.executing.0.child:MainThread,unit.000026,AGENT_EXECUTING,advance,
+1495617215.7003,agent.executing.0.child:MainThread,unit.000026,AGENT_EXECUTING,publish,
+1495617215.7005,agent.executing.0.child:MainThread,unit.000026,,exec,unit launch
+1495617215.7005,agent.executing.0.child:MainThread,unit.000026,,spawn,unit spawn
+1495617215.7213,agent.executing.0.child:MainThread,unit.000026,,command,launch command constructed
+1495617215.7333,agent.executing.0.child:MainThread,unit.000026,,spawn,spawning passed to orte
+1495617215.7335,agent.executing.0.child:Dummy-1,unit.000024,,passed,ExecWatcher picked up unit
+1495617215.7338,agent.executing.0.child:MainThread,unit.000026,AGENT_EXECUTING_PENDING,work done ,
+1495617215.7345,agent.executing.0.child:MainThread,unit.000027,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.7345,agent.executing.0.child:MainThread,unit.000027,AGENT_EXECUTING_PENDING,work start,
+1495617215.7342,agent.executing.0.child:Dummy-1,unit.000024,AGENT_EXECUTING,advance,
+1495617215.7352,agent.executing.0.child:Dummy-1,unit.000024,AGENT_EXECUTING,publish,
+1495617215.7345,agent.executing.0.child:MainThread,unit.000027,AGENT_EXECUTING,advance,
+1495617215.7354,agent.executing.0.child:MainThread,unit.000027,AGENT_EXECUTING,publish,
+1495617215.7356,agent.executing.0.child:Dummy-1,unit.000023,,passed,ExecWatcher picked up unit
+1495617215.7357,agent.executing.0.child:MainThread,unit.000027,,exec,unit launch
+1495617215.7357,agent.executing.0.child:MainThread,unit.000027,,spawn,unit spawn
+1495617215.7359,agent.executing.0.child:Dummy-1,unit.000023,AGENT_EXECUTING,advance,
+1495617215.7363,agent.executing.0.child:Dummy-1,unit.000023,AGENT_EXECUTING,publish,
+1495617215.7381,agent.executing.0.child:MainThread,unit.000027,,command,launch command constructed
+1495617215.7501,agent.executing.0.child:MainThread,unit.000027,,spawn,spawning passed to orte
+1495617215.7502,agent.executing.0.child:Dummy-1,unit.000025,,passed,ExecWatcher picked up unit
+1495617215.7506,agent.executing.0.child:MainThread,unit.000027,AGENT_EXECUTING_PENDING,work done ,
+1495617215.7512,agent.executing.0.child:MainThread,unit.000028,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.7513,agent.executing.0.child:MainThread,unit.000028,AGENT_EXECUTING_PENDING,work start,
+1495617215.7507,agent.executing.0.child:Dummy-1,unit.000025,AGENT_EXECUTING,advance,
+1495617215.7516,agent.executing.0.child:Dummy-1,unit.000025,AGENT_EXECUTING,publish,
+1495617215.7513,agent.executing.0.child:MainThread,unit.000028,AGENT_EXECUTING,advance,
+1495617215.7520,agent.executing.0.child:MainThread,unit.000028,AGENT_EXECUTING,publish,
+1495617215.7522,agent.executing.0.child:MainThread,unit.000028,,exec,unit launch
+1495617215.7522,agent.executing.0.child:MainThread,unit.000028,,spawn,unit spawn
+1495617215.7544,agent.executing.0.child:MainThread,unit.000028,,command,launch command constructed
+1495617215.7665,agent.executing.0.child:MainThread,unit.000028,,spawn,spawning passed to orte
+1495617215.7668,agent.executing.0.child:MainThread,unit.000028,AGENT_EXECUTING_PENDING,work done ,
+1495617215.7674,agent.executing.0.child:MainThread,unit.000029,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.7674,agent.executing.0.child:MainThread,unit.000029,AGENT_EXECUTING_PENDING,work start,
+1495617215.7674,agent.executing.0.child:MainThread,unit.000029,AGENT_EXECUTING,advance,
+1495617215.7678,agent.executing.0.child:MainThread,unit.000029,AGENT_EXECUTING,publish,
+1495617215.7680,agent.executing.0.child:MainThread,unit.000029,,exec,unit launch
+1495617215.7680,agent.executing.0.child:MainThread,unit.000029,,spawn,unit spawn
+1495617215.7702,agent.executing.0.child:MainThread,unit.000029,,command,launch command constructed
+1495617215.7822,agent.executing.0.child:MainThread,unit.000029,,spawn,spawning passed to orte
+1495617215.7824,agent.executing.0.child:Dummy-1,unit.000027,,passed,ExecWatcher picked up unit
+1495617215.7827,agent.executing.0.child:MainThread,unit.000029,AGENT_EXECUTING_PENDING,work done ,
+1495617215.7835,agent.executing.0.child:MainThread,unit.000030,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.7836,agent.executing.0.child:MainThread,unit.000030,AGENT_EXECUTING_PENDING,work start,
+1495617215.7830,agent.executing.0.child:Dummy-1,unit.000027,AGENT_EXECUTING,advance,
+1495617215.7839,agent.executing.0.child:Dummy-1,unit.000027,AGENT_EXECUTING,publish,
+1495617215.7836,agent.executing.0.child:MainThread,unit.000030,AGENT_EXECUTING,advance,
+1495617215.7842,agent.executing.0.child:MainThread,unit.000030,AGENT_EXECUTING,publish,
+1495617215.7844,agent.executing.0.child:MainThread,unit.000030,,exec,unit launch
+1495617215.7844,agent.executing.0.child:MainThread,unit.000030,,spawn,unit spawn
+1495617215.7867,agent.executing.0.child:MainThread,unit.000030,,command,launch command constructed
+1495617215.7988,agent.executing.0.child:MainThread,unit.000030,,spawn,spawning passed to orte
+1495617215.7990,agent.executing.0.child:Dummy-1,unit.000026,,passed,ExecWatcher picked up unit
+1495617215.7992,agent.executing.0.child:MainThread,unit.000030,AGENT_EXECUTING_PENDING,work done ,
+1495617215.8000,agent.executing.0.child:MainThread,unit.000031,AGENT_EXECUTING_PENDING,get,agent.executing.queue.output
+1495617215.8001,agent.executing.0.child:MainThread,unit.000031,AGENT_EXECUTING_PENDING,work start,
+1495617215.7995,agent.executing.0.child:Dummy-1,unit.000026,AGENT_EXECUTING,advance,
+1495617215.8005,agent.executing.0.child:Dummy-1,unit.000026,AGENT_EXECUTING,publish,
+1495617215.8006,agent.executing.0.child:Dummy-1,unit.000028,,passed,ExecWatcher picked up unit
+1495617215.8001,agent.executing.0.child:MainThread,unit.000031,AGENT_EXECUTING,advance,
+1495617215.8009,agent.executing.0.child:MainThread,unit.000031,AGENT_EXECUTING,publish,
+1495617215.8013,agent.executing.0.child:MainThread,unit.000031,,exec,unit launch
+1495617215.8013,agent.executing.0.child:MainThread,unit.000031,,spawn,unit spawn
+1495617215.8011,agent.executing.0.child:Dummy-1,unit.000028,AGENT_EXECUTING,advance,
+1495617215.8017,agent.executing.0.child:Dummy-1,unit.000028,AGENT_EXECUTING,publish,
+1495617215.8036,agent.executing.0.child:MainThread,unit.000031,,command,launch command constructed
+1495617215.8153,agent.executing.0.child:MainThread,unit.000031,,spawn,spawning passed to orte
+1495617215.8155,agent.executing.0.child:Dummy-1,unit.000029,,passed,ExecWatcher picked up unit
+1495617215.8158,agent.executing.0.child:MainThread,unit.000031,AGENT_EXECUTING_PENDING,work done ,
+1495617215.8161,agent.executing.0.child:Dummy-1,unit.000029,AGENT_EXECUTING,advance,
+1495617215.8165,agent.executing.0.child:Dummy-1,unit.000029,AGENT_EXECUTING,publish,
+1495617215.8310,agent.executing.0.child:Dummy-1,unit.000030,,passed,ExecWatcher picked up unit
+1495617215.8312,agent.executing.0.child:Dummy-1,unit.000030,AGENT_EXECUTING,advance,
+1495617215.8316,agent.executing.0.child:Dummy-1,unit.000030,AGENT_EXECUTING,publish,
+1495617215.8458,agent.executing.0.child:Dummy-1,unit.000031,,passed,ExecWatcher picked up unit
+1495617215.8461,agent.executing.0.child:Dummy-1,unit.000031,AGENT_EXECUTING,advance,
+1495617215.8464,agent.executing.0.child:Dummy-1,unit.000031,AGENT_EXECUTING,publish,
+1495618355.3931,agent.executing.0.child:Dummy-1,unit.000021,,exec,execution complete
+1495618355.3943,agent.executing.0.child:Dummy-1,unit.000021,,final,execution succeeded
+1495618355.3944,agent.executing.0.child:Dummy-1,unit.000021,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618355.3948,agent.executing.0.child:Dummy-1,unit.000021,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618355.3952,agent.executing.0.child:Dummy-1,unit.000021,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618363.6646,agent.executing.0.child:Dummy-1,unit.000020,,exec,execution complete
+1495618363.6650,agent.executing.0.child:Dummy-1,unit.000020,,final,execution succeeded
+1495618363.6650,agent.executing.0.child:Dummy-1,unit.000020,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618363.6654,agent.executing.0.child:Dummy-1,unit.000020,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618363.6658,agent.executing.0.child:Dummy-1,unit.000020,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618369.7730,agent.executing.0.child:Dummy-1,unit.000012,,exec,execution complete
+1495618369.7734,agent.executing.0.child:Dummy-1,unit.000012,,final,execution succeeded
+1495618369.7734,agent.executing.0.child:Dummy-1,unit.000012,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618369.7738,agent.executing.0.child:Dummy-1,unit.000012,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618369.7742,agent.executing.0.child:Dummy-1,unit.000012,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618377.5614,agent.executing.0.child:Dummy-1,unit.000028,,exec,execution complete
+1495618377.5617,agent.executing.0.child:Dummy-1,unit.000028,,final,execution succeeded
+1495618377.5618,agent.executing.0.child:Dummy-1,unit.000028,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618377.5622,agent.executing.0.child:Dummy-1,unit.000028,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618377.5626,agent.executing.0.child:Dummy-1,unit.000028,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618381.7327,agent.executing.0.child:Dummy-1,unit.000009,,exec,execution complete
+1495618381.7330,agent.executing.0.child:Dummy-1,unit.000009,,final,execution succeeded
+1495618381.7330,agent.executing.0.child:Dummy-1,unit.000009,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618381.7334,agent.executing.0.child:Dummy-1,unit.000009,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618381.7338,agent.executing.0.child:Dummy-1,unit.000009,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618381.8421,agent.executing.0.child:Dummy-1,unit.000016,,exec,execution complete
+1495618381.8423,agent.executing.0.child:Dummy-1,unit.000016,,final,execution succeeded
+1495618381.8424,agent.executing.0.child:Dummy-1,unit.000016,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618381.8428,agent.executing.0.child:Dummy-1,unit.000016,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618381.8432,agent.executing.0.child:Dummy-1,unit.000016,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618382.3144,agent.executing.0.child:Dummy-1,unit.000005,,exec,execution complete
+1495618382.3148,agent.executing.0.child:Dummy-1,unit.000005,,final,execution succeeded
+1495618382.3148,agent.executing.0.child:Dummy-1,unit.000005,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618382.3152,agent.executing.0.child:Dummy-1,unit.000005,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618382.3156,agent.executing.0.child:Dummy-1,unit.000005,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618382.3212,agent.executing.0.child:Dummy-1,unit.000013,,exec,execution complete
+1495618382.3215,agent.executing.0.child:Dummy-1,unit.000013,,final,execution succeeded
+1495618382.3215,agent.executing.0.child:Dummy-1,unit.000013,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618382.3219,agent.executing.0.child:Dummy-1,unit.000013,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618382.3223,agent.executing.0.child:Dummy-1,unit.000013,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618382.4231,agent.executing.0.child:Dummy-1,unit.000017,,exec,execution complete
+1495618382.4235,agent.executing.0.child:Dummy-1,unit.000017,,final,execution succeeded
+1495618382.4235,agent.executing.0.child:Dummy-1,unit.000017,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618382.4239,agent.executing.0.child:Dummy-1,unit.000017,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618382.4243,agent.executing.0.child:Dummy-1,unit.000017,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618382.5797,agent.executing.0.child:Dummy-1,unit.000018,,exec,execution complete
+1495618382.5800,agent.executing.0.child:Dummy-1,unit.000018,,final,execution succeeded
+1495618382.5801,agent.executing.0.child:Dummy-1,unit.000018,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618382.5805,agent.executing.0.child:Dummy-1,unit.000018,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618382.5809,agent.executing.0.child:Dummy-1,unit.000018,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618383.0404,agent.executing.0.child:Dummy-1,unit.000010,,exec,execution complete
+1495618383.0407,agent.executing.0.child:Dummy-1,unit.000010,,final,execution succeeded
+1495618383.0408,agent.executing.0.child:Dummy-1,unit.000010,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618383.0412,agent.executing.0.child:Dummy-1,unit.000010,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618383.0416,agent.executing.0.child:Dummy-1,unit.000010,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618383.3866,agent.executing.0.child:Dummy-1,unit.000027,,exec,execution complete
+1495618383.3870,agent.executing.0.child:Dummy-1,unit.000027,,final,execution succeeded
+1495618383.3870,agent.executing.0.child:Dummy-1,unit.000027,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618383.3874,agent.executing.0.child:Dummy-1,unit.000027,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618383.3878,agent.executing.0.child:Dummy-1,unit.000027,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618383.5012,agent.executing.0.child:Dummy-1,unit.000006,,exec,execution complete
+1495618383.5014,agent.executing.0.child:Dummy-1,unit.000006,,final,execution succeeded
+1495618383.5015,agent.executing.0.child:Dummy-1,unit.000006,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618383.5019,agent.executing.0.child:Dummy-1,unit.000006,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618383.5023,agent.executing.0.child:Dummy-1,unit.000006,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618385.6600,agent.executing.0.child:Dummy-1,unit.000025,,exec,execution complete
+1495618385.6603,agent.executing.0.child:Dummy-1,unit.000025,,final,execution succeeded
+1495618385.6603,agent.executing.0.child:Dummy-1,unit.000025,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618385.6607,agent.executing.0.child:Dummy-1,unit.000025,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618385.6611,agent.executing.0.child:Dummy-1,unit.000025,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618385.6846,agent.executing.0.child:Dummy-1,unit.000024,,exec,execution complete
+1495618385.6849,agent.executing.0.child:Dummy-1,unit.000024,,final,execution succeeded
+1495618385.6849,agent.executing.0.child:Dummy-1,unit.000024,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618385.6853,agent.executing.0.child:Dummy-1,unit.000024,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618385.6857,agent.executing.0.child:Dummy-1,unit.000024,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618385.8510,agent.executing.0.child:Dummy-1,unit.000022,,exec,execution complete
+1495618385.8513,agent.executing.0.child:Dummy-1,unit.000022,,final,execution succeeded
+1495618385.8513,agent.executing.0.child:Dummy-1,unit.000022,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618385.8517,agent.executing.0.child:Dummy-1,unit.000022,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618385.8521,agent.executing.0.child:Dummy-1,unit.000022,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618389.3530,agent.executing.0.child:Dummy-1,unit.000014,,exec,execution complete
+1495618389.3533,agent.executing.0.child:Dummy-1,unit.000014,,final,execution succeeded
+1495618389.3534,agent.executing.0.child:Dummy-1,unit.000014,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618389.3538,agent.executing.0.child:Dummy-1,unit.000014,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618389.3542,agent.executing.0.child:Dummy-1,unit.000014,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618390.5897,agent.executing.0.child:Dummy-1,unit.000023,,exec,execution complete
+1495618390.5900,agent.executing.0.child:Dummy-1,unit.000023,,final,execution succeeded
+1495618390.5901,agent.executing.0.child:Dummy-1,unit.000023,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618390.5905,agent.executing.0.child:Dummy-1,unit.000023,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618390.5909,agent.executing.0.child:Dummy-1,unit.000023,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618393.4077,agent.executing.0.child:Dummy-1,unit.000001,,exec,execution complete
+1495618393.4080,agent.executing.0.child:Dummy-1,unit.000001,,final,execution succeeded
+1495618393.4081,agent.executing.0.child:Dummy-1,unit.000001,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618393.4085,agent.executing.0.child:Dummy-1,unit.000001,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618393.4089,agent.executing.0.child:Dummy-1,unit.000001,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618393.5412,agent.executing.0.child:Dummy-1,unit.000007,,exec,execution complete
+1495618393.5415,agent.executing.0.child:Dummy-1,unit.000007,,final,execution succeeded
+1495618393.5415,agent.executing.0.child:Dummy-1,unit.000007,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618393.5419,agent.executing.0.child:Dummy-1,unit.000007,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618393.5423,agent.executing.0.child:Dummy-1,unit.000007,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618394.5323,agent.executing.0.child:Dummy-1,unit.000008,,exec,execution complete
+1495618394.5326,agent.executing.0.child:Dummy-1,unit.000008,,final,execution succeeded
+1495618394.5327,agent.executing.0.child:Dummy-1,unit.000008,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618394.5331,agent.executing.0.child:Dummy-1,unit.000008,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618394.5335,agent.executing.0.child:Dummy-1,unit.000008,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618394.8258,agent.executing.0.child:Dummy-1,unit.000004,,exec,execution complete
+1495618394.8261,agent.executing.0.child:Dummy-1,unit.000004,,final,execution succeeded
+1495618394.8261,agent.executing.0.child:Dummy-1,unit.000004,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618394.8265,agent.executing.0.child:Dummy-1,unit.000004,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618394.8269,agent.executing.0.child:Dummy-1,unit.000004,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618397.4780,agent.executing.0.child:Dummy-1,unit.000015,,exec,execution complete
+1495618397.4784,agent.executing.0.child:Dummy-1,unit.000015,,final,execution succeeded
+1495618397.4784,agent.executing.0.child:Dummy-1,unit.000015,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618397.4788,agent.executing.0.child:Dummy-1,unit.000015,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618397.4792,agent.executing.0.child:Dummy-1,unit.000015,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618397.5383,agent.executing.0.child:Dummy-1,unit.000026,,exec,execution complete
+1495618397.5387,agent.executing.0.child:Dummy-1,unit.000026,,final,execution succeeded
+1495618397.5387,agent.executing.0.child:Dummy-1,unit.000026,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618397.5391,agent.executing.0.child:Dummy-1,unit.000026,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618397.5395,agent.executing.0.child:Dummy-1,unit.000026,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618398.3384,agent.executing.0.child:Dummy-1,unit.000002,,exec,execution complete
+1495618398.3387,agent.executing.0.child:Dummy-1,unit.000002,,final,execution succeeded
+1495618398.3387,agent.executing.0.child:Dummy-1,unit.000002,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618398.3391,agent.executing.0.child:Dummy-1,unit.000002,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618398.3395,agent.executing.0.child:Dummy-1,unit.000002,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618398.3433,agent.executing.0.child:Dummy-1,unit.000029,,exec,execution complete
+1495618398.3436,agent.executing.0.child:Dummy-1,unit.000029,,final,execution succeeded
+1495618398.3436,agent.executing.0.child:Dummy-1,unit.000029,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618398.3440,agent.executing.0.child:Dummy-1,unit.000029,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618398.3444,agent.executing.0.child:Dummy-1,unit.000029,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618398.6671,agent.executing.0.child:Dummy-1,unit.000000,,exec,execution complete
+1495618398.6675,agent.executing.0.child:Dummy-1,unit.000000,,final,execution succeeded
+1495618398.6675,agent.executing.0.child:Dummy-1,unit.000000,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618398.6679,agent.executing.0.child:Dummy-1,unit.000000,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618398.6683,agent.executing.0.child:Dummy-1,unit.000000,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618399.4935,agent.executing.0.child:Dummy-1,unit.000031,,exec,execution complete
+1495618399.4938,agent.executing.0.child:Dummy-1,unit.000031,,final,execution succeeded
+1495618399.4939,agent.executing.0.child:Dummy-1,unit.000031,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618399.4943,agent.executing.0.child:Dummy-1,unit.000031,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618399.4947,agent.executing.0.child:Dummy-1,unit.000031,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618399.5000,agent.executing.0.child:Dummy-1,unit.000030,,exec,execution complete
+1495618399.5003,agent.executing.0.child:Dummy-1,unit.000030,,final,execution succeeded
+1495618399.5003,agent.executing.0.child:Dummy-1,unit.000030,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618399.5007,agent.executing.0.child:Dummy-1,unit.000030,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618399.5011,agent.executing.0.child:Dummy-1,unit.000030,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618402.7658,agent.executing.0.child:Dummy-1,unit.000003,,exec,execution complete
+1495618402.7661,agent.executing.0.child:Dummy-1,unit.000003,,final,execution succeeded
+1495618402.7661,agent.executing.0.child:Dummy-1,unit.000003,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618402.7665,agent.executing.0.child:Dummy-1,unit.000003,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618402.7669,agent.executing.0.child:Dummy-1,unit.000003,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618405.1507,agent.executing.0.child:Dummy-1,unit.000019,,exec,execution complete
+1495618405.1510,agent.executing.0.child:Dummy-1,unit.000019,,final,execution succeeded
+1495618405.1510,agent.executing.0.child:Dummy-1,unit.000019,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618405.1514,agent.executing.0.child:Dummy-1,unit.000019,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618405.1519,agent.executing.0.child:Dummy-1,unit.000019,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input
+1495618406.4652,agent.executing.0.child:Dummy-1,unit.000011,,exec,execution complete
+1495618406.4655,agent.executing.0.child:Dummy-1,unit.000011,,final,execution succeeded
+1495618406.4656,agent.executing.0.child:Dummy-1,unit.000011,AGENT_STAGING_OUTPUT_PENDING,advance,
+1495618406.4660,agent.executing.0.child:Dummy-1,unit.000011,AGENT_STAGING_OUTPUT_PENDING,publish,
+1495618406.4664,agent.executing.0.child:Dummy-1,unit.000011,AGENT_STAGING_OUTPUT_PENDING,put,agent.staging.output.queue.input

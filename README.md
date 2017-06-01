@@ -11,8 +11,8 @@ or the performance of the interaction between the client and agent modules.
 |----|-----------|-------------|----------|----------|
 | 1  |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|Synapse emulating AMBER single core|Andre|Vivek|
 | ~~2~~ |~~[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)~~|~~AMBER single core~~|~~?~~|~~Vivek~~| 
-| 3 |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|?|Vivek| 
-| 4  |[Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1)|AMBER MPI|Manuel|Antons|
+| 3 |[AMBER/CoCo ensembles for molecular sciences](https://docs.google.com/document/d/1ZYwwHIQUIwowAnYgZJIorPOVeEge9_Dg1MIJLZQK3sY/edit#heading=h.k670rad7dcz1)|CoCo MPI|Manuel|Vivek| 
+| 4  |[Replica Exchange simulations for molecular sciences](https://docs.google.com/document/d/1rIgWeoRoincsuNN83kOBYlE9C63hhjFCVnh_0lFiWO0/edit#heading=h.k670rad7dcz1)|AMBER MPI|Srinivas|Antons|
 | 5  |[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)|GROMACS single core|Alessio|Vivek|
 | ~~6~~ |~~[GROMACS/LSDMap ensembles for molecular sciences](https://docs.google.com/document/d/1a8i38Z_aROQgylRNtbsePGH6UovRJgg0WW4gbk5kW4A/edit#heading=h.8tk04bz0vj23)~~|~~LSDMap?~~|~~?~~|~~Vivek~~|
 | 7  |[Geant4 detector simulation for the ATALAS Monte Carlo workflow](https://docs.google.com/document/d/1EDgUda6kGUgmKFzOoRUxLZNCZqKI6ulUGaYXPMTaL4U/edit)|Geant4 multithreading|Alessio|Sergey|
@@ -20,7 +20,7 @@ or the performance of the interaction between the client and agent modules.
 
 ## Experiment 1 -- Weak scalability
 
-#### Use Case IDs: 1,5,7
+### Use Case IDs: 1,5,7
 
 |N runs| N tasks | N core/task | N generations | N pilot | N core/pilot | Resource       |
 |------|---------|-------------|---------------|---------|--------------|----------------|
@@ -44,7 +44,7 @@ Use case 5:
 * SuperMIC: max 1280 task/cores
 * Titan: max at 1024 task/cores
 
-#### Use Case IDs: 3, 4
+### Use Case IDs: 3, 4
 
 We assume:
 * 16 cores per worker node;

@@ -1,6 +1,0 @@
-2017-05-17 11:12:13,954: control.pubsub.bridge.child: control.pubsub.bridge.child     : MainThread     : INFO    : python.interpreter   version: 2.7.7 |Continuum Analytics, Inc.| (default, Jun 2 2014, 12:34:02) [GCC 4.1.2 20080704 (Red Hat 4.1.2-54)]
-2017-05-17 11:12:13,957: control.pubsub.bridge.child: control.pubsub.bridge.child     : MainThread     : INFO    :                      pid: 108061
-2017-05-17 11:12:13,957: control.pubsub.bridge.child: control.pubsub.bridge.child     : MainThread     : INFO    :                      tid: MainThread
-2017-05-17 11:12:13,958: control.pubsub.bridge.child: control.pubsub.bridge.child     : MainThread     : INFO    : radical.pilot        version: split-71-gfdd36239@devel
-2017-05-17 11:12:13,958: control.pubsub.bridge.child: control.pubsub.bridge.child     : MainThread     : INFO    : start bridge control.pubsub.bridge.child on tcp://*:*
-2017-05-17 11:12:13,958: control.pubsub.bridge.child: control.pubsub.bridge.child     : MainThread     : INFO    : bound bridge control.pubsub.bridge.child to tcp://0.0.0.0:40907 : tcp://0.0.0.0:41207

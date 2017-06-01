@@ -36,9 +36,12 @@ Todo:
 import os
 import sys
 import glob
+import fcntl
 import getopt
+import psutil
 import numpy as np
 import pandas as pd
+import multiprocessing as mp
 import radical.analytics as ra
 
 
@@ -212,7 +215,10 @@ def store_df(new_df, stored=pd.DataFrame(), etype=None):
             else:
                 df = stored.append(new_df)
             df.reset_index(inplace=True, drop=True)
-            df.to_csv(csvs[etype])
+            with open(csvs[etype], 'a') as f:
+                fcntl.flock(f, fcntl.LOCK_EX)
+                df.to_csv(f)
+                fcntl.flock(f, fcntl.LOCK_UN)
 
         else:
             error = 'Cannot store DF to %s' % etype
@@ -753,10 +759,18 @@ if __name__ == '__main__':
     # Find out what sessions need to be wrangled.
     rawsids = get_raw_sessions(ddir, etag, clopts)
     sids = get_new_sessions(rawsids)
+    procs = []
+
+    num_workers = psutil.cpu_count(logical=False)
+    workers = mp.Pool(num_workers)
 
     # Wrangle the new sessions.
     if sids:
         for sdir,sid in sids.iteritems():
             wrangle_session(sdir, sid)
+        #     workers.apply_async(wrangle_session, (sdir, sid,))
+        # workers.close()
+        # workers.join()
+
     else:
         print 'No new sessions to wrangle found.'

@@ -1,0 +1,5 @@
+#time,name,uid,state,event,msg
+1498638564.1277,umgr.staging.output.0:,,,sync abs,one:144.76.72.175:1498638564.12:1498638564.11:ntp
+1498638564.1279,umgr.staging.output.0:MainThread,umgr.staging.output.0,,initialize,
+1498651206.2236,umgr.staging.output.0:MainThread,umgr.staging.output.0,,stopped,
+1498651206.2237,umgr.staging.output.0:MainThread,,,END,

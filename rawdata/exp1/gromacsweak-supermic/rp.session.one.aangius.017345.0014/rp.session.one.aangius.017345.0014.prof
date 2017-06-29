@@ -1,0 +1,10 @@
+#time,name,uid,state,event,msg
+1498678258.9113,rp.session.one.aangius.017345.0014:,,,sync abs,one:144.76.72.175:1498678258.9:1498678258.9:ntp
+1498678258.9116,rp.session.one.aangius.017345.0014:MainThread,rp.session.one.aangius.017345.0014,,start session,
+1498678259.0095,rp.session.one.aangius.017345.0014:MainThread,rp.session.one.aangius.017345.0014,,configs parsed,
+1498679503.7799,rp.session.one.aangius.017345.0014:MainThread,rp.session.one.aangius.017345.0014,,close,
+1498679505.2769,rp.session.one.aangius.017345.0014:MainThread,umgr.0000,,closed umgr,
+1498679507.3179,rp.session.one.aangius.017345.0014:MainThread,pmgr.0000,,closed pmgr,
+1498679507.7602,rp.session.one.aangius.017345.0014:MainThread,rp.session.one.aangius.017345.0014,,closing,False
+1498679507.7606,rp.session.one.aangius.017345.0014:MainThread,rp.session.one.aangius.017345.0014,,closed,
+1498679507.7606,rp.session.one.aangius.017345.0014:MainThread,,,END,

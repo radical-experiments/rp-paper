@@ -1,0 +1,5 @@
+#time,name,uid,state,event,msg
+1498614039.6701,umgr.scheduling.0:,,,sync abs,one:144.76.72.175:1498614039.66:1498614039.67:ntp
+1498614039.6702,umgr.scheduling.0:MainThread,umgr.scheduling.0,,initialize,
+1498615684.2141,umgr.scheduling.0:MainThread,umgr.scheduling.0,,stopped,
+1498615684.2142,umgr.scheduling.0:MainThread,,,END,

@@ -44,6 +44,8 @@ import pandas as pd
 import multiprocessing as mp
 import radical.analytics as ra
 
+from sqlalchemy import create_engine
+
 
 # -----------------------------------------------------------------------------
 def help():
@@ -201,6 +203,10 @@ def store_df(new_df, stored=pd.DataFrame(), etype=None):
     if new_df.empty:
         print 'WARNING: attempting to store an empty DF.'
     else:
+        # Set header for csv file
+        header = True
+        if os.path.isfile(csvs[etype]):
+            header = False
         if etype == 'session':
             new_sessions = new_df.drop('session', axis=1)
             if stored.empty:
@@ -213,11 +219,11 @@ def store_df(new_df, stored=pd.DataFrame(), etype=None):
             if stored.empty:
                 df = new_df
             else:
-                df = stored.append(new_df)
+                df = stored.append(new_df, ignore_index=True)
             df.reset_index(inplace=True, drop=True)
             with open(csvs[etype], 'a') as f:
                 fcntl.flock(f, fcntl.LOCK_EX)
-                df.to_csv(f)
+                df.to_csv(f, header=header)
                 fcntl.flock(f, fcntl.LOCK_UN)
 
         else:
@@ -366,8 +372,7 @@ def load_pilots(sid, exp, sra_pilots, pdm, pu_rels, pts):
         # FIXME: This is a workaround to load the full DF before saving it. The
         # DF is then unloaded loading only the portion related to the pilots
         # just wrangled. This avoids using memory but needs cleanup.
-        stored_pilots = load_df(etype='pilot')
-        store_df(pilots, stored=stored_pilots, etype='pilot')
+        store_df(pilots, etype='pilot')
         stored_pilots = load_df(etype='pilot', sid=sid)
         print '\nstored in %s.' % csvs['pilot']
 
@@ -440,7 +445,6 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts):
                 us[duration].append(np.nan)
 
         # pilot and host on which the unit has been executed.
-
         punit = [key[0] for key in pu_rels.items() if uid in key[1]]
         if punit:
             punit = punit[0]
@@ -460,8 +464,7 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts):
         # FIXME: This is a workaround to load the full DF before saving it. The
         # DF is then reloaded, loading only the units just wrangled. This
         # avoids using memory but needs cleanup.
-        stored_units = load_df(etype='unit')
-        store_df(units, stored=stored_units, etype='unit')
+        store_df(units, etype='unit')
         stored_units = load_df(etype='unit', sid=sid)
         print '\nstored in %s.' % csvs['unit']
 
@@ -474,11 +477,12 @@ def load_units(sid, exp, sra_units, udm, pilots, sra, pu_rels, uts):
 def load_session(sid, exp, sra_session, sra_pilots, sra_units,
                  sdm, pdm, udm, pilots, units, sts):
 
+    # REDUNDANT: get_new_sessions checks for this already
     # If this session has been already stored get out, nothing to do here.
-    stored_sessions = load_df(etype='session', sid=sid)
-    if sid in stored_sessions.index.tolist():
-        sys.stdout.write('%s already stored in %s' % (sid, csvs['session']))
-        return False
+    # stored_sessions = load_df(etype='session', sid=sid)
+    # if sid in stored_sessions.index.tolist():
+    #     sys.stdout.write('%s already stored in %s' % (sid, csvs['session']))
+    #     return False
 
     sys.stdout.write('\n%s --- %s' % (exp, sid))
     s = initialize_entity(etype='session')
@@ -543,6 +547,7 @@ def load_session(sid, exp, sra_session, sra_pilots, sra_units,
 # -----------------------------------------------------------------------------
 def get_raw_sessions(ddir, etag, clopts):
 
+    print '\n\nGet raw sessions: '
     sids = {}
 
     # Get sessions ID, experiment number and RA object. Assume:
@@ -589,12 +594,14 @@ def get_raw_sessions(ddir, etag, clopts):
                 error = 'ERROR: session folder and json file name differ'
                 print '%s: %s != %s' % (error, sdir, sid)
 
+    print 'Done.'
     return sids
 
 
 # -----------------------------------------------------------------------------
 def get_new_sessions(sids):
 
+    print '\n\nMarking sessions for wrangling: '
     towrangle = {}
 
     # Load current sessions, pilots, units DFs
@@ -621,8 +628,10 @@ def get_new_sessions(sids):
         if (sid not in sessions.sid.tolist()) or \
                 (units[units.sid == sid].shape[0] < nurequest[0]) or \
                 (pilots[pilots.sid == sid].shape[0] < nprequest[0]):
+            print 'Mark session %sfor wrangling' % sid
             towrangle[sdir] = sid
 
+    print 'Done.'
     return towrangle
 
 
@@ -759,6 +768,7 @@ if __name__ == '__main__':
     # Find out what sessions need to be wrangled.
     rawsids = get_raw_sessions(ddir, etag, clopts)
     sids = get_new_sessions(rawsids)
+
     procs = []
 
     num_workers = psutil.cpu_count(logical=False)

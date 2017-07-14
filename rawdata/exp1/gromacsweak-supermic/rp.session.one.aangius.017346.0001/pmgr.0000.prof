@@ -1,0 +1,13 @@
+#time,name,uid,state,event,msg
+1498698189.3965,pmgr.0000:,,,sync abs,one:144.76.72.175:1498698189.4:1498698189.4:ntp
+1498698189.3966,pmgr.0000:MainThread,pmgr.0000,,initialize,
+1498698189.6581,pmgr.0000:MainThread,pmgr.0000,,create pmgr,
+1498698189.7190,pmgr.0000:MainThread,,,PMGR setup done,
+1498698194.8693,pmgr.0000:MainThread,pilot.0000,NEW,advance,
+1498698194.8709,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,advance,
+1498698194.8714,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,publish,
+1498698194.8718,pmgr.0000:MainThread,pilot.0000,PMGR_LAUNCHING_PENDING,put,pmgr.launching.queue.input
+1498698194.8751,pmgr.0000:pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_LAUNCHING,advance,
+1498698211.5587,pmgr.0000:pmgr.0000.subscriber._state_sub_cb,pilot.0000,PMGR_ACTIVE_PENDING,advance,
+1498698823.0894,pmgr.0000:MainThread,pmgr.0000,,stopped,
+1498698823.0894,pmgr.0000:MainThread,,,END,
